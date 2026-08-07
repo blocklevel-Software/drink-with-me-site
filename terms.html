@@ -1,0 +1,1009 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffb800">
+  <title>Terms of Use - Drink With Me</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .legal { max-width: 880px; min-height: calc(100svh - 76px); margin: 0 auto; padding: 80px 24px 120px; }
+    .legal h1 { font-size: clamp(40px, 7vw, 66px); }
+    .legal h2 { margin-top: 40px; font-size: 30px; }
+    .legal h3 { margin-top: 30px; font-size: 22px; }
+    .legal p, .legal li { color: var(--muted); }
+    .legal strong { color: var(--espresso); }
+    .back { display: inline-block; margin-bottom: 44px; font-weight: 700; text-underline-offset: 5px; }
+    .lang-switch { display: flex; gap: 8px; flex-wrap: wrap; margin: 0 0 24px; }
+    .lang-switch button {
+      min-height: 32px;
+      min-width: 46px;
+      padding: 5px 12px;
+      border: 1px solid var(--espresso);
+      border-radius: 999px;
+      background: transparent;
+      color: var(--espresso);
+      font: 700 12px/1 "Schibsted Grotesk", "Helvetica Neue", sans-serif;
+      cursor: pointer;
+    }
+    .lang-switch button[aria-pressed="true"] {
+      background: var(--espresso);
+      color: var(--foam);
+    }
+    .terms-content ul { margin: 0 0 16px 18px; }
+    .terms-content p { margin: 0 0 14px; }
+    .terms-content h2, .terms-content h3 { color: var(--espresso); }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="assets/logo-banner.png" alt="Drink With Me"></a>
+  </header>
+
+  <main class="legal">
+    <a class="back" href="index.html" data-i18n="backLink">← Back to homepage</a>
+    <p class="section-label" data-i18n="legalLabel">Legal</p>
+    <h1 data-i18n="pageTitle">Terms of Use</h1>
+
+    <div class="lang-switch" role="group" aria-label="Language switch">
+      <button type="button" data-set-lang="de" aria-pressed="false">DE</button>
+      <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+    </div>
+
+    <div class="terms-content" id="terms-content"></div>
+  </main>
+
+  <script>
+    (function () {
+      var supported = ['de', 'en'];
+      var storageKey = 'dwm-lang';
+      var queryLang = new URLSearchParams(window.location.search).get('lang');
+
+      var markdown = {
+        en: `# Terms of Use - Drink With Me
+**Last updated: August 7, 2026**
+
+These Terms of Use ("Terms") govern your use of the **Drink With Me** mobile application ("Drink With Me", the "App", "Service").
+
+The Service is provided by:
+
+**blocklevel GmbH**
+Drahtzieherweg 15
+47877 Willich
+Germany
+
+Email: **[impressum@blocklevel.de](mailto:impressum@blocklevel.de)**
+
+By creating an account and accepting these Terms, you enter into an agreement with blocklevel GmbH regarding your use of Drink With Me.
+
+The German version of these Terms is the authoritative version. This English version is provided for convenience. Mandatory consumer rights under applicable law remain unaffected.
+
+## 1. What Drink With Me Is
+Drink With Me is a social application designed to help adults discover and connect with other people who may be interested in meeting for a drink or other social activity.
+
+Depending on the functionality available, Drink With Me may allow users to:
+
+- create a profile;
+- discover other users;
+- indicate their availability;
+- become Buddies or Matches;
+- express interest in meeting another user;
+- send or respond to drink requests;
+- communicate with other users;
+- make plans;
+- share current activities;
+- voluntarily share locations or photos;
+- block or report other users.
+Drink With Me facilitates contact between users. We are not a party to meetings, arrangements or interactions between users and do not organise or supervise real-world meetings.
+
+## 2. Minimum Age
+You must be **at least 18 years old** to create an account or use Drink With Me.
+
+By creating an account, you confirm that you are at least 18 years old.
+
+We may take reasonable steps to verify age where necessary. Accounts used by persons under the age of 18 may be suspended or deleted.
+
+Drink With Me is not directed at children or minors.
+
+## 3. Alcohol and Responsible Use
+Drink With Me does not sell or supply alcoholic beverages.
+
+Using Drink With Me does not require you to consume alcohol. Users may choose alcoholic or non-alcoholic drinks.
+
+You are responsible for complying with applicable laws concerning alcohol consumption.
+
+You must not use Drink With Me to:
+
+- encourage dangerous or excessive alcohol consumption;
+- pressure another person to consume alcohol;
+- facilitate the unlawful provision of alcohol;
+- organise or promote illegal activities involving alcohol.
+Never drive or operate vehicles or machinery while impaired.
+
+## 4. Account Registration
+You must provide accurate information when creating and using your account.
+
+You may not:
+
+- create an account for another person without permission;
+- impersonate another person;
+- misrepresent your identity or age;
+- operate multiple accounts for abusive, deceptive or manipulative purposes;
+- sell, transfer or make your account available to another person.
+You are responsible for maintaining appropriate control over access to your account.
+
+If you believe another person has gained unauthorised access to your account, please contact us promptly.
+
+## 5. Profiles and Authenticity
+Drink With Me is intended for genuine social interaction between real people.
+
+Your profile must represent you.
+
+You must not:
+
+- use another person's identity or photographs without permission;
+- deliberately provide materially false or misleading profile information;
+- create fake profiles;
+- use the Service primarily for scams, commercial solicitation or deceptive activity.
+We may remove misleading profiles or restrict accounts where reasonably necessary to protect users or the integrity of the Service.
+
+## 6. User Content
+“User Content” means content that you provide through Drink With Me, including:
+
+- profile information;
+- photographs;
+- profile descriptions;
+- messages;
+- activities;
+- locations you voluntarily share;
+- plan information;
+- other text, images or content.
+You remain responsible for your User Content.
+
+You represent that you have the rights and permissions necessary to upload and share your User Content.
+
+You must not upload content that infringes another person's copyright, privacy, personality rights or other rights.
+
+## 7. Licence for User Content
+You retain ownership of your User Content.
+
+To operate Drink With Me, you grant blocklevel GmbH a non-exclusive, worldwide, royalty-free licence to host, store, process, reproduce and display your User Content only to the extent necessary to:
+
+- provide the functionality you requested;
+- display content to the audience selected by you;
+- operate and secure the Service;
+- perform backups;
+- investigate reports or violations;
+- comply with legal obligations.
+This licence does not give us the right to use your private content for third-party advertising.
+
+The licence generally ends when the relevant content is deleted or your account is deleted, except where temporary retention is technically necessary or further retention is permitted or required by law.
+
+## 8. Prohibited Content and Behaviour
+You must treat other users with respect.
+
+The following content and behaviour are prohibited:
+
+- illegal content or activity;
+- threats, violence or encouragement of violence;
+- harassment, bullying or stalking;
+- hate speech or discriminatory abuse;
+- sexually explicit or pornographic content;
+- sexual exploitation or abuse;
+- any sexual content involving minors;
+- unsolicited explicit images or sexual messages;
+- coercive, predatory or exploitative behaviour;
+- impersonation or identity fraud;
+- scams, fraud or phishing;
+- spam or repetitive unsolicited commercial messages;
+- publishing another person's private information without permission;
+- content that infringes intellectual-property rights;
+- malware or harmful code;
+- attempts to circumvent security or access restrictions;
+- promotion or facilitation of unlawful drug activity;
+- promotion of dangerous or excessive alcohol consumption;
+- using the Service to arrange illegal activities;
+- deliberately submitting false or abusive reports;
+- any content or conduct that creates a serious safety risk for other users.
+We may establish additional Community Guidelines consistent with these Terms.
+
+## 9. Messaging and Contact With Other Users
+You may only contact other users for legitimate purposes consistent with Drink With Me.
+
+If another user declines an invitation, blocks you, asks you to stop contacting them or otherwise indicates that they do not wish to interact with you, you must respect that decision.
+
+You must not attempt to circumvent another user's block or privacy settings by creating another account or using another communication channel obtained through Drink With Me.
+
+## 10. Real-World Meetings and User Safety
+Drink With Me helps users make contact but does not control the behaviour of users outside the Service.
+
+Unless expressly stated otherwise, we:
+
+- do not conduct criminal-background checks;
+- do not guarantee a user's identity;
+- do not guarantee that profile information is accurate;
+- do not guarantee that another user's intentions or behaviour will meet your expectations.
+Any decision to communicate with or meet another user is made by the users involved.
+
+When meeting someone for the first time, users should exercise appropriate judgment regarding the meeting place, transportation, personal information and other circumstances.
+
+Nothing in this section limits any statutory liability of blocklevel GmbH.
+
+## 11. Location Information
+Drink With Me may provide location-based functionality.
+
+Distances and map positions may be approximate and may be affected by:
+
+- device accuracy;
+- network conditions;
+- outdated location information;
+- user-selected locations;
+- technical limitations.
+You decide whether to use optional location-sharing functions.
+
+If you voluntarily share a specific location with another user, the selected recipients may be able to determine where you are.
+
+Do not share a precise location unless you want the selected users to receive that information.
+
+## 12. Reporting and Blocking
+Drink With Me provides functionality for reporting users or content and for blocking other users.
+
+You should use these functions where you encounter behaviour or content that violates these Terms or poses a safety concern.
+
+Reports may be reviewed by us and may result in measures including:
+
+- removal or restriction of content;
+- warnings;
+- restriction of functionality;
+- temporary suspension;
+- permanent account termination.
+Where required by applicable law, illegal content may also be reported to us through the available reporting mechanisms or by contacting:
+
+**[impressum@blocklevel.de](mailto:impressum@blocklevel.de)**
+
+A report should contain sufficient information to allow us to identify the relevant content or user and understand the concern.
+
+## 13. Content Moderation
+We may moderate User Content and user activity where reasonably necessary to:
+
+- enforce these Terms;
+- comply with applicable law;
+- respond to user reports;
+- protect users;
+- prevent fraud, harassment or abuse;
+- maintain the security and integrity of Drink With Me.
+Moderation may involve technical tools, automated signals and/or human review.
+
+We may:
+
+- reduce the visibility of content;
+- remove content;
+- restrict particular functions;
+- issue warnings;
+- temporarily suspend an account;
+- permanently terminate an account.
+We will take into account the nature, severity, frequency and circumstances of a violation where appropriate.
+
+Serious violations, particularly those involving threats, violence, exploitation, fraud, child safety or significant risks to other users, may result in immediate action without prior warning.
+
+Where required by law, we will provide information about the reason for a moderation decision and available means of redress.
+
+## 14. Contesting Moderation Decisions
+If you believe that we have incorrectly removed content, restricted your account or taken another moderation action, you may contact us at:
+
+**[impressum@blocklevel.de](mailto:impressum@blocklevel.de)**
+
+Please provide sufficient information to identify your account and the decision you wish to contest.
+
+We will review requests as required by applicable law.
+
+This does not affect any statutory right to seek judicial or other legal remedies.
+
+## 15. Intellectual Property of Drink With Me
+The software, design, branding, graphics and other elements of Drink With Me are owned by blocklevel GmbH or its licensors unless otherwise stated.
+
+Subject to these Terms, we grant you a personal, limited, non-exclusive, non-transferable and revocable right to use Drink With Me for its intended purposes.
+
+You may not:
+
+- copy or commercially redistribute the App;
+- sell or sublicense access to it;
+- interfere with the technical operation of the Service;
+- attempt to bypass security measures;
+- scrape or systematically extract user data;
+- use automated accounts, bots or scripts without our permission;
+- reverse-engineer the App except where such restriction is prohibited by applicable law.
+Open-source components remain subject to their respective licences.
+
+## 16. Availability and Changes to the Service
+We aim to provide a reliable Service but cannot guarantee that Drink With Me will always be uninterrupted or error-free.
+
+The Service may temporarily be unavailable due to:
+
+- maintenance;
+- security measures;
+- technical failures;
+- third-party infrastructure;
+- updates;
+- circumstances outside our reasonable control.
+We may modify or discontinue functionality where reasonably necessary for technical, security, legal or product reasons.
+
+Where a change materially affects your contractual rights or the essential functionality of the Service, we will provide appropriate information in advance where required.
+
+Mandatory statutory rights relating to digital services remain unaffected.
+
+## 17. Suspension and Termination
+You may stop using Drink With Me at any time.
+
+You may permanently delete your account using the account deletion functionality provided within the App.
+
+Deleting the App from your device does not by itself delete your Drink With Me account.
+
+We may restrict, suspend or terminate an account where there is a legitimate reason, including:
+
+- material or repeated violations of these Terms;
+- illegal activity;
+- fraud or attempted fraud;
+- serious harassment or safety risks;
+- misuse of the reporting system;
+- attempts to compromise the security of the Service;
+- legal requirements.
+Where appropriate, we may first issue a warning.
+
+Where required by applicable law, we will provide reasons and available means of redress.
+
+Information about the processing and deletion of personal data is available in our Privacy Policy.
+
+## 18. Third-Party Services
+Drink With Me relies on certain third-party services and infrastructure, including services relating to:
+
+- authentication;
+- hosting;
+- notifications;
+- maps;
+- app distribution.
+Your use of certain third-party services may additionally be subject to the terms of the respective provider.
+
+If you downloaded Drink With Me through the Apple App Store or Google Play, the terms of the relevant app store also apply to your use of that platform.
+
+These Terms are entered into between you and blocklevel GmbH, not between you and Apple, Google or another app-store provider.
+
+## 19. Liability
+We are liable without limitation:
+
+- in cases of intent or gross negligence;
+- for injury to life, body or health;
+- where liability is mandatory under applicable law;
+- under applicable product-liability law;
+- where we have expressly assumed a guarantee.
+In cases of simple negligence, we are liable for breach of essential contractual obligations whose performance is necessary for proper performance of the agreement and on whose performance you may normally rely.
+
+In such cases, liability is limited to damage that was foreseeable and typical when the agreement was entered into.
+
+Otherwise, liability for simple negligence is excluded to the extent permitted by law.
+
+These limitations also apply to our legal representatives and agents.
+
+Nothing in these Terms limits mandatory consumer rights.
+
+## 20. Privacy
+Information about how we process personal data is provided separately in the **Drink With Me Privacy Policy**.
+
+The Privacy Policy is not replaced by these Terms.
+
+Where processing requires consent, consent is requested separately where legally required.
+
+## 21. Changes to These Terms
+We may update these Terms where reasonably necessary, for example because of:
+
+- changes to the Service;
+- new functionality;
+- security requirements;
+- changes in applicable law;
+- changes required by app-store rules.
+The current version will be made available through the App and/or the Drink With Me website.
+
+Where a change materially affects the existing contractual relationship, we will notify you and request acceptance of updated Terms where required by law.
+
+We will not treat silence as consent where affirmative consent is legally required.
+
+## 22. Governing Law
+These Terms are governed by the laws of the Federal Republic of Germany.
+
+If you are a consumer whose habitual residence is in another country, this choice of law does not deprive you of mandatory consumer protections applicable under the law of your habitual residence.
+
+Statutory rules regarding jurisdiction remain unaffected.
+
+The UN Convention on Contracts for the International Sale of Goods does not apply.
+
+## 23. Consumer Dispute Resolution
+We participate in dispute resolution proceedings before a consumer arbitration body.
+
+The competent body is:
+
+**Universalschlichtungsstelle des Bundes**
+Zentrum für Schlichtung e.V.
+Straßburger Straße 8
+77694 Kehl am Rhein
+Germany
+
+[www.universalschlichtungsstelle.de](http://www.universalschlichtungsstelle.de/)
+
+Participation in consumer dispute resolution does not restrict your right to bring a claim before a competent court.
+
+## 24. Severability
+If an individual provision of these Terms is or becomes invalid or unenforceable, the remaining provisions remain unaffected to the extent permitted by law.
+
+The applicable statutory rules apply in place of an invalid provision.
+
+## 25. Contact
+Questions, complaints or notices concerning these Terms or Drink With Me may be sent to:
+
+**blocklevel GmbH**
+Drahtzieherweg 15
+47877 Willich
+Germany
+
+Email: **[impressum@blocklevel.de](mailto:impressum@blocklevel.de)**`,
+
+        de: `# Nutzungsbedingungen - Drink With Me
+**Stand: 7. August 2026**
+
+Diese Nutzungsbedingungen („Nutzungsbedingungen“) regeln die Nutzung der mobilen Anwendung **Drink With Me** („Drink With Me“, die „App“, der „Dienst“).
+
+Anbieter des Dienstes ist:
+
+**blocklevel GmbH**
+Drahtzieherweg 15
+47877 Willich
+Deutschland
+
+E-Mail: **[impressum@blocklevel.de](mailto:impressum@blocklevel.de)**
+
+Mit der Erstellung eines Kontos und der Zustimmung zu diesen Nutzungsbedingungen kommt zwischen dir und der blocklevel GmbH ein Vertrag über die Nutzung von Drink With Me zustande.
+
+## 1. Was ist Drink With Me?
+Drink With Me ist eine soziale Anwendung, die erwachsenen Nutzern dabei hilft, andere Personen zu entdecken und kennenzulernen, die Interesse an einem gemeinsamen Drink oder einer anderen sozialen Aktivität haben.
+
+Je nach verfügbarer Funktionalität können Nutzer insbesondere:
+
+- ein Profil erstellen;
+- andere Nutzer entdecken;
+- ihre Verfügbarkeit angeben;
+- Buddies oder Matches werden;
+- Interesse an einem Treffen bekunden;
+- Drink-Anfragen senden oder beantworten;
+- mit anderen Nutzern kommunizieren;
+- gemeinsame Pläne erstellen;
+- aktuelle Aktivitäten teilen;
+- freiwillig Orte oder Fotos teilen;
+- andere Nutzer blockieren oder melden.
+Drink With Me ermöglicht den Kontakt zwischen Nutzern. Wir sind nicht Partei der zwischen Nutzern vereinbarten Treffen oder sonstigen Interaktionen und organisieren oder beaufsichtigen reale Treffen nicht.
+
+## 2. Mindestalter
+Du musst **mindestens 18 Jahre alt** sein, um ein Konto zu erstellen oder Drink With Me zu nutzen.
+
+Mit der Erstellung eines Kontos bestätigst du, dass du mindestens 18 Jahre alt bist.
+
+Soweit erforderlich, können wir angemessene Maßnahmen zur Überprüfung des Alters ergreifen. Konten von Personen unter 18 Jahren können gesperrt oder gelöscht werden.
+
+Drink With Me richtet sich nicht an Kinder oder Minderjährige.
+
+## 3. Alkohol und verantwortungsvolle Nutzung
+Drink With Me verkauft oder vermittelt keine alkoholischen Getränke.
+
+Die Nutzung von Drink With Me setzt keinen Alkoholkonsum voraus. Nutzer können sich sowohl für alkoholische als auch für alkoholfreie Getränke verabreden.
+
+Du bist selbst dafür verantwortlich, die jeweils geltenden gesetzlichen Bestimmungen zum Alkoholkonsum einzuhalten.
+
+Drink With Me darf insbesondere nicht genutzt werden, um:
+
+- gefährlichen oder übermäßigen Alkoholkonsum zu fördern;
+- andere Personen zum Alkoholkonsum zu drängen;
+- die rechtswidrige Abgabe von Alkohol zu ermöglichen;
+- rechtswidrige Aktivitäten im Zusammenhang mit Alkohol zu organisieren oder zu fördern.
+Führe kein Fahrzeug und bediene keine Maschinen, wenn deine Fahrtüchtigkeit oder Reaktionsfähigkeit beeinträchtigt ist.
+
+## 4. Registrierung und Benutzerkonto
+Bei der Erstellung und Nutzung deines Kontos musst du zutreffende Informationen angeben.
+
+Du darfst insbesondere nicht:
+
+- ohne Erlaubnis ein Konto für eine andere Person erstellen;
+- dich als eine andere Person ausgeben;
+- deine Identität oder dein Alter vorsätzlich falsch darstellen;
+- mehrere Konten zu missbräuchlichen, täuschenden oder manipulativen Zwecken betreiben;
+- dein Konto verkaufen, übertragen oder einer anderen Person zur Nutzung überlassen.
+Du bist dafür verantwortlich, einen angemessenen Schutz des Zugangs zu deinem Konto sicherzustellen.
+
+Wenn du vermutest, dass eine andere Person unberechtigt Zugriff auf dein Konto erlangt hat, solltest du uns unverzüglich kontaktieren.
+
+## 5. Profile und Authentizität
+Drink With Me ist für echte soziale Interaktionen zwischen realen Personen gedacht.
+
+Dein Profil muss dich selbst darstellen.
+
+Du darfst insbesondere nicht:
+
+- ohne Erlaubnis die Identität oder Fotos einer anderen Person verwenden;
+- wesentliche Profilinformationen bewusst falsch oder irreführend darstellen;
+- Fake-Profile erstellen;
+- den Dienst überwiegend für Betrug, kommerzielle Ansprache oder sonstige täuschende Aktivitäten nutzen.
+Wir können irreführende Profile entfernen oder Konten einschränken, soweit dies zum Schutz der Nutzer oder der Integrität des Dienstes angemessen erforderlich ist.
+
+## 6. Nutzergenerierte Inhalte
+„Nutzergenerierte Inhalte“ sind Inhalte, die du über Drink With Me bereitstellst, beispielsweise:
+
+- Profilinformationen;
+- Fotos;
+- Profilbeschreibungen;
+- Nachrichten;
+- Aktivitäten;
+- freiwillig freigegebene Standorte;
+- Informationen zu Plänen;
+- sonstige Texte, Bilder oder Inhalte.
+Du bist für die von dir bereitgestellten Inhalte verantwortlich.
+
+Du bestätigst, dass du über die notwendigen Rechte und Berechtigungen verfügst, um diese Inhalte hochzuladen und zu teilen.
+
+Du darfst insbesondere keine Inhalte hochladen, die Urheberrechte, Persönlichkeitsrechte, Datenschutzrechte oder sonstige Rechte anderer Personen verletzen.
+
+## 7. Nutzungsrechte an deinen Inhalten
+Du behältst die Rechte an deinen nutzergenerierten Inhalten.
+
+Damit wir Drink With Me betreiben können, räumst du der blocklevel GmbH ein nicht ausschließliches, weltweites und unentgeltliches Recht ein, deine Inhalte in dem Umfang zu speichern, zu verarbeiten, zu vervielfältigen und darzustellen, wie dies erforderlich ist, um:
+
+- die von dir gewünschte Funktion bereitzustellen;
+- Inhalte der von dir gewählten Zielgruppe anzuzeigen;
+- den Dienst zu betreiben und zu schützen;
+- Sicherungskopien zu erstellen;
+- Meldungen oder Verstöße zu untersuchen;
+- gesetzliche Verpflichtungen zu erfüllen.
+Dieses Recht erlaubt uns nicht, private Inhalte für Werbung durch Dritte zu verwenden.
+
+Das Nutzungsrecht endet grundsätzlich, wenn der betreffende Inhalt oder dein Konto gelöscht wird, soweit keine vorübergehende technische Speicherung erforderlich oder eine weitere Speicherung gesetzlich zulässig oder vorgeschrieben ist.
+
+## 8. Verbotene Inhalte und Verhaltensweisen
+Behandle andere Nutzer respektvoll.
+
+Insbesondere sind folgende Inhalte und Verhaltensweisen untersagt:
+
+- rechtswidrige Inhalte oder Aktivitäten;
+- Drohungen, Gewalt oder Aufrufe zu Gewalt;
+- Belästigung, Mobbing oder Stalking;
+- Hassrede oder diskriminierende Beleidigungen;
+- sexuell explizite oder pornografische Inhalte;
+- sexuelle Ausbeutung oder sexueller Missbrauch;
+- jegliche sexualisierten Inhalte mit Minderjährigen;
+- unaufgefordert versendete explizite Bilder oder sexuelle Nachrichten;
+- Zwang, ausbeuterisches oder übergriffiges Verhalten;
+- Identitätsmissbrauch;
+- Betrug, Scams oder Phishing;
+- Spam oder wiederholte unerwünschte kommerzielle Nachrichten;
+- Veröffentlichung privater Informationen anderer Personen ohne deren Erlaubnis;
+- Verletzungen geistiger Eigentumsrechte;
+- Schadsoftware oder schädlicher Code;
+- Versuche, Sicherheitsmaßnahmen oder Zugriffsbeschränkungen zu umgehen;
+- Förderung oder Unterstützung rechtswidriger Drogenaktivitäten;
+- Förderung gefährlichen oder übermäßigen Alkoholkonsums;
+- Nutzung des Dienstes zur Organisation rechtswidriger Aktivitäten;
+- bewusst falsche oder missbräuchliche Meldungen;
+- sonstige Inhalte oder Verhaltensweisen, die ein erhebliches Sicherheitsrisiko für andere Nutzer darstellen.
+Wir können ergänzende Community Guidelines aufstellen, soweit diese mit diesen Nutzungsbedingungen vereinbar sind.
+
+## 9. Nachrichten und Kontakt mit anderen Nutzern
+Du darfst andere Nutzer nur für legitime Zwecke kontaktieren, die mit dem Zweck von Drink With Me vereinbar sind.
+
+Wenn eine andere Person eine Einladung ablehnt, dich blockiert, dich auffordert, den Kontakt zu beenden, oder auf andere Weise deutlich macht, dass sie keinen weiteren Kontakt wünscht, musst du diese Entscheidung respektieren.
+
+Du darfst eine Blockierung oder Privatsphäre-Einstellung nicht dadurch umgehen, dass du ein anderes Konto erstellst oder über einen anderen Kommunikationsweg Kontakt aufnimmst, den du über Drink With Me erhalten hast.
+
+## 10. Persönliche Treffen und Sicherheit
+Drink With Me ermöglicht den Kontakt zwischen Nutzern, kontrolliert jedoch nicht das Verhalten von Nutzern außerhalb des Dienstes.
+
+Soweit nicht ausdrücklich anders angegeben:
+
+- führen wir keine strafrechtlichen Hintergrundprüfungen von Nutzern durch;
+- garantieren wir nicht die Identität eines Nutzers;
+- garantieren wir nicht die Richtigkeit von Profilinformationen;
+- garantieren wir nicht die Absichten oder das Verhalten anderer Nutzer.
+Die Entscheidung, mit einer anderen Person zu kommunizieren oder sich mit ihr zu treffen, treffen die beteiligten Nutzer selbst.
+
+Insbesondere bei einem ersten persönlichen Treffen sollten Nutzer angemessen berücksichtigen, wo das Treffen stattfindet, wie sie an- und abreisen, welche persönlichen Informationen sie teilen und welche sonstigen Umstände relevant sind.
+
+Gesetzliche Haftungstatbestände der blocklevel GmbH bleiben von diesem Abschnitt unberührt.
+
+## 11. Standortinformationen
+Drink With Me kann standortbezogene Funktionen bereitstellen.
+
+Entfernungsangaben und Kartenpositionen können ungenau sein, beispielsweise aufgrund von:
+
+- Gerätegenauigkeit;
+- Netzwerkbedingungen;
+- veralteten Standortinformationen;
+- vom Nutzer ausgewählten Standorten;
+- technischen Einschränkungen.
+Du entscheidest selbst, ob du optionale Funktionen zum Teilen eines Standorts verwendest.
+
+Wenn du freiwillig einen konkreten Standort mit anderen Nutzern teilst, können die ausgewählten Empfänger daraus deinen Aufenthaltsort erkennen.
+
+Teile einen genauen Standort nur dann, wenn du möchtest, dass die ausgewählten Personen diese Information erhalten.
+
+## 12. Melden und Blockieren
+Drink With Me bietet Funktionen zum Melden von Nutzern oder Inhalten sowie zum Blockieren anderer Nutzer.
+
+Diese Funktionen sollten verwendet werden, wenn du auf Verhalten oder Inhalte stößt, die gegen diese Nutzungsbedingungen verstoßen oder ein Sicherheitsproblem darstellen.
+
+Meldungen können von uns geprüft werden und insbesondere zu folgenden Maßnahmen führen:
+
+- Entfernung oder Einschränkung von Inhalten;
+- Verwarnungen;
+- Einschränkung bestimmter Funktionen;
+- vorübergehende Sperrung;
+- dauerhafte Beendigung eines Kontos.
+Soweit gesetzlich erforderlich, können rechtswidrige Inhalte außerdem über die verfügbaren Meldefunktionen oder unter folgender Adresse gemeldet werden:
+
+**[impressum@blocklevel.de](mailto:impressum@blocklevel.de)**
+
+Eine Meldung sollte ausreichende Informationen enthalten, damit wir den betreffenden Inhalt oder Nutzer identifizieren und den Sachverhalt nachvollziehen können.
+
+## 13. Inhaltsmoderation
+Wir können nutzergenerierte Inhalte und Nutzeraktivitäten moderieren, soweit dies angemessen erforderlich ist, um:
+
+- diese Nutzungsbedingungen durchzusetzen;
+- gesetzliche Verpflichtungen zu erfüllen;
+- auf Meldungen zu reagieren;
+- Nutzer zu schützen;
+- Betrug, Belästigung oder Missbrauch zu verhindern;
+- die Sicherheit und Integrität von Drink With Me zu gewährleisten.
+Bei der Moderation können technische Hilfsmittel, automatisierte Signale und/oder menschliche Prüfungen eingesetzt werden.
+
+Wir können insbesondere:
+
+- die Sichtbarkeit von Inhalten einschränken;
+- Inhalte entfernen;
+- bestimmte Funktionen einschränken;
+- Verwarnungen aussprechen;
+- Konten vorübergehend sperren;
+- Konten dauerhaft beenden.
+Soweit angemessen, berücksichtigen wir dabei Art, Schwere, Häufigkeit und Umstände eines Verstoßes.
+
+Schwerwiegende Verstöße, insbesondere im Zusammenhang mit Drohungen, Gewalt, Ausbeutung, Betrug, Kinderschutz oder erheblichen Gefahren für andere Nutzer, können zu sofortigen Maßnahmen ohne vorherige Verwarnung führen.
+
+Soweit gesetzlich vorgeschrieben, informieren wir über die Gründe einer Moderationsentscheidung und über verfügbare Rechtsbehelfe.
+
+## 14. Überprüfung von Moderationsentscheidungen
+Wenn du der Ansicht bist, dass wir einen Inhalt zu Unrecht entfernt, dein Konto zu Unrecht eingeschränkt oder eine andere Moderationsmaßnahme fälschlicherweise ergriffen haben, kannst du uns kontaktieren:
+
+**[impressum@blocklevel.de](mailto:impressum@blocklevel.de)**
+
+Bitte stelle ausreichende Informationen bereit, damit wir dein Konto und die betroffene Entscheidung identifizieren können.
+
+Wir prüfen solche Anfragen nach Maßgabe der geltenden gesetzlichen Anforderungen.
+
+Dein gesetzliches Recht, gerichtliche oder andere Rechtsbehelfe einzulegen, bleibt unberührt.
+
+## 15. Rechte an Drink With Me
+Die Software, Gestaltung, Marken, Grafiken und sonstigen Bestandteile von Drink With Me stehen, soweit nicht anders angegeben, im Eigentum der blocklevel GmbH oder ihrer Lizenzgeber.
+
+Vorbehaltlich dieser Nutzungsbedingungen erhältst du ein persönliches, beschränktes, nicht ausschließliches, nicht übertragbares und widerrufliches Recht, Drink With Me bestimmungsgemäß zu nutzen.
+
+Du darfst insbesondere nicht:
+
+- die App kopieren oder kommerziell weiterverbreiten;
+- den Zugang verkaufen oder unterlizenzieren;
+- den technischen Betrieb des Dienstes beeinträchtigen;
+- Sicherheitsmaßnahmen umgehen;
+- Nutzerinformationen automatisiert oder systematisch auslesen;
+- ohne unsere Erlaubnis Bots, Skripte oder automatisierte Konten einsetzen;
+- die App zurückentwickeln, soweit ein solches Verbot nach anwendbarem Recht zulässig ist.
+Open-Source-Komponenten unterliegen den jeweils geltenden Open-Source-Lizenzbedingungen.
+
+## 16. Verfügbarkeit und Änderungen des Dienstes
+Wir bemühen uns um einen zuverlässigen Betrieb von Drink With Me, können jedoch keine jederzeit unterbrechungs- oder fehlerfreie Verfügbarkeit garantieren.
+
+Der Dienst kann insbesondere vorübergehend nicht verfügbar sein aufgrund von:
+
+- Wartungsarbeiten;
+- Sicherheitsmaßnahmen;
+- technischen Störungen;
+- Infrastruktur von Drittanbietern;
+- Updates;
+- Umständen außerhalb unseres zumutbaren Einflussbereichs.
+Wir können Funktionen anpassen oder einstellen, soweit dies aus technischen, sicherheitsbezogenen, rechtlichen oder produktbezogenen Gründen angemessen erforderlich ist.
+
+Wenn eine Änderung deine vertraglichen Rechte oder wesentliche Funktionen des Dienstes erheblich beeinträchtigt, informieren wir dich, soweit erforderlich, angemessen im Voraus.
+
+Zwingende gesetzliche Rechte im Zusammenhang mit digitalen Diensten bleiben unberührt.
+
+## 17. Sperrung und Beendigung
+Du kannst die Nutzung von Drink With Me jederzeit beenden.
+
+Du kannst dein Konto über die innerhalb der App bereitgestellte Kontolöschfunktion dauerhaft löschen.
+
+Das bloße Deinstallieren der App löscht dein Drink With Me Konto nicht.
+
+Wir können ein Konto einschränken, sperren oder beenden, wenn hierfür ein berechtigter Grund besteht, insbesondere bei:
+
+- erheblichen oder wiederholten Verstößen gegen diese Nutzungsbedingungen;
+- rechtswidrigen Aktivitäten;
+- Betrug oder Betrugsversuchen;
+- schwerwiegender Belästigung oder Sicherheitsgefährdung;
+- Missbrauch des Meldesystems;
+- Versuchen, die Sicherheit des Dienstes zu beeinträchtigen;
+- gesetzlichen Verpflichtungen.
+Soweit angemessen, sprechen wir zuvor eine Verwarnung aus.
+
+Soweit gesetzlich erforderlich, informieren wir über die Gründe und verfügbare Rechtsbehelfe.
+
+Informationen über die Verarbeitung und Löschung personenbezogener Daten findest du in unserer Datenschutzerklärung.
+
+## 18. Dienste Dritter
+Drink With Me nutzt bestimmte Dienste und Infrastrukturen von Drittanbietern, insbesondere für:
+
+- Authentifizierung;
+- Hosting;
+- Push-Benachrichtigungen;
+- Karten;
+- App-Vertrieb.
+Für die Nutzung bestimmter Dienste Dritter können zusätzlich deren eigene Bedingungen gelten.
+
+Wenn du Drink With Me über den Apple App Store oder Google Play heruntergeladen hast, gelten zusätzlich die Bedingungen des jeweiligen App Stores für deine Nutzung dieser Plattform.
+
+Diese Nutzungsbedingungen werden zwischen dir und der blocklevel GmbH geschlossen, nicht zwischen dir und Apple, Google oder einem anderen App-Store-Anbieter.
+
+## 19. Haftung
+Wir haften unbeschränkt:
+
+- bei Vorsatz und grober Fahrlässigkeit;
+- bei Verletzung von Leben, Körper oder Gesundheit;
+- soweit eine Haftung gesetzlich zwingend vorgeschrieben ist;
+- nach anwendbarem Produkthaftungsrecht;
+- soweit wir ausdrücklich eine Garantie übernommen haben.
+Bei einfacher Fahrlässigkeit haften wir für die Verletzung wesentlicher Vertragspflichten, deren Erfüllung die ordnungsgemäße Durchführung des Vertrages überhaupt erst ermöglicht und auf deren Einhaltung du regelmäßig vertrauen darfst.
+
+In diesen Fällen ist die Haftung auf den vorhersehbaren und vertragstypischen Schaden begrenzt.
+
+Im Übrigen ist die Haftung für einfache Fahrlässigkeit im gesetzlich zulässigen Umfang ausgeschlossen.
+
+Diese Haftungsregelungen gelten entsprechend für unsere gesetzlichen Vertreter und Erfüllungsgehilfen.
+
+Zwingende Verbraucherrechte bleiben unberührt.
+
+## 20. Datenschutz
+Informationen über die Verarbeitung deiner personenbezogenen Daten findest du separat in der **Datenschutzerklärung für die Drink With Me App**.
+
+Diese Nutzungsbedingungen ersetzen die Datenschutzerklärung nicht.
+
+Soweit eine Verarbeitung eine Einwilligung erfordert, holen wir diese - soweit gesetzlich erforderlich - gesondert ein.
+
+## 21. Änderungen dieser Nutzungsbedingungen
+Wir können diese Nutzungsbedingungen aktualisieren, soweit dies angemessen erforderlich ist, beispielsweise aufgrund von:
+
+- Änderungen des Dienstes;
+- neuen Funktionen;
+- Sicherheitsanforderungen;
+- Änderungen der Rechtslage;
+- Anforderungen von App Stores.
+Die aktuelle Fassung wird über die App und/oder die Drink With Me Website bereitgestellt.
+
+Soweit eine Änderung das bestehende Vertragsverhältnis wesentlich betrifft, informieren wir dich und holen eine Zustimmung zu den geänderten Nutzungsbedingungen ein, soweit dies gesetzlich erforderlich ist.
+
+Schweigen gilt nicht als Zustimmung, wenn nach geltendem Recht eine ausdrückliche Zustimmung erforderlich ist.
+
+## 22. Anwendbares Recht
+Es gilt das Recht der Bundesrepublik Deutschland.
+
+Wenn du Verbraucher bist und deinen gewöhnlichen Aufenthalt in einem anderen Staat hast, führt diese Rechtswahl nicht dazu, dass dir zwingende Verbraucherschutzvorschriften entzogen werden, die nach dem Recht deines gewöhnlichen Aufenthalts gelten.
+
+Die gesetzlichen Regelungen über den Gerichtsstand bleiben unberührt.
+
+Das UN-Kaufrecht findet keine Anwendung.
+
+## 23. Verbraucherstreitbeilegung
+Wir nehmen an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teil.
+
+Zuständig ist:
+
+**Universalschlichtungsstelle des Bundes**
+Zentrum für Schlichtung e.V.
+Straßburger Straße 8
+77694 Kehl am Rhein
+
+[www.universalschlichtungsstelle.de](http://www.universalschlichtungsstelle.de/)
+
+Die Teilnahme an einem Verbraucherstreitbeilegungsverfahren schränkt dein Recht nicht ein, Ansprüche vor einem zuständigen Gericht geltend zu machen.
+
+## 24. Salvatorische Bestimmung
+Sollte eine einzelne Bestimmung dieser Nutzungsbedingungen unwirksam oder nicht durchsetzbar sein oder werden, bleiben die übrigen Bestimmungen im gesetzlich zulässigen Umfang unberührt.
+
+An die Stelle einer unwirksamen Bestimmung treten die gesetzlichen Regelungen.
+
+## 25. Kontakt
+Fragen, Beschwerden oder Mitteilungen im Zusammenhang mit diesen Nutzungsbedingungen oder Drink With Me kannst du richten an:
+
+**blocklevel GmbH**
+Drahtzieherweg 15
+47877 Willich
+Deutschland
+
+E-Mail: **[impressum@blocklevel.de](mailto:impressum@blocklevel.de)**`
+      };
+
+      var labels = {
+        de: {
+          pageTitleTag: 'Nutzungsbedingungen - Drink With Me',
+          backLink: '← Zurück zur Startseite',
+          legalLabel: 'Rechtliches',
+          pageTitle: 'Nutzungsbedingungen'
+        },
+        en: {
+          pageTitleTag: 'Terms of Use - Drink With Me',
+          backLink: '← Back to homepage',
+          legalLabel: 'Legal',
+          pageTitle: 'Terms of Use'
+        }
+      };
+
+      function detectBrowserLanguage() {
+        var preferred = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
+        return preferred.toLowerCase().startsWith('de') ? 'de' : 'en';
+      }
+
+      function readStoredLanguage() {
+        try {
+          var stored = localStorage.getItem(storageKey);
+          return supported.indexOf(stored) >= 0 ? stored : null;
+        } catch {
+          return null;
+        }
+      }
+
+      function storeLanguage(lang) {
+        try {
+          localStorage.setItem(storageKey, lang);
+        } catch {
+          // Ignore storage failures.
+        }
+      }
+
+      function escapeHtml(text) {
+        return text
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;');
+      }
+
+      function inlineFormatting(text) {
+        return escapeHtml(text)
+          .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+          .replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2">$1</a>');
+      }
+
+      function renderMarkdown(md) {
+        var lines = md.split(/\r?\n/);
+        var html = [];
+        var inList = false;
+        var paragraph = [];
+
+        function flushParagraph() {
+          if (paragraph.length) {
+            html.push('<p>' + inlineFormatting(paragraph.join(' ')) + '</p>');
+            paragraph = [];
+          }
+        }
+
+        function closeList() {
+          if (inList) {
+            html.push('</ul>');
+            inList = false;
+          }
+        }
+
+        lines.forEach(function (line) {
+          var trimmed = line.trim();
+
+          if (!trimmed) {
+            flushParagraph();
+            closeList();
+            return;
+          }
+
+          if (trimmed.startsWith('- ')) {
+            flushParagraph();
+            if (!inList) {
+              html.push('<ul>');
+              inList = true;
+            }
+            html.push('<li>' + inlineFormatting(trimmed.slice(2)) + '</li>');
+            return;
+          }
+
+          closeList();
+
+          if (trimmed.startsWith('### ')) {
+            flushParagraph();
+            html.push('<h3>' + inlineFormatting(trimmed.slice(4)) + '</h3>');
+            return;
+          }
+
+          if (trimmed.startsWith('## ')) {
+            flushParagraph();
+            html.push('<h2>' + inlineFormatting(trimmed.slice(3)) + '</h2>');
+            return;
+          }
+
+          if (trimmed.startsWith('# ')) {
+            flushParagraph();
+            html.push('<h1>' + inlineFormatting(trimmed.slice(2)) + '</h1>');
+            return;
+          }
+
+          paragraph.push(trimmed);
+        });
+
+        flushParagraph();
+        closeList();
+
+        return html.join('');
+      }
+
+      function resolveInitialLanguage() {
+        if (supported.indexOf(queryLang) >= 0) {
+          return queryLang;
+        }
+
+        var stored = readStoredLanguage();
+        if (supported.indexOf(stored) >= 0) {
+          return stored;
+        }
+
+        var browser = detectBrowserLanguage();
+        return supported.indexOf(browser) >= 0 ? browser : 'en';
+      }
+
+      function applyLanguage(lang) {
+        var content = markdown[lang] || markdown.en;
+        var ui = labels[lang] || labels.en;
+
+        document.documentElement.lang = lang;
+        document.title = ui.pageTitleTag;
+
+        document.querySelectorAll('[data-i18n]').forEach(function (el) {
+          var key = el.getAttribute('data-i18n');
+          if (ui[key]) {
+            el.textContent = ui[key];
+          }
+        });
+
+        document.querySelectorAll('[data-set-lang]').forEach(function (button) {
+          button.setAttribute('aria-pressed', button.getAttribute('data-set-lang') === lang ? 'true' : 'false');
+        });
+
+        var target = document.getElementById('terms-content');
+        target.innerHTML = renderMarkdown(content);
+
+        storeLanguage(lang);
+      }
+
+      document.querySelectorAll('[data-set-lang]').forEach(function (button) {
+        button.addEventListener('click', function () {
+          var next = button.getAttribute('data-set-lang');
+          if (supported.indexOf(next) >= 0) {
+            applyLanguage(next);
+            var params = new URLSearchParams(window.location.search);
+            params.set('lang', next);
+            history.replaceState(null, '', window.location.pathname + '?' + params.toString());
+          }
+        });
+      });
+
+      applyLanguage(resolveInitialLanguage());
+    })();
+  </script>
+</body>
+</html>
