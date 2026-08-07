@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffb800">
-  <title>Datenschutzerklaerung - Drink With Me</title>
+  <title>Datenschutzerklärung - Drink With Me</title>
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,8 +14,14 @@
     .legal { max-width: 780px; min-height: calc(100svh - 76px); margin: 0 auto; padding: 80px 24px 120px; }
     .legal h1 { font-size: clamp(48px, 8vw, 78px); }
     .legal h2 { margin-top: 48px; font-size: 28px; }
+    .legal h3 { margin-top: 30px; font-size: 22px; }
     .legal p { color: var(--muted); }
+    .legal ul { color: var(--muted); }
     .back { display: inline-block; margin-bottom: 44px; font-weight: 700; text-underline-offset: 5px; }
+    .lang-switch { display: flex; gap: 12px; flex-wrap: wrap; margin: 0 0 24px; }
+    .lang-switch a { font-weight: 700; text-underline-offset: 5px; }
+    .legal-note { margin-top: 18px; font-weight: 600; }
+    .todo-note { border-left: 4px solid var(--sunburst); padding-left: 12px; }
   </style>
 </head>
 <body>
@@ -23,14 +29,26 @@
     <a class="brand" href="index.html"><img src="assets/logo-banner.png" alt="Drink With Me"></a>
   </header>
   <main class="legal">
-    <a class="back" href="index.html">← Zurueck zur Startseite</a>
+    <a class="back" href="index.html">← Zurück zur Startseite</a>
     <p class="section-label">Rechtliches</p>
-    <h1>Datenschutzerklaerung</h1>
-    <p>Die folgenden Hinweise geben einen Ueberblick darueber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.</p>
+    <h1>Datenschutzerklärung (Website)</h1>
 
-    <h2>1. Verantwortliche Stelle</h2>
+    <p class="lang-switch">
+      <a href="#de">Deutsch</a>
+      <span>|</span>
+      <a href="#en">English</a>
+    </p>
+
+    <h2 id="de">Deutsch</h2>
+    <p class="legal-note">Bei Abweichungen ist die deutsche Fassung maßgeblich.</p>
     <p>
-      Verantwortlich fuer die Datenverarbeitung auf dieser Website ist:<br><br>
+      Diese Datenschutzerklärung gilt ausschließlich für die öffentliche Website
+      https://drink-with-me.net/ (inklusive der Unterseiten wie Impressum und Datenschutz).
+      Sie gilt nicht für die Verarbeitungsvorgänge innerhalb der Drink With Me App.
+    </p>
+
+    <h3>1. Verantwortliche Stelle und Kontakt</h3>
+    <p>
       blocklevel GmbH<br>
       Drahtzieherweg 15<br>
       47877 Willich<br>
@@ -38,53 +56,188 @@
       Telefon: +49 (2154) 8912 - 800
     </p>
 
-    <h2>2. Hosting</h2>
+    <h3>2. Hosting (GitHub Pages / GitHub Hosting)</h3>
     <p>
-      Diese Website wird ueber GitHub-gehostete Infrastruktur bereitgestellt.
-      Dabei verarbeitet der Hosting-Anbieter technisch erforderliche Daten, insbesondere
-      IP-Adresse, Datum und Uhrzeit des Abrufs sowie Browser- und Systeminformationen.
-    </p>
-    <p>
-      Die Verarbeitung erfolgt zur sicheren und stabilen Bereitstellung der Website auf
-      Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse).
+      Diese Website wird über GitHub-gehostete Infrastruktur bereitgestellt.
+      Im Rahmen des Hostings werden technisch erforderliche Daten verarbeitet,
+      insbesondere Zugriffsdaten und Server-/Access-Log-Informationen.
     </p>
     <p>
       Anbieter: GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA.
     </p>
 
-    <h2>3. Erhebung und Zweck der Verarbeitung</h2>
+    <h3>3. Kategorien personenbezogener Daten (Server-/Access-Logs)</h3>
     <p>
-      Beim Aufruf dieser Website werden serverseitig technisch notwendige Zugriffsdaten
-      verarbeitet (z. B. IP-Adresse, aufgerufene Seite, Referrer, Browsertyp,
-      Betriebssystem, Uhrzeit). Diese Daten werden verwendet, um den Betrieb, die
-      Sicherheit und die Fehleranalyse der Website zu ermoeglichen.
+      Beim Aufruf dieser Website können insbesondere folgende Daten in Log-Dateien
+      verarbeitet werden: IP-Adresse, Datum/Uhrzeit des Zugriffs, angeforderte Ressource,
+      Referrer-URL, Browsertyp/-version, Betriebssystem, HTTP-Statuscode.
     </p>
 
-    <h2>4. Rechtsgrundlagen</h2>
+    <h3>4. Zwecke der Verarbeitung</h3>
+    <ul>
+      <li>Bereitstellung der Website und Auslieferung der Inhalte</li>
+      <li>Gewährleistung von Stabilität und Sicherheit</li>
+      <li>Fehleranalyse und Missbrauchserkennung</li>
+    </ul>
+
+    <h3>5. Rechtsgrundlagen (DSGVO)</h3>
+    <ul>
+      <li>Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an sicherem, stabilem Betrieb)</li>
+      <li>Art. 6 Abs. 1 lit. c DSGVO, soweit eine rechtliche Verpflichtung besteht</li>
+      <li>Art. 6 Abs. 1 lit. a DSGVO, soweit im Einzelfall eine Einwilligung eingeholt wird</li>
+    </ul>
+
+    <h3>6. Empfänger / Auftragsverarbeiter</h3>
     <p>
-      Soweit wir personenbezogene Daten verarbeiten, geschieht dies je nach Sachverhalt
-      auf Grundlage von Art. 6 Abs. 1 lit. a, b, c oder f DSGVO. Bei Einwilligungen
-      koennen Sie diese jederzeit mit Wirkung fuer die Zukunft widerrufen.
+      Empfänger der Daten sind die technisch eingebundenen Anbieter für Hosting und
+      Inhaltsauslieferung. Nach dem aktuellen Stand dieser Website sind dies insbesondere:
+    </p>
+    <ul>
+      <li>GitHub (Hosting der Website)</li>
+      <li>Google Fonts (Abruf der Webfonts über fonts.googleapis.com / fonts.gstatic.com)</li>
+    </ul>
+
+    <h3>7. Drittlandübermittlungen und Garantien</h3>
+    <p>
+      Bei Nutzung von GitHub und Google Fonts kann eine Übermittlung personenbezogener Daten
+      in die USA oder andere Drittländer nicht ausgeschlossen werden.
+    </p>
+    <p class="todo-note">
+      TODO: Verifizieren und dokumentieren, auf welche konkreten Garantien sich die jeweiligen
+      Drittlandübermittlungen stützen (z. B. EU-Standardvertragsklauseln und/oder
+      EU-U.S. Data Privacy Framework) und mit welchem Vertragspartner diese abgeschlossen sind.
     </p>
 
-    <h2>5. Speicherdauer</h2>
+    <h3>8. Speicherdauer</h3>
     <p>
-      Personenbezogene Daten werden nur so lange gespeichert, wie dies zur Erfuellung
-      der genannten Zwecke erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen.
+      Personenbezogene Daten werden nur so lange gespeichert, wie dies zur Erfüllung der
+      genannten Zwecke erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen.
+      Für Server-/Access-Logs gelten die vom jeweiligen Hosting-Anbieter technisch und
+      organisatorisch vorgesehenen Speicherfristen.
     </p>
 
-    <h2>6. Ihre Rechte</h2>
+    <h3>9. Ihre Rechte nach DSGVO</h3>
     <p>
-      Sie haben nach DSGVO insbesondere das Recht auf Auskunft, Berichtigung, Loeschung,
-      Einschraenkung der Verarbeitung, Datenuebertragbarkeit sowie Widerspruch gegen
-      bestimmte Verarbeitungen. Zudem steht Ihnen ein Beschwerderecht bei einer
-      Datenschutzaufsichtsbehoerde zu.
+      Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung,
+      Datenübertragbarkeit sowie Widerspruch gegen Verarbeitungen auf Grundlage von
+      Art. 6 Abs. 1 lit. e oder f DSGVO.
+    </p>
+    <p>
+      Sofern eine Verarbeitung auf Einwilligung beruht, können Sie diese Einwilligung
+      jederzeit mit Wirkung für die Zukunft widerrufen.
     </p>
 
-    <h2>7. Kontakt zum Datenschutz</h2>
+    <h3>10. Beschwerderecht bei einer Aufsichtsbehörde</h3>
     <p>
-      Bei Fragen zur Verarbeitung Ihrer personenbezogenen Daten erreichen Sie uns unter
-      datenschutz@blocklevel.de.
+      Sie haben das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren.
+      Zuständige Aufsichtsbehörde für blocklevel GmbH ist:
+      Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen (LDI NRW).
+    </p>
+
+    <h3>11. Kontakt zum Datenschutz</h3>
+    <p>
+      Bei Fragen zum Datenschutz auf dieser Website kontaktieren Sie uns unter:
+      datenschutz@blocklevel.de
+    </p>
+
+    <h2 id="en">English</h2>
+    <p class="legal-note">In case of discrepancies, the German version above is authoritative.</p>
+    <p>
+      This privacy policy applies exclusively to the public website
+      https://drink-with-me.net/ (including subpages such as imprint and privacy).
+      It does not cover processing operations inside the Drink With Me app.
+    </p>
+
+    <h3>1. Controller and contact details</h3>
+    <p>
+      blocklevel GmbH<br>
+      Drahtzieherweg 15<br>
+      47877 Willich<br>
+      Germany<br>
+      Email: datenschutz@blocklevel.de<br>
+      Phone: +49 (2154) 8912 - 800
+    </p>
+
+    <h3>2. Hosting (GitHub Pages / GitHub hosting)</h3>
+    <p>
+      This website is provided via GitHub-hosted infrastructure.
+      As part of hosting, technically necessary data is processed,
+      including access data and server/access log information.
+    </p>
+    <p>
+      Provider: GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA.
+    </p>
+
+    <h3>3. Categories of personal data (server/access logs)</h3>
+    <p>
+      When you access this website, log files may include: IP address, date/time,
+      requested resource, referrer URL, browser type/version, operating system,
+      and HTTP status code.
+    </p>
+
+    <h3>4. Purposes of processing</h3>
+    <ul>
+      <li>Providing the website and delivering content</li>
+      <li>Ensuring stability and security</li>
+      <li>Error analysis and abuse detection</li>
+    </ul>
+
+    <h3>5. GDPR legal bases</h3>
+    <ul>
+      <li>Art. 6(1)(f) GDPR (legitimate interest in secure and stable operation)</li>
+      <li>Art. 6(1)(c) GDPR where processing is required by law</li>
+      <li>Art. 6(1)(a) GDPR where consent is obtained in individual cases</li>
+    </ul>
+
+    <h3>6. Recipients / processors</h3>
+    <p>
+      Data recipients are the providers technically involved in hosting and content delivery.
+      Based on the current website setup, these are in particular:
+    </p>
+    <ul>
+      <li>GitHub (website hosting)</li>
+      <li>Google Fonts (font loading via fonts.googleapis.com / fonts.gstatic.com)</li>
+    </ul>
+
+    <h3>7. Transfers to third countries and safeguards</h3>
+    <p>
+      When using GitHub and Google Fonts, transfers of personal data to the USA
+      or other third countries cannot be excluded.
+    </p>
+    <p class="todo-note">
+      TODO: Verify and document the exact safeguards used for these transfers
+      (e.g., EU Standard Contractual Clauses and/or EU-U.S. Data Privacy Framework),
+      including the specific contracting entities.
+    </p>
+
+    <h3>8. Retention periods</h3>
+    <p>
+      Personal data is stored only as long as necessary for the purposes stated above,
+      or as required by statutory retention obligations. Server/access log retention
+      follows the technical and organizational setup of the relevant hosting provider.
+    </p>
+
+    <h3>9. Your GDPR rights</h3>
+    <p>
+      You have the right to access, rectification, erasure, restriction of processing,
+      data portability, and to object to processing based on Art. 6(1)(e) or (f) GDPR.
+    </p>
+    <p>
+      Where processing is based on consent, you may withdraw consent at any time
+      with effect for the future.
+    </p>
+
+    <h3>10. Right to lodge a complaint with a supervisory authority</h3>
+    <p>
+      You have the right to lodge a complaint with a data protection supervisory authority.
+      The competent authority for blocklevel GmbH is:
+      Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen (LDI NRW).
+    </p>
+
+    <h3>11. Privacy contact</h3>
+    <p>
+      For questions regarding privacy on this website, contact us at:
+      datenschutz@blocklevel.de
     </p>
 
     <p>Stand: August 2026</p>
