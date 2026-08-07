@@ -17,9 +17,24 @@
     .legal h3 { margin-top: 30px; font-size: 22px; }
     .legal p { color: var(--muted); }
     .back { display: inline-block; margin-bottom: 44px; font-weight: 700; text-underline-offset: 5px; }
-    .lang-switch { display: flex; gap: 12px; flex-wrap: wrap; margin: 0 0 24px; }
-    .lang-switch a { font-weight: 700; text-underline-offset: 5px; }
+    .lang-switch { display: flex; gap: 8px; flex-wrap: wrap; margin: 0 0 24px; }
+    .lang-switch button {
+      min-height: 32px;
+      min-width: 46px;
+      padding: 5px 12px;
+      border: 1px solid var(--espresso);
+      border-radius: 999px;
+      background: transparent;
+      color: var(--espresso);
+      font: 700 12px/1 "Schibsted Grotesk", "Helvetica Neue", sans-serif;
+      cursor: pointer;
+    }
+    .lang-switch button[aria-pressed="true"] {
+      background: var(--espresso);
+      color: var(--foam);
+    }
     .legal-note { margin-top: 18px; font-weight: 600; }
+    .lang-block[hidden] { display: none; }
   </style>
 </head>
 <body>
@@ -27,17 +42,17 @@
     <a class="brand" href="index.html"><img src="assets/logo-banner.png" alt="Drink With Me"></a>
   </header>
   <main class="legal">
-    <a class="back" href="index.html">← Zurück zur Startseite</a>
-    <p class="section-label">Rechtliches</p>
-    <h1>Impressum</h1>
+    <a class="back" href="index.html" data-i18n="backLink">← Zurück zur Startseite</a>
+    <p class="section-label" data-i18n="legalLabel">Rechtliches</p>
+    <h1 data-i18n="pageTitle">Impressum</h1>
 
-    <p class="lang-switch">
-      <a href="#de">Deutsch</a>
-      <span>|</span>
-      <a href="#en">English</a>
-    </p>
+    <div class="lang-switch" role="group" aria-label="Language switch">
+      <button type="button" data-set-lang="de" aria-pressed="true">DE</button>
+      <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+    </div>
 
-    <h2 id="de">Deutsch</h2>
+    <section class="lang-block" data-lang="de">
+    <h2>Deutsch</h2>
 
     <p class="legal-note">Bei Abweichungen ist die deutsche Fassung maßgeblich.</p>
 
@@ -76,8 +91,10 @@
       Straßburger Straße 8, 77694 Kehl am Rhein,
       <a href="https://www.universalschlichtungsstelle.de/" target="_blank" rel="noopener noreferrer">https://www.universalschlichtungsstelle.de</a>.
     </p>
+    </section>
 
-    <h2 id="en">English</h2>
+    <section class="lang-block" data-lang="en" hidden>
+    <h2>English</h2>
 
     <p class="legal-note">In case of discrepancies, the German version above is authoritative.</p>
 
@@ -117,8 +134,93 @@
       Straßburger Straße 8, 77694 Kehl am Rhein, Germany,
       <a href="https://www.universalschlichtungsstelle.de/" target="_blank" rel="noopener noreferrer">https://www.universalschlichtungsstelle.de</a>.
     </p>
+    </section>
 
-    <p>Stand: August 2026</p>
+    <p data-i18n="updated">Stand: August 2026</p>
   </main>
+
+  <script>
+    (function () {
+      var supported = ['de', 'en'];
+      var storageKey = 'dwm-lang';
+      var translations = {
+        de: {
+          pageTitleTag: 'Impressum - Drink With Me',
+          backLink: '← Zurück zur Startseite',
+          legalLabel: 'Rechtliches',
+          pageTitle: 'Impressum',
+          updated: 'Stand: August 2026'
+        },
+        en: {
+          pageTitleTag: 'Imprint - Drink With Me',
+          backLink: '← Back to homepage',
+          legalLabel: 'Legal',
+          pageTitle: 'Imprint',
+          updated: 'Version: August 2026'
+        }
+      };
+
+      function detectBrowserLanguage() {
+        var preferred = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
+        return preferred.toLowerCase().startsWith('de') ? 'de' : 'en';
+      }
+
+      function readStoredLanguage() {
+        try {
+          var stored = localStorage.getItem(storageKey);
+          return supported.indexOf(stored) >= 0 ? stored : null;
+        } catch {
+          return null;
+        }
+      }
+
+      function storeLanguage(lang) {
+        try {
+          localStorage.setItem(storageKey, lang);
+        } catch {
+          // Ignore storage failures.
+        }
+      }
+
+      function applyLanguage(lang) {
+        var t = translations[lang] || translations.en;
+        document.documentElement.lang = lang;
+        document.title = t.pageTitleTag;
+
+        document.querySelectorAll('[data-i18n]').forEach(function (el) {
+          var key = el.getAttribute('data-i18n');
+          if (t[key]) {
+            el.textContent = t[key];
+          }
+        });
+
+        document.querySelectorAll('.lang-block').forEach(function (block) {
+          block.hidden = block.getAttribute('data-lang') !== lang;
+        });
+
+        document.querySelectorAll('[data-set-lang]').forEach(function (button) {
+          button.setAttribute('aria-pressed', button.getAttribute('data-set-lang') === lang ? 'true' : 'false');
+        });
+
+        storeLanguage(lang);
+      }
+
+      var initialLanguage = readStoredLanguage() || detectBrowserLanguage();
+      if (supported.indexOf(initialLanguage) < 0) {
+        initialLanguage = 'en';
+      }
+
+      document.querySelectorAll('[data-set-lang]').forEach(function (button) {
+        button.addEventListener('click', function () {
+          var next = button.getAttribute('data-set-lang');
+          if (supported.indexOf(next) >= 0) {
+            applyLanguage(next);
+          }
+        });
+      });
+
+      applyLanguage(initialLanguage);
+    })();
+  </script>
 </body>
 </html>

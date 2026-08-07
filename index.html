@@ -14,95 +14,277 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Drink With Me home">
+    <a class="brand" href="#top" aria-label="Drink With Me home" data-i18n-attr="aria-label:brandAriaLabel">
       <img src="assets/logo-banner.png" alt="Drink With Me">
     </a>
-    <a class="header-link" href="#social-pulse">Social Pulse</a>
+    <div class="header-tools">
+      <a class="header-link" href="#social-pulse" data-i18n="headerSocialPulse">Social Pulse</a>
+      <div class="lang-toggle" role="group" aria-label="Language switch">
+        <button type="button" data-set-lang="de" aria-pressed="false">DE</button>
+        <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+      </div>
+    </div>
   </header>
 
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-content">
-        <p class="eyebrow">A social app for actual social life</p>
-        <h1 id="hero-title">Less scrolling.<br><span>More showing up.</span></h1>
-        <p class="hero-copy">Drink With Me helps turn “I feel like doing something” into a real plan with real people, nearby and now.</p>
-        <a class="primary-link" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a>
+        <p class="eyebrow" data-i18n="heroEyebrow">A social app for actual social life</p>
+        <h1 id="hero-title" data-i18n-html="heroTitle">Less scrolling.<br><span>More showing up.</span></h1>
+        <p class="hero-copy" data-i18n="heroCopy">Drink With Me helps turn “I feel like doing something” into a real plan with real people, nearby and now.</p>
+        <a class="primary-link" href="#how-it-works" data-i18n-html="heroCta">See how it works <span aria-hidden="true">↓</span></a>
       </div>
       <div class="hero-visual" aria-hidden="true">
-        <div class="signal signal-one"><span>Open tonight</span></div>
-        <div class="signal signal-two"><span>Live music</span></div>
-        <div class="signal signal-three"><span>Cocktails</span></div>
+        <div class="signal signal-one"><span data-i18n="signalOne">Open tonight</span></div>
+        <div class="signal signal-two"><span data-i18n="signalTwo">Live music</span></div>
+        <div class="signal signal-three"><span data-i18n="signalThree">Cocktails</span></div>
         <div class="pulse-mark">
           <span class="pulse-ring ring-one"></span>
           <span class="pulse-ring ring-two"></span>
           <img src="assets/app-icon.png" alt="">
         </div>
-        <p class="meeting-note">Something is brewing</p>
+        <p class="meeting-note" data-i18n="meetingNote">Something is brewing</p>
       </div>
     </section>
 
     <section class="manifesto" id="how-it-works" aria-labelledby="manifesto-title">
-      <p class="section-label">Our point of view</p>
-      <h2 id="manifesto-title">Your social life should not happen inside a feed.</h2>
-      <p>We do not want you to scroll endlessly, perform for an audience, or swipe through people forever. Drink With Me is designed to get out of the way once it has helped something real happen.</p>
+      <p class="section-label" data-i18n="manifestoLabel">Our point of view</p>
+      <h2 id="manifesto-title" data-i18n="manifestoTitle">Your social life should not happen inside a feed.</h2>
+      <p data-i18n="manifestoCopy">We do not want you to scroll endlessly, perform for an audience, or swipe through people forever. Drink With Me is designed to get out of the way once it has helped something real happen.</p>
     </section>
 
     <section class="pulse-section" id="social-pulse" aria-labelledby="pulse-title">
       <div class="pulse-intro">
-        <p class="section-label">Social Pulse</p>
-        <h2 id="pulse-title">The right nudge at the right moment.</h2>
-        <p>Social Pulse brings together privacy-safe signals such as who is open, what people feel like doing, nearby happenings, buddies, and mutual interest. It looks for one useful opportunity, not another infinite list.</p>
+        <p class="section-label" data-i18n="pulseLabel">Social Pulse</p>
+        <h2 id="pulse-title" data-i18n="pulseTitle">The right nudge at the right moment.</h2>
+        <p data-i18n="pulseCopy">Social Pulse brings together privacy-safe signals such as who is open, what people feel like doing, nearby happenings, buddies, and mutual interest. It looks for one useful opportunity, not another infinite list.</p>
       </div>
       <ol class="steps">
         <li>
           <span class="step-number">01</span>
-          <div><h3>Share a lightweight intent</h3><p>Say that you are open, up for a casual drink, coffee, live music, or simply open to ideas.</p></div>
+          <div><h3 data-i18n="step1Title">Share a lightweight intent</h3><p data-i18n="step1Copy">Say that you are open, up for a casual drink, coffee, live music, or simply open to ideas.</p></div>
         </li>
         <li>
           <span class="step-number">02</span>
-          <div><h3>Notice what aligns</h3><p>Social Pulse finds a timely, explainable opportunity without exposing private one-sided interest.</p></div>
+          <div><h3 data-i18n="step2Title">Notice what aligns</h3><p data-i18n="step2Copy">Social Pulse finds a timely, explainable opportunity without exposing private one-sided interest.</p></div>
         </li>
         <li>
           <span class="step-number">03</span>
-          <div><h3>Make it happen</h3><p>Turn the moment into a plan, put the phone away, and meet in real life.</p></div>
+          <div><h3 data-i18n="step3Title">Make it happen</h3><p data-i18n="step3Copy">Turn the moment into a plan, put the phone away, and meet in real life.</p></div>
         </li>
       </ol>
     </section>
 
-    <section class="principles" aria-label="Product principles">
+    <section class="principles" aria-label="Product principles" data-i18n-attr="aria-label:principlesAria">
       <article>
         <span aria-hidden="true">∞</span>
-        <h3>No endless feed</h3>
-        <p>There is no prize for staying in the app longer.</p>
+        <h3 data-i18n="principle1Title">No endless feed</h3>
+        <p data-i18n="principle1Copy">There is no prize for staying in the app longer.</p>
       </article>
       <article>
         <span aria-hidden="true">↔</span>
-        <h3>Mutual and low-pressure</h3>
-        <p>Private signals stay private until there is a meaningful reason to connect.</p>
+        <h3 data-i18n="principle2Title">Mutual and low-pressure</h3>
+        <p data-i18n="principle2Copy">Private signals stay private until there is a meaningful reason to connect.</p>
       </article>
       <article>
         <span aria-hidden="true">●</span>
-        <h3>Reality first</h3>
-        <p>Success is a good meeting, not another metric on a screen.</p>
+        <h3 data-i18n="principle3Title">Reality first</h3>
+        <p data-i18n="principle3Copy">Success is a good meeting, not another metric on a screen.</p>
       </article>
     </section>
 
     <section class="closing" aria-labelledby="closing-title">
       <img src="assets/app-icon.png" alt="Drink With Me app icon">
       <div>
-        <p class="section-label">Drink With Me</p>
-        <h2 id="closing-title">Real life is the destination.</h2>
-        <p>Built for people who want a little less screen time and a little more time together.</p>
+        <p class="section-label" data-i18n="closingLabel">Drink With Me</p>
+        <h2 id="closing-title" data-i18n="closingTitle">Real life is the destination.</h2>
+        <p data-i18n="closingCopy">Built for people who want a little less screen time and a little more time together.</p>
       </div>
     </section>
   </main>
 
   <footer>
     <img src="assets/logo-banner.png" alt="Drink With Me">
-    <p>A product by blocklevel Software.</p>
-    <a href="privacy.html">Datenschutz</a>
-    <a href="impressum.html">Impressum</a>
+    <p data-i18n="footerProduct">A product by blocklevel Software.</p>
+    <a href="privacy.html" data-i18n="footerPrivacy">Datenschutz</a>
+    <a href="impressum.html" data-i18n="footerImprint">Impressum</a>
     <span>© 2026 blocklevel Software</span>
   </footer>
+
+  <script>
+    (function () {
+      var supported = ['de', 'en'];
+      var storageKey = 'dwm-lang';
+
+      function detectBrowserLanguage() {
+        var preferred = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
+        return preferred.toLowerCase().startsWith('de') ? 'de' : 'en';
+      }
+
+      function readStoredLanguage() {
+        try {
+          var stored = localStorage.getItem(storageKey);
+          return supported.indexOf(stored) >= 0 ? stored : null;
+        } catch {
+          return null;
+        }
+      }
+
+      function storeLanguage(lang) {
+        try {
+          localStorage.setItem(storageKey, lang);
+        } catch {
+          // Ignore storage failures (private mode / disabled storage).
+        }
+      }
+
+      var translations = {
+        de: {
+          pageTitle: 'Drink With Me - Das echte Leben ist das Ziel',
+          pageDescription: 'Drink With Me verwandelt leichte soziale Impulse durch Social Pulse in echte Treffen im realen Leben.',
+          brandAriaLabel: 'Drink With Me Startseite',
+          headerSocialPulse: 'Social Pulse',
+          heroEyebrow: 'Eine Social App fuer echtes Sozialleben',
+          heroTitle: 'Weniger scrollen.<br><span>Mehr auftauchen.</span>',
+          heroCopy: 'Drink With Me hilft dabei, aus "Ich haette Lust auf etwas" einen echten Plan mit echten Menschen zu machen, in deiner Naehe und im richtigen Moment.',
+          heroCta: 'So funktioniert es <span aria-hidden="true">↓</span>',
+          signalOne: 'Heute offen',
+          signalTwo: 'Live-Musik',
+          signalThree: 'Cocktails',
+          meetingNote: 'Etwas entsteht gerade',
+          manifestoLabel: 'Unsere Haltung',
+          manifestoTitle: 'Dein Sozialleben sollte nicht im Feed stattfinden.',
+          manifestoCopy: 'Wir wollen nicht, dass du endlos scrollst, fuer ein Publikum performst oder dich fuer immer durch Menschen swipest. Drink With Me soll aus dem Weg gehen, sobald etwas Echtes entstehen konnte.',
+          pulseLabel: 'Social Pulse',
+          pulseTitle: 'Der richtige Impuls im richtigen Moment.',
+          pulseCopy: 'Social Pulse verbindet datenschutzfreundliche Signale wie Offenheit, Aktivitaetswunsch, Ereignisse in der Naehe, Buddies und gegenseitiges Interesse. Ziel ist eine hilfreiche Chance, nicht eine endlose Liste.',
+          step1Title: 'Leichten Impuls teilen',
+          step1Copy: 'Zeig, dass du offen bist, Lust auf einen entspannten Drink, Kaffee, Live-Musik oder einfach auf Ideen hast.',
+          step2Title: 'Passende Momente erkennen',
+          step2Copy: 'Social Pulse findet einen passenden, nachvollziehbaren Moment, ohne einseitiges privates Interesse offenzulegen.',
+          step3Title: 'Treffen real machen',
+          step3Copy: 'Mach aus dem Moment einen Plan, leg das Handy weg und triff dich im echten Leben.',
+          principlesAria: 'Produktprinzipien',
+          principle1Title: 'Kein Endlos-Feed',
+          principle1Copy: 'Es gibt keinen Preis dafuer, laenger in der App zu bleiben.',
+          principle2Title: 'Gegenseitig und ohne Druck',
+          principle2Copy: 'Private Signale bleiben privat, bis es einen sinnvollen Grund fuer Kontakt gibt.',
+          principle3Title: 'Realitaet zuerst',
+          principle3Copy: 'Erfolg ist ein gutes Treffen, nicht noch eine Kennzahl auf dem Bildschirm.',
+          closingLabel: 'Drink With Me',
+          closingTitle: 'Das echte Leben ist das Ziel.',
+          closingCopy: 'Entwickelt fuer Menschen, die etwas weniger Bildschirmzeit und etwas mehr gemeinsame Zeit wollen.',
+          footerProduct: 'Ein Produkt von blocklevel Software.',
+          footerPrivacy: 'Datenschutz',
+          footerImprint: 'Impressum'
+        },
+        en: {
+          pageTitle: 'Drink With Me - Real life is the destination',
+          pageDescription: 'Drink With Me turns lightweight social intent into meaningful real-world meetings through Social Pulse.',
+          brandAriaLabel: 'Drink With Me home',
+          headerSocialPulse: 'Social Pulse',
+          heroEyebrow: 'A social app for actual social life',
+          heroTitle: 'Less scrolling.<br><span>More showing up.</span>',
+          heroCopy: 'Drink With Me helps turn "I feel like doing something" into a real plan with real people, nearby and now.',
+          heroCta: 'See how it works <span aria-hidden="true">↓</span>',
+          signalOne: 'Open tonight',
+          signalTwo: 'Live music',
+          signalThree: 'Cocktails',
+          meetingNote: 'Something is brewing',
+          manifestoLabel: 'Our point of view',
+          manifestoTitle: 'Your social life should not happen inside a feed.',
+          manifestoCopy: 'We do not want you to scroll endlessly, perform for an audience, or swipe through people forever. Drink With Me is designed to get out of the way once it has helped something real happen.',
+          pulseLabel: 'Social Pulse',
+          pulseTitle: 'The right nudge at the right moment.',
+          pulseCopy: 'Social Pulse brings together privacy-safe signals such as who is open, what people feel like doing, nearby happenings, buddies, and mutual interest. It looks for one useful opportunity, not another infinite list.',
+          step1Title: 'Share a lightweight intent',
+          step1Copy: 'Say that you are open, up for a casual drink, coffee, live music, or simply open to ideas.',
+          step2Title: 'Notice what aligns',
+          step2Copy: 'Social Pulse finds a timely, explainable opportunity without exposing private one-sided interest.',
+          step3Title: 'Make it happen',
+          step3Copy: 'Turn the moment into a plan, put the phone away, and meet in real life.',
+          principlesAria: 'Product principles',
+          principle1Title: 'No endless feed',
+          principle1Copy: 'There is no prize for staying in the app longer.',
+          principle2Title: 'Mutual and low-pressure',
+          principle2Copy: 'Private signals stay private until there is a meaningful reason to connect.',
+          principle3Title: 'Reality first',
+          principle3Copy: 'Success is a good meeting, not another metric on a screen.',
+          closingLabel: 'Drink With Me',
+          closingTitle: 'Real life is the destination.',
+          closingCopy: 'Built for people who want a little less screen time and a little more time together.',
+          footerProduct: 'A product by blocklevel Software.',
+          footerPrivacy: 'Privacy',
+          footerImprint: 'Imprint'
+        }
+      };
+
+      function applyLanguage(lang) {
+        var t = translations[lang];
+        if (!t) {
+          return;
+        }
+
+        document.documentElement.lang = lang;
+        document.title = t.pageTitle;
+
+        var description = document.querySelector('meta[name="description"]');
+        if (description) {
+          description.setAttribute('content', t.pageDescription);
+        }
+
+        document.querySelectorAll('[data-i18n]').forEach(function (el) {
+          var key = el.getAttribute('data-i18n');
+          if (t[key]) {
+            el.textContent = t[key];
+          }
+        });
+
+        document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
+          var key = el.getAttribute('data-i18n-html');
+          if (t[key]) {
+            el.innerHTML = t[key];
+          }
+        });
+
+        document.querySelectorAll('[data-i18n-attr]').forEach(function (el) {
+          var mappings = (el.getAttribute('data-i18n-attr') || '').split(',');
+          mappings.forEach(function (mapping) {
+            var parts = mapping.split(':');
+            if (parts.length !== 2) {
+              return;
+            }
+            var attr = parts[0].trim();
+            var key = parts[1].trim();
+            if (attr && key && t[key]) {
+              el.setAttribute(attr, t[key]);
+            }
+          });
+        });
+
+        document.querySelectorAll('[data-set-lang]').forEach(function (button) {
+          button.setAttribute('aria-pressed', button.getAttribute('data-set-lang') === lang ? 'true' : 'false');
+        });
+
+        storeLanguage(lang);
+      }
+
+      var initialLanguage = readStoredLanguage() || detectBrowserLanguage();
+      if (supported.indexOf(initialLanguage) < 0) {
+        initialLanguage = 'en';
+      }
+
+      document.querySelectorAll('[data-set-lang]').forEach(function (button) {
+        button.addEventListener('click', function () {
+          var next = button.getAttribute('data-set-lang');
+          if (supported.indexOf(next) >= 0) {
+            applyLanguage(next);
+          }
+        });
+      });
+
+      applyLanguage(initialLanguage);
+    })();
+  </script>
 </body>
 </html>
