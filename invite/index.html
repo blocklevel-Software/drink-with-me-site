@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Accept a buddy invitation to Drink With Me.">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#1dc9a4">
+  <title>Your Drink With Me invitation</title>
+  <link rel="icon" href="../assets/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&amp;family=Schibsted+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="invite-page">
+  <header class="site-header">
+    <a class="brand" href="../" aria-label="Drink With Me home" data-i18n-attr="aria-label:brandAriaLabel">
+      <img src="../assets/logo-banner.png" alt="Drink With Me">
+    </a>
+    <div class="lang-toggle" role="group" aria-label="Language switch">
+      <button type="button" data-set-lang="de" aria-pressed="false">DE</button>
+      <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+    </div>
+  </header>
+
+  <main class="invite-main" id="invite-main">
+    <section class="invite-copy" aria-labelledby="invite-title">
+      <p class="eyebrow" data-i18n="eyebrow">Buddy invite</p>
+      <h1 id="invite-title" data-i18n="title">Someone wants to meet you.</h1>
+      <p data-i18n="copy">A buddy invite is waiting in Drink With Me. Open the app to accept it and start planning something real.</p>
+    </section>
+
+    <section class="invite-actions" aria-label="Accept invitation" data-i18n-attr="aria-label:actionsAria">
+      <img class="invite-app-icon" src="../assets/app-icon.png" alt="Drink With Me app icon">
+      <p class="invite-status" id="invite-status" aria-live="polite" data-i18n="status">Your invitation is ready.</p>
+      <a class="primary-link invite-open" id="open-app" href="#" data-i18n="openApp">Open Drink With Me</a>
+      <p class="invite-helper" data-i18n="helper">Installing first? Return to this page afterward to continue.</p>
+      <div class="invite-divider"><span data-i18n="needApp">Need the app?</span></div>
+      <div class="store-links" aria-label="Public beta downloads" data-i18n-attr="aria-label:downloadsAria">
+        <a class="store-link" href="https://testflight.apple.com/join/axvwhX94?utm_source=drinkwithme_site&amp;utm_medium=website&amp;utm_campaign=public_beta_2026&amp;utm_content=invite_ios" data-i18n-attr="aria-label:testFlightAria">
+          <svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17.05 12.54c-.03-3.04 2.48-4.5 2.59-4.57a5.56 5.56 0 0 0-4.38-2.37c-1.84-.2-3.63 1.1-4.57 1.1-.96 0-2.4-1.08-3.96-1.05a5.8 5.8 0 0 0-4.87 2.98c-2.12 3.67-.54 9.07 1.49 12.04 1.02 1.46 2.2 3.08 3.76 3.02 1.53-.06 2.1-.97 3.95-.97 1.83 0 2.37.97 3.96.93 1.64-.02 2.67-1.46 3.65-2.93a12.04 12.04 0 0 0 1.67-3.4 5.24 5.24 0 0 1-3.24-4.78ZM14.06 3.64A5.34 5.34 0 0 0 15.28 0a5.5 5.5 0 0 0-3.56 1.73 5.09 5.09 0 0 0-1.25 3.5 4.56 4.56 0 0 0 3.59-1.59Z"/>
+          </svg>
+          <span><small data-i18n="testFlightKicker">Join the public beta on</small><strong>TestFlight</strong></span>
+          <span class="store-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="store-link" href="https://play.google.com/apps/testing/me.drinkwith.drink_with_me?utm_source=drinkwithme_site&amp;utm_medium=website&amp;utm_campaign=public_beta_2026&amp;utm_content=invite_android" data-i18n-attr="aria-label:googlePlayAria">
+          <svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M1.47.34A2.2 2.2 0 0 0 .5 2.18v19.64c0 .76.37 1.43.97 1.84L13 12 1.47.34Zm1.64.67 13.82 7.84-3.08 3.08L3.11 1.01Zm0 21.98 10.74-10.92 3.08 3.08L3.11 22.99Zm15.35-7.02L15 12.07l3.46-3.46 4.07 2.31c1.29.73 1.29 1.43 0 2.16l-4.07 2.89Z"/>
+          </svg>
+          <span><small data-i18n="googlePlayKicker">Join the public beta on</small><strong>Google Play</strong></span>
+          <span class="store-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="../assets/logo-banner.png" alt="Drink With Me">
+    <p data-i18n="footerProduct">A product by blocklevel Software.</p>
+    <a href="../privacy.html" data-i18n="footerPrivacy">Privacy</a>
+    <a href="../impressum.html" data-i18n="footerImprint">Imprint</a>
+    <span>© 2026 blocklevel GmbH</span>
+  </footer>
+
+  <script>
+    (function () {
+      var supported = ['de', 'en'];
+      var storageKey = 'dwm-lang';
+      var token = new URLSearchParams(window.location.search).get('token') || '';
+      var validToken = /^[0-9a-f]{32}$/i.test(token);
+      var main = document.getElementById('invite-main');
+      var openApp = document.getElementById('open-app');
+
+      if (validToken) {
+        openApp.href = 'me.drinkwith.drinkwithme://invite?token=' + encodeURIComponent(token.toLowerCase());
+      } else {
+        main.classList.add('invite-invalid');
+      }
+
+      function detectBrowserLanguage() {
+        var preferred = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
+        return preferred.toLowerCase().startsWith('de') ? 'de' : 'en';
+      }
+
+      function readStoredLanguage() {
+        try {
+          var stored = localStorage.getItem(storageKey);
+          return supported.indexOf(stored) >= 0 ? stored : null;
+        } catch {
+          return null;
+        }
+      }
+
+      function storeLanguage(lang) {
+        try {
+          localStorage.setItem(storageKey, lang);
+        } catch {
+          // Ignore storage failures (private mode / disabled storage).
+        }
+      }
+
+      var translations = {
+        de: {
+          pageTitle: 'Deine Drink With Me Einladung',
+          pageDescription: 'Nimm eine Buddy-Einladung zu Drink With Me an.',
+          brandAriaLabel: 'Drink With Me Startseite',
+          eyebrow: 'Buddy-Einladung',
+          title: 'Jemand möchte dich treffen.',
+          copy: 'Eine Buddy-Einladung wartet in Drink With Me auf dich. Öffne die App, nimm sie an und plant etwas Echtes.',
+          status: validToken ? 'Deine Einladung ist bereit.' : 'Dieser Einladungslink ist unvollständig.',
+          actionsAria: 'Einladung annehmen',
+          openApp: 'Drink With Me öffnen',
+          helper: 'Du installierst die App zuerst? Kehre danach zu dieser Seite zurück.',
+          needApp: 'Du brauchst die App?',
+          downloadsAria: 'Downloads für die öffentliche Beta',
+          testFlightKicker: 'Öffentliche Beta über',
+          testFlightAria: 'An der öffentlichen Beta über TestFlight teilnehmen',
+          googlePlayKicker: 'Öffentliche Beta bei',
+          googlePlayAria: 'An der öffentlichen Beta bei Google Play teilnehmen',
+          footerProduct: 'Ein Produkt von blocklevel Software.',
+          footerPrivacy: 'Datenschutz',
+          footerImprint: 'Impressum'
+        },
+        en: {
+          pageTitle: 'Your Drink With Me invitation',
+          pageDescription: 'Accept a buddy invitation to Drink With Me.',
+          brandAriaLabel: 'Drink With Me home',
+          eyebrow: 'Buddy invite',
+          title: 'Someone wants to meet you.',
+          copy: 'A buddy invite is waiting in Drink With Me. Open the app to accept it and start planning something real.',
+          status: validToken ? 'Your invitation is ready.' : 'This invitation link is incomplete.',
+          actionsAria: 'Accept invitation',
+          openApp: 'Open Drink With Me',
+          helper: 'Installing first? Return to this page afterward to continue.',
+          needApp: 'Need the app?',
+          downloadsAria: 'Public beta downloads',
+          testFlightKicker: 'Join the public beta on',
+          testFlightAria: 'Join the public beta on TestFlight',
+          googlePlayKicker: 'Join the public beta on',
+          googlePlayAria: 'Join the public beta on Google Play',
+          footerProduct: 'A product by blocklevel Software.',
+          footerPrivacy: 'Privacy',
+          footerImprint: 'Imprint'
+        }
+      };
+
+      function applyLanguage(lang) {
+        var translation = translations[lang];
+        if (!translation) return;
+        document.documentElement.lang = lang;
+        document.title = translation.pageTitle;
+        document.querySelector('meta[name="description"]').setAttribute('content', translation.pageDescription);
+        document.querySelectorAll('[data-i18n]').forEach(function (element) {
+          var key = element.getAttribute('data-i18n');
+          if (translation[key]) element.textContent = translation[key];
+        });
+        document.querySelectorAll('[data-i18n-attr]').forEach(function (element) {
+          (element.getAttribute('data-i18n-attr') || '').split(',').forEach(function (mapping) {
+            var parts = mapping.split(':');
+            if (parts.length === 2 && translation[parts[1].trim()]) {
+              element.setAttribute(parts[0].trim(), translation[parts[1].trim()]);
+            }
+          });
+        });
+        document.querySelectorAll('[data-set-lang]').forEach(function (button) {
+          button.setAttribute('aria-pressed', button.getAttribute('data-set-lang') === lang ? 'true' : 'false');
+        });
+        storeLanguage(lang);
+      }
+
+      document.querySelectorAll('[data-set-lang]').forEach(function (button) {
+        button.addEventListener('click', function () {
+          applyLanguage(button.getAttribute('data-set-lang'));
+        });
+      });
+
+      applyLanguage(readStoredLanguage() || detectBrowserLanguage());
+    })();
+  </script>
+</body>
+</html>

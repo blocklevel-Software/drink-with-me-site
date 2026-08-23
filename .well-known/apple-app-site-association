@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "S792U22FCB.me.drinkwith.drinkWithMe",
+        "paths": [
+          "/invite",
+          "/invite/"
+        ]
+      }
+    ]
+  }
+}

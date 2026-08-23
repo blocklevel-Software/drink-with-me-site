@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "me.drinkwith.drink_with_me",
+      "sha256_cert_fingerprints": [
+        "FE:C5:80:BD:0B:DD:35:D5:BB:8C:04:FC:47:C5:46:92:A9:91:BA:9E:B5:92:C4:0B:2F:9C:70:26:F1:EE:D2:71"
+      ]
+    }
+  }
+]
