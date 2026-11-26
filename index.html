@@ -1,336 +1,162 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Drink With Me turns lightweight social intent into meaningful real-world meetings through Social Pulse.">
-  <meta name="theme-color" content="#ffb800">
-  <title>Drink With Me - Real life is the destination</title>
-  <link rel="icon" href="assets/favicon.png" type="image/png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260823-1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drink With Me – Auf einen Drink? Neue Leute in deiner Stadt</title>
+<meta name="description" content="Triff neue Leute in deiner Stadt – spontan oder geplant. Einchecken, gegenseitig zuprosten, Runden planen. Öffentliche Beta in Wien, Düsseldorf und Willich.">
+<meta name="theme-color" content="#FF7A1A">
+<link rel="canonical" href="https://drink-with-me.net/">
+<link rel="alternate" hreflang="de" href="https://drink-with-me.net/">
+<link rel="alternate" hreflang="en" href="https://drink-with-me.net/en/">
+<link rel="alternate" hreflang="x-default" href="https://drink-with-me.net/">
+<script src="/assets/js/lang.js"></script>
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Drink With Me">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="Drink With Me – Auf einen Drink? Neue Leute in deiner Stadt">
+<meta property="og:description" content="Triff neue Leute in deiner Stadt – spontan oder geplant. Einchecken, gegenseitig zuprosten, Runden planen. Öffentliche Beta in Wien, Düsseldorf und Willich.">
+<meta property="og:url" content="https://drink-with-me.net/">
+<meta property="og:image" content="https://drink-with-me.net/assets/img/og-de.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/assets/fonts/BricolageGrotesque-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/Manrope-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Drink With Me home" data-i18n-attr="aria-label:brandAriaLabel">
-      <img src="assets/logo-banner.png" alt="Drink With Me">
-    </a>
-    <div class="header-tools">
-      <a class="header-link" href="#social-pulse" data-i18n="headerSocialPulse">Social Pulse</a>
-      <div class="lang-toggle" role="group" aria-label="Language switch">
-        <button type="button" data-set-lang="de" aria-pressed="false">DE</button>
-        <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
-      </div>
+
+<div class="lp" id="top">
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Drink With Me"><svg width="30" height="30" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="dwdrink1"><path d="M13 8 H35 L32.5 23 A8.5 8.5 0 0 1 15.5 23 Z"></path></clipPath></defs><g clip-path="url(#dwdrink1)" stroke="none"><rect x="0" y="14" width="48" height="48" fill="#FF7A1A"></rect></g><path d="M13 8 H35 L32.5 23 A8.5 8.5 0 0 1 15.5 23 Z"></path><path d="M24 31.5 V40"></path><path d="M16 41 H32"></path></svg><span>Drink With Me</span></a>
+    <nav class="links" aria-label="Seitennavigation"><a href="#momente">So geht’s</a><a href="#sicherheit">Sicherheit</a><a href="#staedte">Städte</a><a href="#faq">FAQ</a></nav>
+    <div class="navr">
+      <nav class="lang" aria-label="Sprache"><a href="/?lang=de" data-set-lang="de" hreflang="de" lang="de" aria-current="page" class="on">DE</a><a href="/en/" data-set-lang="en" hreflang="en" lang="en">EN</a></nav>
+      <a class="navcta" href="#beta">Beta testen</a>
     </div>
   </header>
+  <main>
 
-  <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-content">
-        <p class="eyebrow" data-i18n="heroEyebrow">A social app for actual social life</p>
-        <h1 id="hero-title" data-i18n-html="heroTitle">Less scrolling.<br><span>More showing up.</span></h1>
-        <p class="hero-copy" data-i18n="heroCopy">Drink With Me helps turn “I feel like doing something” into a real plan with real people, nearby and now.</p>
-        <a class="primary-link" href="#how-it-works" data-i18n-html="heroCta">See how it works <span aria-hidden="true">↓</span></a>
-      </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="signal signal-one"><span data-i18n="signalOne">Open tonight</span></div>
-        <div class="signal signal-two"><span data-i18n="signalTwo">Live music</span></div>
-        <div class="signal signal-three"><span data-i18n="signalThree">Cocktails</span></div>
-        <div class="pulse-mark">
-          <span class="pulse-ring ring-one"></span>
-          <span class="pulse-ring ring-two"></span>
-          <img src="assets/app-icon.png" alt="">
-        </div>
-        <p class="meeting-note" data-i18n="meetingNote">Something is brewing</p>
-      </div>
-    </section>
+  <section class="hero">
+    <div class="herotext">
+      <span class="eyebrow live"><i></i>Öffentliche Beta · Wien · Düsseldorf · Willich</span>
+      <h1>Auf einen Drink?</h1>
+      <p class="lead">Triff neue Leute in deiner Stadt – spontan oder geplant. Du entscheidest, wer dich sieht und wer dazukommt.</p>
+      <div class="stores">
+      <a class="store dark" href="https://testflight.apple.com/join/axvwhX94?utm_source=drinkwithme_site&amp;utm_medium=website&amp;utm_campaign=public_beta_2026&amp;utm_content=ios" target="_blank" rel="noopener"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.5 2-3.6-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.9-.9-3.1-.8-1.6 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3.1.7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.7zM14.1 5.5c.6-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.4-.6.7-1.1 1.8-1 2.9 1.1.1 2.1-.5 2.8-1.3z"></path></svg><span><b>Beta für iPhone</b><small>über TestFlight</small></span></a>
+      <a class="store dark" href="https://play.google.com/apps/testing/me.drinkwith.drink_with_me?utm_source=drinkwithme_site&amp;utm_medium=website&amp;utm_campaign=public_beta_2026&amp;utm_content=android" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 2.8v18.4c0 .5.5.8.9.6L21 12.6c.4-.2.4-.9 0-1.1L4.9 2.2c-.4-.2-.9.1-.9.6z"></path></svg><span><b>Beta für Android</b><small>über Google Play</small></span></a>
+    </div>
+      <span class="meta">Ab 18 · Deutschland und Österreich</span>
+    </div>
+    <div class="heroart" aria-hidden="false">
+      <div class="blob"></div>
+      <span class="fi fi0" aria-hidden="true"><svg width="64" height="64" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="dwaperol2"><path d="M13 9 C12 20 15 30 24 30 C33 30 36 20 35 9 Z"></path></clipPath></defs><g clip-path="url(#dwaperol2)" stroke="none"><rect x="0" y="15" width="48" height="48" fill="#FF7A1A"></rect><rect x="17" y="17" width="7" height="7" rx="1.5" fill="#FFFFFF" fill-opacity="0.45"></rect><circle cx="28" cy="24" r="1.1" fill="#FFFFFF" fill-opacity="0.9"></circle><circle cx="25" cy="20" r="1.1" fill="#FFFFFF" fill-opacity="0.9"></circle></g><path d="M13 9 C12 20 15 30 24 30 C33 30 36 20 35 9 Z"></path><path d="M24 30 V40"></path><path d="M16 41 H32"></path><circle cx="35" cy="10" r="6" fill="#FFB05C" stroke="currentColor" stroke-width="2.2"></circle><path d="M35 5.5 V14.5 M30.5 10 H39.5 M31.8 6.8 L38.2 13.2 M38.2 6.8 L31.8 13.2" stroke="#FFFFFF" stroke-width="1.2"></path></svg></span><span class="fi fi1" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="dwbier3"><path d="M11 13 H31 V38 A3 3 0 0 1 28 41 H14 A3 3 0 0 1 11 38 Z"></path></clipPath></defs><g clip-path="url(#dwbier3)" stroke="none"><rect x="0" y="18" width="48" height="48" fill="#F2B233"></rect><path d="M9 18 C9 12 13 10 16 12 C17 8 23 8 25 11 C28 9 33 11 33 16 L33 19 H9 Z" fill="#FFFFFF"></path><circle cx="16" cy="30" r="1.1" fill="#FFFFFF" fill-opacity="0.9"></circle><circle cx="21" cy="25" r="1.1" fill="#FFFFFF" fill-opacity="0.9"></circle><circle cx="26" cy="33" r="1.1" fill="#FFFFFF" fill-opacity="0.9"></circle></g><path d="M11 13 H31 V38 A3 3 0 0 1 28 41 H14 A3 3 0 0 1 11 38 Z"></path><path d="M31 19 H35 A3.5 3.5 0 0 1 38.5 22.5 V30.5 A3.5 3.5 0 0 1 35 34 H31"></path><path d="M11 18.5 H31"></path></svg></span><span class="fi fi2" aria-hidden="true"><svg width="52" height="52" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="dwespressomartini4"><path d="M10 12 H38 C38 21 31 26 24 26 C17 26 10 21 10 12 Z"></path></clipPath></defs><g clip-path="url(#dwespressomartini4)" stroke="none"><rect x="0" y="12" width="48" height="48" fill="#3E2418"></rect><rect x="6" y="12" width="36" height="4" fill="#EBD3B0"></rect></g><path d="M10 12 H38 C38 21 31 26 24 26 C17 26 10 21 10 12 Z"></path><path d="M24 26 V40"></path><path d="M16 41 H32"></path><path d="M10.5 16 H37.5"></path><ellipse cx="20" cy="11" rx="2.6" ry="1.8" fill="#5A3423" stroke="currentColor" stroke-width="1.6"></ellipse><ellipse cx="25" cy="10" rx="2.6" ry="1.8" fill="#5A3423" stroke="currentColor" stroke-width="1.6"></ellipse><ellipse cx="30" cy="11" rx="2.6" ry="1.8" fill="#5A3423" stroke="currentColor" stroke-width="1.6"></ellipse></svg></span><span class="fi fi3" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="dwkaffee5"><path d="M10 19 H32 V27 A9 9 0 0 1 23 36 H19 A9 9 0 0 1 10 27 Z"></path></clipPath></defs><g clip-path="url(#dwkaffee5)" stroke="none"><rect x="0" y="21" width="48" height="48" fill="#5A3423"></rect><rect x="8" y="19" width="26" height="2.5" fill="#EBD3B0"></rect></g><path d="M10 19 H32 V27 A9 9 0 0 1 23 36 H19 A9 9 0 0 1 10 27 Z"></path><path d="M32 22 H34.5 A3.5 3.5 0 0 1 34.5 29 H31.2"></path><path d="M7 40 H37"></path><path d="M17 15 C15.5 13 18.5 11.5 17 9 M23 15 C21.5 13 24.5 11.5 23 9" stroke="currentColor" stroke-width="2"></path></svg></span><span class="fi fi4" aria-hidden="true"><svg width="50" height="50" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="dwmocktail6"><path d="M16 6 C14 13 16 18 19 22 C16 26 16 32 19 35 H29 C32 32 32 26 29 22 C32 18 34 13 32 6 Z"></path></clipPath></defs><g clip-path="url(#dwmocktail6)" stroke="none"><rect x="0" y="11" width="48" height="48" fill="#FF8FA3"></rect><circle cx="22" cy="28" r="0.95" fill="#FFFFFF" fill-opacity="0.9"></circle><circle cx="26" cy="17" r="0.95" fill="#FFFFFF" fill-opacity="0.9"></circle><circle cx="24" cy="31" r="0.95" fill="#FFFFFF" fill-opacity="0.9"></circle></g><path d="M16 6 C14 13 16 18 19 22 C16 26 16 32 19 35 H29 C32 32 32 26 29 22 C32 18 34 13 32 6 Z"></path><path d="M24 35 V40"></path><path d="M16 41 H32"></path><path d="M29 3 L26 20"></path><path d="M31 10 C31 5 35 3 39 3 C39 7 36 10 31 10 Z" fill="#3FA864" stroke="currentColor" stroke-width="2"></path></svg></span>
+      <div class="phone p1"><picture><source srcset="/assets/img/screens/MainV3Day.webp" type="image/webp"><img fetchpriority="high" src="/assets/img/screens/MainV3Day.png" alt="Entdecken: Wer ist gerade unterwegs" width="390" height="844"></picture></div>
+      <div class="phone p2"><picture><source srcset="/assets/img/screens/ProstMomentV3Day.webp" type="image/webp"><img src="/assets/img/screens/ProstMomentV3Day.png" alt="Prost-Moment nach gegenseitigem Zuprosten" width="390" height="844"></picture></div>
+      <span class="heropill"><b><svg width="22" height="22" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="dwdrink7"><path d="M13 8 H35 L32.5 23 A8.5 8.5 0 0 1 15.5 23 Z"></path></clipPath></defs><g clip-path="url(#dwdrink7)" stroke="none"><rect x="0" y="14" width="48" height="48" fill="#FF7A1A"></rect></g><path d="M13 8 H35 L32.5 23 A8.5 8.5 0 0 1 15.5 23 Z"></path><path d="M24 31.5 V40"></path><path d="M16 41 H32"></path></svg></b>Hat dir zugeprostet!</span>
+    </div>
+  </section>
 
-    <section class="manifesto" id="how-it-works" aria-labelledby="manifesto-title">
-      <p class="section-label" data-i18n="manifestoLabel">Our point of view</p>
-      <h2 id="manifesto-title" data-i18n="manifestoTitle">Your social life should not happen inside a feed.</h2>
-      <p data-i18n="manifestoCopy">We do not want you to scroll endlessly, perform for an audience, or swipe through people forever. Drink With Me is designed to get out of the way once it has helped something real happen.</p>
-    </section>
+  <section class="sec" id="momente">
+    <span class="eyebrow">Drei Momente</span>
+    <h2>Vom Sofa an die Bar. Ohne Umwege.</h2>
+    <div class="moments">
+      <article class="moment"><div class="shot"><div class="phone "><picture><source srcset="/assets/img/screens/CheckInV3Day.webp" type="image/webp"><img loading="lazy" decoding="async" src="/assets/img/screens/CheckInV3Day.png" alt="Ich bin gerade unterwegs: Check-in" width="390" height="844"></picture></div></div><span class="tag live">Spontan</span><h3>Ich bin gerade unterwegs</h3><p>Check ein, wo du gerade bist. Freunde bekommen Bescheid. Fremde sehen nur die Gegend – und können dir zuprosten.</p></article>
+      <article class="moment hot"><div class="shot"><div class="phone "><picture><source srcset="/assets/img/screens/PersonV3Day.webp" type="image/webp"><img loading="lazy" decoding="async" src="/assets/img/screens/PersonV3Day.png" alt="Profil mit Hat dir zugeprostet" width="390" height="844"></picture></div></div><span class="tag aperol">Gegenseitig</span><h3>Prost!</h3><p>Ein Prost ist kein Like. Erst wenn ihr euch beide zuprostet, öffnet sich der Chat. Niemand bekommt eine Absage.</p></article>
+      <article class="moment"><div class="shot"><div class="phone "><picture><source srcset="/assets/img/screens/PlanV3Day.webp" type="image/webp"><img loading="lazy" decoding="async" src="/assets/img/screens/PlanV3Day.png" alt="Runde planen im Satz-Baukasten" width="390" height="844"></picture></div></div><span class="tag planned">Geplant</span><h3>Ich will ausgehen</h3><p>Plan eine Runde in einem Satz: wann, wo, worauf. Wer mitkommen will, fragt an – und du entscheidest.</p></article>
+    </div>
+  </section>
 
-    <section class="pulse-section" id="social-pulse" aria-labelledby="pulse-title">
-      <div class="pulse-intro">
-        <p class="section-label" data-i18n="pulseLabel">Social Pulse</p>
-        <h2 id="pulse-title" data-i18n="pulseTitle">The right nudge at the right moment.</h2>
-        <p data-i18n="pulseCopy">Social Pulse brings together privacy-safe signals such as who is open, what people feel like doing, nearby happenings, buddies, and mutual interest. It looks for one useful opportunity, not another infinite list.</p>
-      </div>
-      <ol class="steps">
-        <li>
-          <span class="step-number">01</span>
-          <div><h3 data-i18n="step1Title">Share a lightweight intent</h3><p data-i18n="step1Copy">Say that you are open, up for a casual drink, coffee, live music, or simply open to ideas.</p></div>
-        </li>
-        <li>
-          <span class="step-number">02</span>
-          <div><h3 data-i18n="step2Title">Notice what aligns</h3><p data-i18n="step2Copy">Social Pulse finds a timely, explainable opportunity without exposing private one-sided interest.</p></div>
-        </li>
-        <li>
-          <span class="step-number">03</span>
-          <div><h3 data-i18n="step3Title">Make it happen</h3><p data-i18n="step3Copy">Turn the moment into a plan, put the phone away, and meet in real life.</p></div>
-        </li>
-      </ol>
-    </section>
+  <section class="sec how">
+    <span class="eyebrow">So kommt’s zum Treffen</span>
+    <h2>Drei Schritte. Dann seid ihr da.</h2>
+    <ol class="steps">
+      <li><span class="num">1</span><h3>Einchecken oder Runde posten</h3><p>Sag, wo du bist oder wann du ausgehen willst. Dauert zehn Sekunden.</p></li>
+      <li><span class="num">2</span><h3>Prost oder Mitkommen</h3><p>Spontan prostet ihr euch zu, geplant fragt man an. Beides nur, wenn beide wollen.</p></li>
+      <li><span class="num a">3</span><h3>Chat, „Bin da“, Prost</h3><p>Im Chat steht die Bar. Am nächsten Tag fragen wir: In Kontakt bleiben? Sagen beide Ja, seid ihr Freunde.</p></li>
+    </ol>
+  </section>
 
-    <section class="principles" aria-label="Product principles" data-i18n-attr="aria-label:principlesAria">
-      <article>
-        <span aria-hidden="true">∞</span>
-        <h3 data-i18n="principle1Title">No endless feed</h3>
-        <p data-i18n="principle1Copy">There is no prize for staying in the app longer.</p>
-      </article>
-      <article>
-        <span aria-hidden="true">↔</span>
-        <h3 data-i18n="principle2Title">Mutual and low-pressure</h3>
-        <p data-i18n="principle2Copy">Private signals stay private until there is a meaningful reason to connect.</p>
-      </article>
-      <article>
-        <span aria-hidden="true">●</span>
-        <h3 data-i18n="principle3Title">Reality first</h3>
-        <p data-i18n="principle3Copy">Success is a good meeting, not another metric on a screen.</p>
-      </article>
-    </section>
-
-    <section class="early-access" aria-labelledby="early-access-title">
-      <div class="early-access-copy">
-        <p class="section-label" data-i18n="earlyAccessLabel">Early access</p>
-        <h2 id="early-access-title" data-i18n="earlyAccessTitle">Help shape what comes next.</h2>
-        <p data-i18n="earlyAccessCopy">Be one of the first to try Drink With Me. Join the public beta and help shape what comes next.</p>
-        <p class="eligibility" data-i18n="earlyAccessEligibility">Available in Germany and Austria · Ages 18+</p>
-      </div>
-      <div class="store-links" aria-label="Public beta downloads" data-i18n-attr="aria-label:storeLinksAria">
-        <a class="store-link" href="https://testflight.apple.com/join/axvwhX94?utm_source=drinkwithme_site&amp;utm_medium=website&amp;utm_campaign=public_beta_2026&amp;utm_content=ios" data-i18n-attr="aria-label:testFlightAria">
-          <svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M17.05 12.54c-.03-3.04 2.48-4.5 2.59-4.57a5.56 5.56 0 0 0-4.38-2.37c-1.84-.2-3.63 1.1-4.57 1.1-.96 0-2.4-1.08-3.96-1.05a5.8 5.8 0 0 0-4.87 2.98c-2.12 3.67-.54 9.07 1.49 12.04 1.02 1.46 2.2 3.08 3.76 3.02 1.53-.06 2.1-.97 3.95-.97 1.83 0 2.37.97 3.96.93 1.64-.02 2.67-1.46 3.65-2.93a12.04 12.04 0 0 0 1.67-3.4 5.24 5.24 0 0 1-3.24-4.78ZM14.06 3.64A5.34 5.34 0 0 0 15.28 0a5.5 5.5 0 0 0-3.56 1.73 5.09 5.09 0 0 0-1.25 3.5 4.56 4.56 0 0 0 3.59-1.59Z"/>
-          </svg>
-          <span><small data-i18n="testFlightKicker">Join the public beta on</small><strong>TestFlight</strong></span>
-          <span class="store-arrow" aria-hidden="true">↗</span>
-        </a>
-        <a class="store-link" href="https://play.google.com/apps/testing/me.drinkwith.drink_with_me?utm_source=drinkwithme_site&amp;utm_medium=website&amp;utm_campaign=public_beta_2026&amp;utm_content=android" data-i18n-attr="aria-label:googlePlayAria">
-          <svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M1.47.34A2.2 2.2 0 0 0 .5 2.18v19.64c0 .76.37 1.43.97 1.84L13 12 1.47.34Zm1.64.67 13.82 7.84-3.08 3.08L3.11 1.01Zm0 21.98 10.74-10.92 3.08 3.08L3.11 22.99Zm15.35-7.02L15 12.07l3.46-3.46 4.07 2.31c1.29.73 1.29 1.43 0 2.16l-4.07 2.89Z"/>
-          </svg>
-          <span><small data-i18n="googlePlayKicker">Join the public beta on</small><strong>Google Play</strong></span>
-          <span class="store-arrow" aria-hidden="true">↗</span>
-        </a>
-      </div>
-    </section>
-
-    <section class="closing" aria-labelledby="closing-title">
-      <img src="assets/app-icon.png" alt="Drink With Me app icon">
+  <section class="sec" id="sicherheit">
+    <div class="split">
       <div>
-        <p class="section-label" data-i18n="closingLabel">Drink With Me</p>
-        <h2 id="closing-title" data-i18n="closingTitle">Real life is the destination.</h2>
-        <p data-i18n="closingCopy">Built for people who want a little less screen time and a little more time together.</p>
+        <span class="eyebrow">Du behältst die Kontrolle</span>
+        <h2>Neue Leute treffen. Sicher.</h2>
+        <div class="feats">
+          <div class="feat"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg></span><div><h3>Nur die Gegend</h3><p>Fremde sehen „Neubau“, nicht deine Bar. Die Bar teilst du erst im Chat.</p></div></div>
+          <div class="feat"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"></path><circle cx="12" cy="12" r="3"></circle></svg></span><div><h3>Du wählst, wer dich sieht</h3><p>Bei jedem Check-in entscheidest du: Freunde, bestimmte Freunde oder alle.</p></div></div>
+          <div class="feat"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M8.5 14.5c1 1 2.2 1.5 3.5 1.5s2.5-.5 3.5-1.5"></path><path d="M9 9.5h.01M15 9.5h.01"></path></svg></span><div><h3>Kein Drama</h3><p>Keine Absagen, keine Gründe. Klappt es nicht, heißt es einfach: „Diesmal nicht.“</p></div></div>
+          <div class="feat"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4"></path><path d="M5 4h11l-2 4 2 4H5"></path></svg></span><div><h3>Melden &amp; Blockieren</h3><p>Jederzeit, mit einem Tipp. Die andere Person erfährt nichts davon.</p></div></div>
+        </div>
       </div>
-    </section>
+      <div class="safeart"><div class="phone "><picture><source srcset="/assets/img/screens/ChatV3Day.webp" type="image/webp"><img loading="lazy" decoding="async" src="/assets/img/screens/ChatV3Day.png" alt="Chat nach gegenseitigem Prost mit Sicherheitshinweis" width="390" height="844"></picture></div></div>
+    </div>
+  </section>
+
+  <section class="sec" id="staedte">
+    <div class="split rev">
+      <div class="cityart"><div class="phone "><picture><source srcset="/assets/img/screens/EmptyV3Day.webp" type="image/webp"><img loading="lazy" decoding="async" src="/assets/img/screens/EmptyV3Day.png" alt="Entdecken, solange in deiner Nähe noch wenig los ist" width="390" height="844"></picture></div></div>
+      <div>
+        <span class="eyebrow">Start in drei Städten</span>
+        <h2>Wien. Düsseldorf. Willich.</h2>
+        <p class="body">Wir starten dort, wo wir Leute kennen. Sei von Anfang an dabei: Check ein, wo du gerade bist, oder plan eine Runde.</p>
+        <div class="cities">
+          <div class="city"><span class="when">Öffentliche Beta</span><h3>Wien</h3></div>
+          <div class="city"><span class="when">Öffentliche Beta</span><h3>Düsseldorf</h3></div>
+          <div class="city"><span class="when">Öffentliche Beta</span><h3>Willich</h3></div>
+        </div>
+        <p class="miss">Deine Stadt fehlt? Hol dir die Beta und poste die erste Runde.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pov">
+    <div class="povin">
+      <span class="eyebrow">Unsere Haltung</span>
+      <h2>Dein Sozialleben gehört nicht in einen Feed.</h2>
+      <p class="body">Kein endloses Scrollen, keine Likes, keine Bühne. Drink With Me ist gemacht, um wieder zu verschwinden – sobald ihr euch trefft.</p>
+      <div class="povgrid">
+        <div><b>∞</b><h3>Kein endloser Feed</h3><p>Länger in der App bleiben bringt dir nichts.</p></div>
+        <div><b>↔</b><h3>Gegenseitig statt einseitig</h3><p>Interesse bleibt privat, bis es beide haben.</p></div>
+        <div><b>●</b><h3>Das echte Leben zuerst</h3><p>Erfolg ist ein guter Abend, nicht Zeit am Handy.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="faq">
+    <span class="eyebrow">FAQ</span>
+    <h2>Gute Fragen.</h2>
+    <div class="faq">
+      <details class="qa" open><summary class="q"><span>Ist das eine Dating-App?</span><span class="chev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></span></summary><p class="a">Nein. Es geht um neue Bekanntschaften und Freundschaften. Wenn mehr daraus wird – schön. Im Profil kannst du „Dates ok“ angeben, musst du aber nicht.</p></details><details class="qa"><summary class="q"><span>Muss ich Alkohol trinken?</span><span class="chev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></span></summary><p class="a">Nein. Kaffee, Mate, Limo oder Mocktail: „Drink“ heißt einfach auf ein Getränk.</p></details><details class="qa"><summary class="q"><span>Wer sieht meinen Standort?</span><span class="chev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></span></summary><p class="a">Fremde sehen nur die Gegend, Freunde die Bar. Deinen Standort teilst du nur, wenn du willst – einmalig im Chat. Nach 60 Minuten ist er weg.</p></details><details class="qa"><summary class="q"><span>Für wen ist Drink With Me?</span><span class="chev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></span></summary><p class="a">Für alle ab 18. Vor allem für Leute zwischen 25 und 45, die neu in der Stadt sind oder ihren Kreis erweitern wollen.</p></details><details class="qa"><summary class="q"><span>Wo gibt es die App?</span><span class="chev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></span></summary><p class="a">In der öffentlichen Beta für iPhone und Android, in Deutschland und Österreich. Wir starten in Wien, Düsseldorf und Willich.</p></details>
+    </div>
+  </section>
+
+  <section class="beta" id="beta">
+    <div class="betain">
+      <span class="eyebrow ink">Öffentliche Beta</span>
+      <h2>Mach mit und gestalte mit.</h2>
+      <p class="body">Teste die neue Drink With Me und sag uns, was fehlt. Dein Feedback landet direkt beim Team.</p>
+      <div class="stores">
+      <a class="store dark" href="https://testflight.apple.com/join/axvwhX94?utm_source=drinkwithme_site&amp;utm_medium=website&amp;utm_campaign=public_beta_2026&amp;utm_content=ios" target="_blank" rel="noopener"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.5 2-3.6-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.9-.9-3.1-.8-1.6 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3.1.7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.7zM14.1 5.5c.6-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.4-.6.7-1.1 1.8-1 2.9 1.1.1 2.1-.5 2.8-1.3z"></path></svg><span><b>Beta für iPhone</b><small>über TestFlight</small></span></a>
+      <a class="store dark" href="https://play.google.com/apps/testing/me.drinkwith.drink_with_me?utm_source=drinkwithme_site&amp;utm_medium=website&amp;utm_campaign=public_beta_2026&amp;utm_content=android" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 2.8v18.4c0 .5.5.8.9.6L21 12.6c.4-.2.4-.9 0-1.1L4.9 2.2c-.4-.2-.9.1-.9.6z"></path></svg><span><b>Beta für Android</b><small>über Google Play</small></span></a>
+    </div>
+      <span class="meta">Ab 18 · Deutschland und Österreich</span>
+    </div>
+    <div class="betaicons" aria-hidden="true"><span><svg width="54" height="54" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="dwspritzer8"><path d="M13 9 C12 20 15 30 24 30 C33 30 36 20 35 9 Z"></path></clipPath></defs><g clip-path="url(#dwspritzer8)" stroke="none"><rect x="0" y="16" width="48" height="48" fill="#F4D774"></rect><circle cx="20" cy="24" r="1.1" fill="#FFFFFF" fill-opacity="0.9"></circle><circle cx="26" cy="21" r="1.1" fill="#FFFFFF" fill-opacity="0.9"></circle><circle cx="29" cy="26" r="1.1" fill="#FFFFFF" fill-opacity="0.9"></circle><circle cx="23" cy="19" r="1.1" fill="#FFFFFF" fill-opacity="0.9"></circle></g><path d="M13 9 C12 20 15 30 24 30 C33 30 36 20 35 9 Z"></path><path d="M24 30 V40"></path><path d="M16 41 H32"></path></svg></span><span><svg width="54" height="54" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="dwkoelsch9"><path d="M18 5 V41 H30 V5 Z"></path></clipPath></defs><g clip-path="url(#dwkoelsch9)" stroke="none"><rect x="0" y="10" width="48" height="48" fill="#F2B233"></rect><rect x="14" y="5" width="20" height="5" fill="#FFFFFF"></rect><circle cx="22" cy="30" r="0.9" fill="#FFFFFF" fill-opacity="0.9"></circle><circle cx="26" cy="22" r="0.9" fill="#FFFFFF" fill-opacity="0.9"></circle><circle cx="23" cy="16" r="0.9" fill="#FFFFFF" fill-opacity="0.9"></circle></g><path d="M18 5 V41 H30 V5 Z"></path><path d="M18 10.5 H30"></path></svg></span><span><svg width="54" height="54" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="dwsekt10"><path d="M19 5 C18 15 19 25 24 27 C29 25 30 15 29 5 Z"></path></clipPath></defs><g clip-path="url(#dwsekt10)" stroke="none"><rect x="0" y="10" width="48" height="48" fill="#F4D774"></rect><circle cx="22" cy="22" r="0.95" fill="#FFFFFF" fill-opacity="0.9"></circle><circle cx="25" cy="17" r="0.95" fill="#FFFFFF" fill-opacity="0.9"></circle><circle cx="23" cy="13" r="0.95" fill="#FFFFFF" fill-opacity="0.9"></circle><circle cx="26" cy="23" r="0.95" fill="#FFFFFF" fill-opacity="0.9"></circle></g><path d="M19 5 C18 15 19 25 24 27 C29 25 30 15 29 5 Z"></path><path d="M24 27 V40"></path><path d="M16 41 H32"></path></svg></span><span><svg width="54" height="54" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="dwgintonic11"><path d="M15 8 V39 A2 2 0 0 0 17 41 H31 A2 2 0 0 0 33 39 V8 Z"></path></clipPath></defs><g clip-path="url(#dwgintonic11)" stroke="none"><rect x="0" y="12" width="48" height="48" fill="#D6EEF5"></rect><rect x="17.5" y="15" width="7" height="7" rx="1.5" fill="#FFFFFF" stroke="#9CC9D8" stroke-width="1.2"></rect><rect x="23.5" y="22" width="7" height="7" rx="1.5" fill="#FFFFFF" stroke="#9CC9D8" stroke-width="1.2"></rect><circle cx="20" cy="34" r="0.9" fill="#FFFFFF" fill-opacity="0.9"></circle><circle cx="27" cy="35" r="0.9" fill="#FFFFFF" fill-opacity="0.9"></circle><circle cx="24" cy="31" r="0.9" fill="#FFFFFF" fill-opacity="0.9"></circle></g><path d="M15 8 V39 A2 2 0 0 0 17 41 H31 A2 2 0 0 0 33 39 V8 Z"></path><circle cx="33" cy="9" r="5.5" fill="#B6D96B" stroke="currentColor" stroke-width="2.2"></circle><path d="M33 4.8 V13.2 M28.8 9 H37.2" stroke="#FFFFFF" stroke-width="1.2"></path></svg></span><span><svg width="54" height="54" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="dwmatcha12"><path d="M7 21 H41 C41 32 33 39 24 39 C15 39 7 32 7 21 Z"></path></clipPath></defs><g clip-path="url(#dwmatcha12)" stroke="none"><rect x="0" y="21" width="48" height="48" fill="#7CA94A"></rect><rect x="5" y="21" width="38" height="3" fill="#A9CC77"></rect></g><path d="M7 21 H41 C41 32 33 39 24 39 C15 39 7 32 7 21 Z"></path><path d="M18 39 L17 42 H31 L30 39"></path><path d="M32 6 L27 18" stroke="currentColor" stroke-width="2.2"></path><path d="M26 16 C24 19 25 22 27.5 22 C30 22 31 19 29.5 17 Z" fill="#E8D7A6" stroke="currentColor" stroke-width="1.8"></path></svg></span><span><svg width="54" height="54" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="dwaltbier13"><path d="M15 12 L17 41 H31 L33 12 Z"></path></clipPath></defs><g clip-path="url(#dwaltbier13)" stroke="none"><rect x="0" y="16" width="48" height="48" fill="#9C4A1A"></rect><rect x="10" y="12" width="28" height="4.5" fill="#F6EBD9"></rect><circle cx="22" cy="30" r="0.9" fill="#FFFFFF" fill-opacity="0.9"></circle><circle cx="27" cy="25" r="0.9" fill="#FFFFFF" fill-opacity="0.9"></circle></g><path d="M15 12 L17 41 H31 L33 12 Z"></path><path d="M15.4 16.5 H32.6"></path></svg></span></div>
+  </section>
+
+  <section class="closing"><h2>Das echte Leben ist das Ziel.</h2></section>
   </main>
 
-  <footer>
-    <img src="assets/logo-banner.png" alt="Drink With Me">
-    <p data-i18n="footerProduct">A product by blocklevel Software.</p>
-    <a href="child-safety.html" data-i18n="footerChildSafety">Child Safety</a>
-    <a href="privacy.html" data-i18n="footerPrivacy">Datenschutz</a>
-    <a href="impressum.html" data-i18n="footerImprint">Impressum</a>
-    <span>© 2026 blocklevel GmbH</span>
+
+  <footer class="foot">
+    <a class="brand" href="#top"><svg width="30" height="30" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="dwdrink14"><path d="M13 8 H35 L32.5 23 A8.5 8.5 0 0 1 15.5 23 Z"></path></clipPath></defs><g clip-path="url(#dwdrink14)" stroke="none"><rect x="0" y="14" width="48" height="48" fill="#FF7A1A"></rect></g><path d="M13 8 H35 L32.5 23 A8.5 8.5 0 0 1 15.5 23 Z"></path><path d="M24 31.5 V40"></path><path d="M16 41 H32"></path></svg><span>Drink With Me</span></a>
+    <nav class="legal" aria-label="Rechtliches"><a href="/child-safety.html?lang=de">Child Safety</a><a href="/privacy.html?lang=de">Datenschutz</a><a href="/impressum.html?lang=de">Impressum</a></nav>
+    <span class="by">Ein Produkt von blocklevel Software · © 2026 blocklevel GmbH</span>
   </footer>
+</div>
 
-  <script>
-    (function () {
-      var supported = ['de', 'en'];
-      var storageKey = 'dwm-lang';
-
-      function detectBrowserLanguage() {
-        var preferred = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
-        return preferred.toLowerCase().startsWith('de') ? 'de' : 'en';
-      }
-
-      function readStoredLanguage() {
-        try {
-          var stored = localStorage.getItem(storageKey);
-          return supported.indexOf(stored) >= 0 ? stored : null;
-        } catch {
-          return null;
-        }
-      }
-
-      function storeLanguage(lang) {
-        try {
-          localStorage.setItem(storageKey, lang);
-        } catch {
-          // Ignore storage failures (private mode / disabled storage).
-        }
-      }
-
-      var translations = {
-        de: {
-          pageTitle: 'Drink With Me - Das echte Leben ist das Ziel',
-          pageDescription: 'Drink With Me verwandelt leichte soziale Impulse durch Social Pulse in echte Treffen im realen Leben.',
-          brandAriaLabel: 'Drink With Me Startseite',
-          headerSocialPulse: 'Social Pulse',
-          heroEyebrow: 'Eine Social App für echtes Sozialleben',
-          heroTitle: 'Weniger scrollen.<br><span>Mehr auftauchen.</span>',
-          heroCopy: 'Drink With Me hilft dabei, aus "Ich hätte Lust auf etwas" einen echten Plan mit echten Menschen zu machen, in deiner Nähe und im richtigen Moment.',
-          heroCta: 'So funktioniert es <span aria-hidden="true">↓</span>',
-          signalOne: 'Heute offen',
-          signalTwo: 'Live-Musik',
-          signalThree: 'Cocktails',
-          meetingNote: 'Etwas entsteht gerade',
-          manifestoLabel: 'Unsere Haltung',
-          manifestoTitle: 'Dein Sozialleben sollte nicht im Feed stattfinden.',
-          manifestoCopy: 'Wir wollen nicht, dass du endlos scrollst, für ein Publikum performst oder dich für immer durch Menschen swipest. Drink With Me soll aus dem Weg gehen, sobald etwas Echtes entstehen konnte.',
-          pulseLabel: 'Social Pulse',
-          pulseTitle: 'Der richtige Impuls im richtigen Moment.',
-          pulseCopy: 'Social Pulse verbindet datenschutzfreundliche Signale wie Offenheit, Aktivitätswunsch, Ereignisse in der Nähe, Buddies und gegenseitiges Interesse. Ziel ist eine hilfreiche Chance, nicht eine endlose Liste.',
-          step1Title: 'Leichten Impuls teilen',
-          step1Copy: 'Zeig, dass du offen bist, Lust auf einen entspannten Drink, Kaffee, Live-Musik oder einfach auf Ideen hast.',
-          step2Title: 'Passende Momente erkennen',
-          step2Copy: 'Social Pulse findet einen passenden, nachvollziehbaren Moment, ohne einseitiges privates Interesse offenzulegen.',
-          step3Title: 'Treffen real machen',
-          step3Copy: 'Mach aus dem Moment einen Plan, leg das Handy weg und triff dich im echten Leben.',
-          principlesAria: 'Produktprinzipien',
-          principle1Title: 'Kein Endlos-Feed',
-          principle1Copy: 'Es gibt keinen Preis dafür, länger in der App zu bleiben.',
-          principle2Title: 'Gegenseitig und ohne Druck',
-          principle2Copy: 'Private Signale bleiben privat, bis es einen sinnvollen Grund für Kontakt gibt.',
-          principle3Title: 'Realität zuerst',
-          principle3Copy: 'Erfolg ist ein gutes Treffen, nicht noch eine Kennzahl auf dem Bildschirm.',
-          earlyAccessLabel: 'Früh dabei sein',
-          earlyAccessTitle: 'Gestalte mit, wie es weitergeht.',
-          earlyAccessCopy: 'Teste Drink With Me als eine der ersten Personen. Nimm an der öffentlichen Beta teil und gestalte mit, wie es weitergeht.',
-          earlyAccessEligibility: 'Verfügbar in Deutschland und Österreich · Ab 18 Jahren',
-          storeLinksAria: 'Downloads für die öffentliche Beta',
-          testFlightKicker: 'Öffentliche Beta über',
-          testFlightAria: 'An der öffentlichen Beta über TestFlight teilnehmen',
-          googlePlayKicker: 'Öffentliche Beta bei',
-          googlePlayAria: 'An der öffentlichen Beta bei Google Play teilnehmen',
-          closingLabel: 'Drink With Me',
-          closingTitle: 'Das echte Leben ist das Ziel.',
-          closingCopy: 'Entwickelt für Menschen, die etwas weniger Bildschirmzeit und etwas mehr gemeinsame Zeit wollen.',
-          footerProduct: 'Ein Produkt von blocklevel Software.',
-          footerChildSafety: 'Kinderschutz',
-          footerPrivacy: 'Datenschutz',
-          footerImprint: 'Impressum'
-        },
-        en: {
-          pageTitle: 'Drink With Me - Real life is the destination',
-          pageDescription: 'Drink With Me turns lightweight social intent into meaningful real-world meetings through Social Pulse.',
-          brandAriaLabel: 'Drink With Me home',
-          headerSocialPulse: 'Social Pulse',
-          heroEyebrow: 'A social app for actual social life',
-          heroTitle: 'Less scrolling.<br><span>More showing up.</span>',
-          heroCopy: 'Drink With Me helps turn "I feel like doing something" into a real plan with real people, nearby and now.',
-          heroCta: 'See how it works <span aria-hidden="true">↓</span>',
-          signalOne: 'Open tonight',
-          signalTwo: 'Live music',
-          signalThree: 'Cocktails',
-          meetingNote: 'Something is brewing',
-          manifestoLabel: 'Our point of view',
-          manifestoTitle: 'Your social life should not happen inside a feed.',
-          manifestoCopy: 'We do not want you to scroll endlessly, perform for an audience, or swipe through people forever. Drink With Me is designed to get out of the way once it has helped something real happen.',
-          pulseLabel: 'Social Pulse',
-          pulseTitle: 'The right nudge at the right moment.',
-          pulseCopy: 'Social Pulse brings together privacy-safe signals such as who is open, what people feel like doing, nearby happenings, buddies, and mutual interest. It looks for one useful opportunity, not another infinite list.',
-          step1Title: 'Share a lightweight intent',
-          step1Copy: 'Say that you are open, up for a casual drink, coffee, live music, or simply open to ideas.',
-          step2Title: 'Notice what aligns',
-          step2Copy: 'Social Pulse finds a timely, explainable opportunity without exposing private one-sided interest.',
-          step3Title: 'Make it happen',
-          step3Copy: 'Turn the moment into a plan, put the phone away, and meet in real life.',
-          principlesAria: 'Product principles',
-          principle1Title: 'No endless feed',
-          principle1Copy: 'There is no prize for staying in the app longer.',
-          principle2Title: 'Mutual and low-pressure',
-          principle2Copy: 'Private signals stay private until there is a meaningful reason to connect.',
-          principle3Title: 'Reality first',
-          principle3Copy: 'Success is a good meeting, not another metric on a screen.',
-          earlyAccessLabel: 'Early access',
-          earlyAccessTitle: 'Help shape what comes next.',
-          earlyAccessCopy: 'Be one of the first to try Drink With Me. Join the public beta and help shape what comes next.',
-          earlyAccessEligibility: 'Available in Germany and Austria · Ages 18+',
-          storeLinksAria: 'Public beta downloads',
-          testFlightKicker: 'Join the public beta on',
-          testFlightAria: 'Join the public beta on TestFlight',
-          googlePlayKicker: 'Join the public beta on',
-          googlePlayAria: 'Join the public beta on Google Play',
-          closingLabel: 'Drink With Me',
-          closingTitle: 'Real life is the destination.',
-          closingCopy: 'Built for people who want a little less screen time and a little more time together.',
-          footerProduct: 'A product by blocklevel Software.',
-          footerChildSafety: 'Child Safety',
-          footerPrivacy: 'Privacy',
-          footerImprint: 'Imprint'
-        }
-      };
-
-      function applyLanguage(lang) {
-        var t = translations[lang];
-        if (!t) {
-          return;
-        }
-
-        document.documentElement.lang = lang;
-        document.title = t.pageTitle;
-
-        var description = document.querySelector('meta[name="description"]');
-        if (description) {
-          description.setAttribute('content', t.pageDescription);
-        }
-
-        document.querySelectorAll('[data-i18n]').forEach(function (el) {
-          var key = el.getAttribute('data-i18n');
-          if (t[key]) {
-            el.textContent = t[key];
-          }
-        });
-
-        document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
-          var key = el.getAttribute('data-i18n-html');
-          if (t[key]) {
-            el.innerHTML = t[key];
-          }
-        });
-
-        document.querySelectorAll('[data-i18n-attr]').forEach(function (el) {
-          var mappings = (el.getAttribute('data-i18n-attr') || '').split(',');
-          mappings.forEach(function (mapping) {
-            var parts = mapping.split(':');
-            if (parts.length !== 2) {
-              return;
-            }
-            var attr = parts[0].trim();
-            var key = parts[1].trim();
-            if (attr && key && t[key]) {
-              el.setAttribute(attr, t[key]);
-            }
-          });
-        });
-
-        document.querySelectorAll('[data-set-lang]').forEach(function (button) {
-          button.setAttribute('aria-pressed', button.getAttribute('data-set-lang') === lang ? 'true' : 'false');
-        });
-
-        storeLanguage(lang);
-      }
-
-      var initialLanguage = readStoredLanguage() || detectBrowserLanguage();
-      if (supported.indexOf(initialLanguage) < 0) {
-        initialLanguage = 'en';
-      }
-
-      document.querySelectorAll('[data-set-lang]').forEach(function (button) {
-        button.addEventListener('click', function () {
-          var next = button.getAttribute('data-set-lang');
-          if (supported.indexOf(next) >= 0) {
-            applyLanguage(next);
-          }
-        });
-      });
-
-      applyLanguage(initialLanguage);
-    })();
-  </script>
 </body>
 </html>

@@ -6,10 +6,7 @@
   <meta name="theme-color" content="#ffb800">
   <title>Impressum - Drink With Me</title>
   <link rel="icon" href="assets/favicon.png" type="image/png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20261126-1">
   <style>
     .legal { max-width: 780px; min-height: calc(100svh - 76px); margin: 0 auto; padding: 80px 24px 120px; }
     .legal h1 { font-size: clamp(48px, 8vw, 78px); }
@@ -26,7 +23,7 @@
       border-radius: 999px;
       background: transparent;
       color: var(--espresso);
-      font: 700 12px/1 "Schibsted Grotesk", "Helvetica Neue", sans-serif;
+      font: 700 12px/1 "Manrope", "Helvetica Neue", sans-serif;
       cursor: pointer;
     }
     .lang-switch button[aria-pressed="true"] {
@@ -205,7 +202,9 @@
         storeLanguage(lang);
       }
 
-      var initialLanguage = readStoredLanguage() || detectBrowserLanguage();
+      var queryLanguage = new URLSearchParams(window.location.search).get('lang');
+      var initialLanguage = (supported.indexOf(queryLanguage) >= 0 ? queryLanguage : null)
+        || readStoredLanguage() || detectBrowserLanguage();
       if (supported.indexOf(initialLanguage) < 0) {
         initialLanguage = 'en';
       }
