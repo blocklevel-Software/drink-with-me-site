@@ -6,10 +6,7 @@
   <meta name="theme-color" content="#ffb800">
   <title>Drink With Me App Privacy Policy</title>
   <link rel="icon" href="assets/favicon.png" type="image/png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20261126-1">
   <style>
     .legal { max-width: 880px; min-height: calc(100svh - 76px); margin: 0 auto; padding: 80px 24px 120px; }
     .legal h1 { font-size: clamp(40px, 7vw, 66px); }
@@ -27,7 +24,7 @@
       border-radius: 999px;
       background: transparent;
       color: var(--espresso);
-      font: 700 12px/1 "Schibsted Grotesk", "Helvetica Neue", sans-serif;
+      font: 700 12px/1 "Manrope", "Helvetica Neue", sans-serif;
       cursor: pointer;
     }
     .lang-switch button[aria-pressed="true"] {
@@ -63,1103 +60,195 @@
       var queryLang = new URLSearchParams(window.location.search).get('lang');
       var markdown = {
         de: `# Datenschutzerklärung für die Drink With Me App
-**Stand: 7. August 2026**
+**Stand: 26. November 2026**
 
-Diese Datenschutzerklärung erläutert, wie personenbezogene Daten bei der Nutzung der mobilen Anwendung **Drink With Me** ("Drink With Me", die "App", "wir", "uns") verarbeitet werden.
-
-Diese Datenschutzerklärung gilt speziell für die Drink With Me App. Für die öffentlich zugängliche Drink With Me Website besteht eine separate Datenschutzerklärung.
+Diese Datenschutzerklärung erläutert, wie personenbezogene Daten bei der Nutzung der mobilen Anwendung **Drink With Me** („die App“, „wir“, „uns“) verarbeitet werden. Für die Website gibt es eine eigene Datenschutzerklärung.
 
 ## 1. Verantwortlicher
-Verantwortlicher fur die Verarbeitung personenbezogener Daten im Sinne der Datenschutz-Grundverordnung ("DSGVO") ist:
+**blocklevel GmbH**, Drahtzieherweg 15, 47877 Willich, Deutschland
 
-**blocklevel GmbH**
-Drahtzieherweg 15
-47877 Willich
-Deutschland
+E-Mail: **datenschutz@blocklevel.de** · Telefon: +49 (2154) 8912 - 800
 
-E-Mail: **[datenschutz@blocklevel.de](mailto:datenschutz@blocklevel.de)**
-Telefon: +49 (2154) 8912 - 800
+## 2. Alter
+Die App ist nur für Personen ab 18 Jahren. Dein Geburtsdatum wird bei der Registrierung geprüft; wer jünger als 18 ist, kann kein Konto anlegen.
 
-## 2. Kategorien der verarbeiteten personenbezogenen Daten
-Je nachdem, wie du Drink With Me nutzt, konnen wir insbesondere die folgenden Kategorien personenbezogener Daten verarbeiten.
+## 3. Welche Daten wir verarbeiten
 
-### Konto- und Authentifizierungsdaten
-Hierzu konnen gehoren:
+### Konto und Anmeldung
+- E-Mail-Adresse, Benutzer-Kennung und die Art der Anmeldung (E-Mail mit Einmalcode, Apple oder Google).
+- Die Anmeldung läuft über **Microsoft Entra External ID**. Bei Apple oder Google authentifiziert dich der jeweilige Anbieter und übermittelt uns die Angaben, die für dein Konto nötig sind. Apple-Adressen mit „E-Mail verbergen“ behandeln wir als eigene Adresse.
+- Pro E-Mail-Adresse gibt es ein Konto. Meldest du dich mit einer zweiten Anmeldeart und derselben Adresse an, verknüpfen wir die Konten nicht und weisen dich auf die erste Anmeldeart hin.
+- Mit der Registrierung bestätigst du die Nutzungsbedingungen; wir speichern die akzeptierte Version.
 
-- E-Mail-Adresse;
-- Benutzer-ID und interne Kennungen;
-- verwendeter Authentifizierungsanbieter;
-- Authentifizierungs-Token und technische Authentifizierungsinformationen;
-- Informationen externer Identitatsanbieter, sofern du eine entsprechende Anmeldeoption verwendest.
-Drink With Me verwendet **Microsoft Entra External ID** fur die Benutzeridentitat und Authentifizierung.
-
-Soweit angeboten, kannst du auch einen externen Identitatsanbieter wie Google oder Apple verwenden. In diesem Fall authentifiziert dich der jeweilige Anbieter und ubermittelt uns die Informationen, die fur die Erstellung oder Nutzung deines Drink With Me Kontos erforderlich sind.
-
-## 3. Profildaten
-Zu den Informationen, die du fur dein Drink With Me Profil bereitstellst, konnen gehoren:
-
-- Anzeigename;
-- Alter oder Geburtsdatum;
-- Geschlecht;
-- Profilfotos;
-- Profilbeschreibung;
-- Getrankepraferenzen;
-- Discovery-Einstellungen und Filter;
-- weitere freiwillige Profilinformationen.
-Bestimmte Profilinformationen sind dazu vorgesehen, anderen Nutzern im Rahmen der sozialen Funktionen von Drink With Me angezeigt zu werden.
-
-Bestimmte Sichtbarkeits- und Profileinstellungen kannst du innerhalb der App selbst festlegen.
-
-## 4. Standortdaten
-Drink With Me verwendet Standortinformationen fur Funktionen, bei denen die raumliche Nahe relevant ist.
-
-Abhangig von den verwendeten Funktionen konnen wir insbesondere folgende Informationen verarbeiten:
-
-- deinen aktuellen oder zuletzt bereitgestellten Standort;
-- die ungefahre Entfernung zwischen Nutzern;
-- Orte, die mit Aktivitaten oder Planen verknupft sind;
-- Orte, die du ausdrucklich mit anderen Nutzern teilst.
-Der Zugriff auf den Geratestandort erfolgt entsprechend den Berechtigungen, die du uber dein Betriebssystem erteilst.
-
-Wir konnen Standortinformationen insbesondere verwenden, um:
-
-- Personen in deiner Nahe anzuzeigen;
-- ungefahre Entfernungen zu berechnen;
-- Aktivitaten, Veranstaltungen oder Orte in deiner Nahe anzuzeigen;
-- Kartenfunktionen bereitzustellen;
-- standortbasierte Discovery-Funktionen bereitzustellen;
-- das freiwillige Teilen eines Standorts zu ermoglichen.
-Dein genauer Geratestandort wird anderen Nutzern nicht automatisch offengelegt, nur weil du standortbezogene Funktionen von Drink With Me nutzt.
-
-Wenn du im Rahmen einer Funktion, beispielsweise eines Plans oder "Having a drink now", ausdrucklich einen konkreten Standort teilst, kann dieser Standort fur die von dir ausgewahlten Personen sichtbar sein.
-
-Du kannst die Standortberechtigung jederzeit uber die Einstellungen deines Betriebssystems widerrufen. Standortabhangige Funktionen konnen anschliessend moglicherweise nicht mehr genutzt werden.
-
-## 5. Verfugbarkeits- und Aktivitatsinformationen
-Drink With Me verarbeitet Informationen uber deine Verfugbarkeit und deine sozialen Aktivitaten.
-
-Hierzu konnen insbesondere Statusangaben gehoren wie:
-
-- Hidden;
-- Open;
-- Up for a drink.
-Drink With Me kann dir ausserdem ermoglichen, uber Funktionen wie **Having a drink now** eine aktuelle Aktivitat zu veroffentlichen.
-
-Je nachdem, was du freigibst, kann dies umfassen:
-
-- die Information, dass du gerade etwas trinken bist;
-- einen Standort;
-- einen Zeitpunkt;
-- ein Foto;
-- optionale zusatzliche Angaben;
-- die Personen oder Gruppen, mit denen die Aktivitat geteilt wird.
-Du bestimmst im Rahmen der verfugbaren Privatsphare- und Zielgruppeneinstellungen, mit wem solche Informationen geteilt werden.
-
-## 6. Discovery, Buddies, Matches und soziale Interaktionen
-Zur Bereitstellung der sozialen Funktionen und der Discovery-Funktionen kann Drink With Me insbesondere folgende Informationen verarbeiten:
-
-- dir angezeigte Profile;
-- Discovery-Einstellungen und Filter;
-- Entfernungsinformationen;
-- Verfugbarkeitsstatus;
-- Likes oder sonstige Interessensbekundungen;
-- Pass-Entscheidungen oder andere Auswahlentscheidungen;
-- Buddies;
-- Matches;
-- Drink-Anfragen;
-- Antworten auf Drink-Anfragen;
-- Privatsphare-Einstellungen;
-- sonstige Interaktionen zwischen Nutzern.
-Drink With Me kann Algorithmen einsetzen, um zu bestimmen, welche Profile oder Inhalte fur dich relevant sind und in welcher Reihenfolge sie angezeigt werden.
-
-Wir nutzen diese Funktionen nicht fur ausschliesslich automatisierte Entscheidungen, die dir gegenuber rechtliche Wirkung entfalten oder dich in ahnlicher Weise erheblich beeintrachtigen, im Sinne von Art. 22 DSGVO.
-
-## 7. Plane
-Wenn Nutzer uber Drink With Me einen Plan erstellen, konnen wir insbesondere folgende Informationen verarbeiten:
-
-- Teilnehmer;
-- vorgeschlagener oder bestatigter Zeitpunkt;
-- Ort oder Lokal;
-- Status des Plans;
-- Antworten;
-- Bestatigungen;
-- damit verbundene Interaktionsinformationen.
-Diese Informationen werden den am jeweiligen Plan beteiligten Nutzern zur Verfugung gestellt.
-
-## 8. Nachrichten
-Soweit Nachrichtenfunktionen genutzt werden, verarbeitet Drink With Me die Informationen, die zur Bereitstellung der Kommunikation erforderlich sind.
-
-Hierzu konnen gehoren:
-
-- Absender und Empfanger;
-- Nachrichteninhalt;
-- Zeitstempel;
-- technische Zustellinformationen;
-- gegebenenfalls Lese- oder Statusinformationen.
-Private Nachrichten werden nicht fur Werbung durch Dritte verwendet.
-
-## 9. Fotos und nutzergenerierte Inhalte
-Drink With Me verarbeitet Inhalte, die du selbst hochladst oder veroffentlichst, beispielsweise:
-
-- Profilfotos;
-- Aktivitatsfotos;
-- sonstige nutzergenerierte Inhalte.
-Diese Inhalte werden entsprechend der jeweiligen Funktion sowie deiner Sichtbarkeits- und Privatsphare-Einstellungen verarbeitet.
-
-Bitte lade Fotos oder Informationen uber andere Personen nur hoch, wenn du hierzu berechtigt bist.
-
-Informationen, die du freiwillig in Fotos, Nachrichten, Profilbeschreibungen oder anderen nutzergenerierten Inhalten angibst, konnen zusatzliche personenbezogene Informationen uber dich offenbaren.
-
-## 10. Push-Benachrichtigungen
-Drink With Me kann Push-Benachrichtigungen zu Aktivitaten innerhalb der App senden, beispielsweise zu:
-
-- Drink-Anfragen;
-- Matches;
-- Nachrichten;
-- Planen;
-- Aktivitaten von Buddies;
-- Personen, die in deiner Nahe verfugbar werden;
-- "Having a drink now"-Aktivitaten.
-Hierzu verarbeiten wir insbesondere:
-
-- geratespezifische Push-Token;
-- Benachrichtigungseinstellungen;
-- technische Informationen, die zur Zustellung einer Benachrichtigung erforderlich sind.
-Abhangig vom verwendeten Gerat werden Push-Benachrichtigungen insbesondere uber folgende Dienste zugestellt:
-
-- **Firebase Cloud Messaging (FCM)** von Google; und/oder
-- **Apple Push Notification Service (APNs)** von Apple.
-Du kannst einzelne Benachrichtigungsarten, soweit verfugbar, in Drink With Me verwalten und Push-Benachrichtigungen zusatzlich uber die Einstellungen deines Betriebssystems deaktivieren.
-
-## 11. Crash-Reporting und technische Telemetrie
-Wir verarbeiten technische Informationen, um die Sicherheit, Stabilitat und Zuverlassigkeit von Drink With Me zu gewahrleisten.
-
-### Firebase Crashlytics
-In Release-Versionen von Drink With Me verwenden wir **Firebase Crashlytics** von Google zur Erkennung und Analyse technischer Fehler und Absturze.
-
-Crashlytics kann insbesondere folgende Informationen verarbeiten:
-
-- Crash-Berichte;
-- Stack Traces;
-- Informationen uber den Zustand der App zum Zeitpunkt eines Absturzes;
-- Geratemodell und technische Gerateinformationen;
-- Informationen zum Betriebssystem;
-- App-Version;
-- Zeitstempel;
-- Firebase-Installationskennungen;
-- Crashlytics-Installationskennungen.
-Crashlytics dient dazu, technische Probleme zu erkennen und die Stabilitat und Zuverlassigkeit von Drink With Me zu verbessern.
-
-Nach Angaben von Google speichert Firebase Crashlytics Crash-Stack-Traces, zugehorige Kennungen und bestimmte weitere Crash-Informationen grundsatzlich fur etwa 90 Tage, bevor mit der Loschung aus produktiven Systemen und Sicherungssystemen begonnen wird.
-
-Drink With Me verwendet derzeit **kein Firebase Analytics**.
-
-### Technische Drink With Me Telemetrie
-Drink With Me sendet ausserdem bestimmte technische Telemetriedaten direkt an unsere eigene Backend-Infrastruktur.
-
-Hierzu konnen technische Ereignisse gehoren, die erforderlich sind, um:
-
-- Fehler zu erkennen und zu diagnostizieren;
-- die Zuverlassigkeit der App zu uberwachen;
-- technische Probleme zu untersuchen;
-- den Dienst gegen Missbrauch zu schutzen;
-- festzustellen, ob wesentliche App-Funktionen ordnungsgemaess funktionieren.
-Soweit technische Telemetriedaten einem Drink With Me Konto zugeordnet werden konnen, verwenden wir diese ausschliesslich zum Betrieb, Schutz, zur Fehleranalyse und zur Verbesserung des Dienstes und nicht fur Werbung durch Dritte.
-
-### Informationen zur Nutzung von Funktionen
-Drink With Me kann bestimmte Interaktionen mit Funktionen der App in unserer eigenen Backend-Infrastruktur erfassen, beispielsweise ob bestimmte Funktionen angezeigt oder verwendet wurden.
-
-Wir verwenden diese Informationen, um zu verstehen, ob Funktionen wie vorgesehen arbeiten, und um die App und die Benutzerfreundlichkeit zu verbessern.
-
-Diese Informationen werden nicht fur personalisierte Werbung durch Dritte oder appubergreifendes Werbetracking verwendet.
-
-## 12. Karten
-Drink With Me verwendet **MapLibre** zur Darstellung interaktiver Karten.
-
-Kartenstile und Kartenkacheln werden uber **OpenFreeMap** bereitgestellt. OpenFreeMap wird von **Hyperknot Software Kft., Ungarn**, betrieben.
-
-Die Karten verwenden geografische Daten von **OpenStreetMap** sowie Technologien bzw. Datenstrukturen auf Basis des **OpenMapTiles**-Schemas.
-
-Wenn die App Kartenressourcen ladt, werden die technisch zur Bereitstellung notwendigen Verbindungsinformationen an OpenFreeMap ubertragen.
-
-Nach eigenen Angaben speichert OpenFreeMap in seinen regularen Serverprotokollen keine IP-Adressen. OpenFreeMap verarbeitet anonymisierte technische Protokolldaten wie Client- bzw. Browserinformationen, Zeitstempel und Informationen zum Betriebssystem.
-
-OpenFreeMap gibt an, dass im Fall von Sicherheitsvorfallen oder Missbrauch vorubergehend eine Protokollierung von IP-Adressen fur maximal 30 Tage aktiviert werden kann.
-
-OpenFreeMap kann **Cloudflare** als Content Delivery Network einsetzen. In diesem Fall konnen technische Anfrageinformationen zusatzlich durch Cloudflare verarbeitet werden.
-
-Die Kartenfunktionen werden genutzt, um Orte, Veranstaltungen, Aktivitaten und gegebenenfalls freiwillig von Nutzern freigegebene Standorte darzustellen.
-
-## 13. Blockieren, Melden und Plattformsicherheit
-Drink With Me ermoglicht es Nutzern, andere Nutzer zu blockieren und problematische Nutzer, Verhaltensweisen oder Inhalte zu melden.
-
-Dabei konnen wir insbesondere folgende Informationen verarbeiten:
-
-- den meldenden Nutzer;
-- den gemeldeten Nutzer;
-- den Grund der Meldung;
-- relevante Inhalte;
-- relevante Interaktionen;
-- Informationen, die zur Prufung der Meldung erforderlich sind;
-- aufgrund der Meldung ergriffene Massnahmen.
-Diese Informationen verwenden wir insbesondere, um:
-
-- Meldungen zu untersuchen;
-- Nutzer zu schutzen;
-- Betrug, Missbrauch und Belastigung zu verhindern;
-- Plattformregeln durchzusetzen;
-- die Sicherheit und Integritat von Drink With Me zu gewahrleisten;
-- Rechtsanspruche geltend zu machen, auszuuben oder zu verteidigen.
-
-## 14. Technischer Betrieb und Sicherheit
-Bei der Nutzung von Drink With Me konnen automatisch technische Informationen verarbeitet werden, beispielsweise:
-
-- IP-Adresse;
-- Zeitstempel;
-- Geratetyp;
-- Betriebssystem;
-- App-Version;
-- API-Aufrufe;
-- Fehlerinformationen;
-- sicherheitsrelevante Ereignisse.
-Diese Informationen verwenden wir insbesondere fur:
-
-- den Betrieb des Dienstes;
-- Fehleranalyse;
-- Schutz vor Angriffen und Missbrauch;
-- IT- und Plattformsicherheit;
-- den zuverlassigen Betrieb der App.
-
-## 15. Rechtsgrundlagen der Verarbeitung
-Abhangig vom jeweiligen Zweck verarbeiten wir personenbezogene Daten insbesondere auf folgenden Rechtsgrundlagen.
-
-### Vertragserfullung - Art. 6 Abs. 1 lit. b DSGVO
-Verarbeitungen, die zur Bereitstellung der von dir gewunschten Drink With Me Funktionen erforderlich sind, erfolgen grundsatzlich auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO.
-
-Hierzu gehoren insbesondere:
-
-- Kontoverwaltung;
-- Profile;
-- Discovery;
-- Buddies und Matches;
-- soziale Interaktionen;
-- Nachrichten;
-- Drink-Anfragen;
-- Plane;
-- sonstige von dir genutzte App-Funktionen.
-
-### Einwilligung - Art. 6 Abs. 1 lit. a DSGVO
-Soweit gesetzlich erforderlich, verarbeiten wir Daten auf Grundlage deiner Einwilligung.
-
-Dies kann insbesondere gelten fur:
-
-- bestimmte Zugriffe auf Geratefunktionen;
-- bestimmte Verwendungen von Standortinformationen;
-- das freiwillige Teilen genauer Standortinformationen;
-- andere optionale Verarbeitungen, fur die eine Einwilligung erforderlich ist.
-Du kannst eine erteilte Einwilligung jederzeit mit Wirkung fur die Zukunft widerrufen.
-
-### Berechtigte Interessen - Art. 6 Abs. 1 lit. f DSGVO
-Wir stutzen Verarbeitungen auf unsere berechtigten Interessen, soweit dies erforderlich ist, um:
-
-- einen sicheren und zuverlassigen Dienst bereitzustellen;
-- technische Probleme zu erkennen und zu beheben;
-- Funktionen und Benutzerfreundlichkeit zu verbessern;
-- Betrug und Missbrauch zu verhindern;
-- Nutzer zu schutzen;
-- Meldungen zu untersuchen;
-- IT- und Plattformsicherheit zu gewahrleisten;
-- Rechtsanspruche geltend zu machen, auszuuben oder zu verteidigen.
-Soweit wir uns auf berechtigte Interessen stutzen, wagen wir diese Interessen gegen deine Rechte und Freiheiten ab.
-
-### Rechtliche Verpflichtungen - Art. 6 Abs. 1 lit. c DSGVO
-Wir konnen personenbezogene Daten verarbeiten, wenn dies zur Erfullung gesetzlicher Verpflichtungen erforderlich ist.
-
-## 16. Zugriff auf Informationen auf deinem Endgerat
-Soweit Informationen auf deinem Endgerat gespeichert oder von dort ausgelesen werden, beachten wir die anwendbaren Anforderungen des Paragraph 25 Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz (TDDDG).
-
-Soweit ein Zugriff unbedingt erforderlich ist, um eine von dir ausdrucklich gewunschte Funktion bereitzustellen, kann dieser im gesetzlich zulassigen Umfang ohne gesonderte Einwilligung erfolgen.
-
-Soweit gesetzlich eine Einwilligung erforderlich ist, holen wir diese vor dem entsprechenden Zugriff bzw. der Speicherung ein.
-
-Gerateberechtigungen kannst du zusatzlich uber die Einstellungen deines Betriebssystems verwalten.
-
-## 17. Dienstleister und Empfanger
-Wir setzen ausgewahlte technische Dienstleister fur den Betrieb von Drink With Me ein.
-
-### Microsoft
-Wir nutzen **Microsoft Azure** fur Backend- und Hosting-Infrastruktur sowie **Microsoft Entra External ID** fur Benutzeridentitat und Authentifizierung.
-
-Microsoft kann Konto-, Authentifizierungs- und technische Informationen verarbeiten, soweit dies zur Bereitstellung dieser Dienste erforderlich ist.
-
-### Google
-Wir nutzen:
-
-- Firebase Cloud Messaging fur Push-Benachrichtigungen; und
-- Firebase Crashlytics fur Crash-Reporting und technische Fehlerdiagnose.
-Google kann zusatzlich Authentifizierungsinformationen verarbeiten, wenn du Google als Identitatsanbieter verwendest und diese Option angeboten wird.
-
-Firebase Analytics wird derzeit nicht eingesetzt.
-
-### Apple
-Wir nutzen Apple Push Notification Service zur Zustellung von Push-Benachrichtigungen auf Apple-Geraten.
-
-Apple kann ausserdem Authentifizierungsinformationen verarbeiten, wenn du die Anmeldung mit Apple verwendest und diese Option angeboten wird.
-
-### OpenFreeMap
-Wir verwenden OpenFreeMap, betrieben durch Hyperknot Software Kft. in Ungarn, zur Bereitstellung von Kartenstilen und Kartenkacheln.
-
-OpenFreeMap kann Cloudflare als Teil seiner technischen Infrastruktur einsetzen.
-
-### Andere Drink With Me Nutzer
-Informationen konnen anderen Drink With Me Nutzern bereitgestellt werden, soweit dies fur eine von dir genutzte Funktion erforderlich ist oder du die Informationen ausdrucklich mit ihnen teilst.
-
-Dies kann insbesondere umfassen:
-
-- Profilinformationen;
-- Verfugbarkeit;
-- ungefahre Entfernung;
-- soziale Interaktionen;
-- Plane;
-- Aktivitaten;
-- freiwillig freigegebene Standortinformationen.
-
-### Behorden und sonstige gesetzliche Empfanger
-Wir konnen personenbezogene Daten offenlegen, soweit wir hierzu gesetzlich, durch eine gerichtliche Entscheidung oder eine andere verbindliche Verpflichtung verpflichtet sind oder soweit dies zum Schutz der Rechte und Sicherheit von Nutzern oder Dritten erforderlich ist.
-
-Soweit Dienstleister personenbezogene Daten in unserem Auftrag verarbeiten, schliessen wir die erforderlichen datenschutzrechtlichen Vereinbarungen ab.
-
-## 18. Ubermittlungen in Drittlander
-Einige unserer technischen Dienstleister gehoren zu internationalen Unternehmensgruppen oder konnen personenbezogene Daten ausserhalb des Europaischen Wirtschaftsraums ("EWR") verarbeiten.
-
-Soweit personenbezogene Daten ausserhalb des EWR ubermittelt werden, stellen wir sicher, dass ein nach der DSGVO zulassiger Ubermittlungsmechanismus verwendet wird.
-
-Je nach Empfanger und Verarbeitung kann eine solche Ubermittlung insbesondere beruhen auf:
-
-- einem Angemessenheitsbeschluss der Europaischen Kommission;
-- dem EU-U.S. Data Privacy Framework, soweit der jeweilige Empfanger entsprechend zertifiziert ist;
-- Standardvertragsklauseln der Europaischen Kommission;
-- zusaetzlichen Schutzmassnahmen, soweit erforderlich.
-Bestimmte Microsoft-Dienste konnen unter die Microsoft EU Data Boundary fallen. Je nach verwendetem Dienst und betrieblichen Umstanden konnen jedoch weiterhin begrenzte Ubermittlungen oder Zugriffe ausserhalb der EU bzw. des EWR stattfinden.
-
-Weitere Informationen zu den fur eine konkrete Ubermittlung verwendeten Garantien kannst du bei uns anfordern.
-
-## 19. Speicherdauer
-Wir speichern personenbezogene Daten nur so lange, wie dies fur den jeweiligen Verarbeitungszweck erforderlich ist oder gesetzliche, sicherheitsbezogene oder sonstige zulassige Grunde eine weitere Speicherung erfordern.
-
-Grundsatzlich gelten folgende Kriterien.
-
-### Konto- und Profildaten
-Konto- und Profildaten werden grundsatzlich so lange gespeichert, wie dein Drink With Me Konto aktiv ist.
-
-### Verfugbarkeits- und Aktivitatsinformationen
-Temporare Verfugbarkeits- und Aktivitatsinformationen werden nur so lange gespeichert, wie dies fur die jeweilige Funktion erforderlich ist und entsprechend den fur die Funktion geltenden Ablauf- oder Loschregeln.
-
-### Standortinformationen
-Standortinformationen werden nur so lange gespeichert, wie dies fur die jeweilige standortbezogene Funktion erforderlich ist.
-
-Standorte, die du freiwillig im Rahmen einer Aktivitat oder eines Plans teilst, werden entsprechend den Ablauf-, Losch- oder Sichtbarkeitsregeln der jeweiligen Funktion nicht mehr angezeigt.
-
-### Nachrichten und Plane
-Nachrichten und Planinformationen werden so lange gespeichert, wie dies zur Bereitstellung der jeweiligen Funktion und zur Aufrechterhaltung der entsprechenden Kommunikation oder Planung erforderlich ist, sofern nicht fruher eine Loschung oder Anonymisierung erfolgt.
-
-### Meldungen und Sicherheitsinformationen
-Informationen zu Meldungen, Missbrauch, Blockierungen oder Sicherheitsvorfallen konnen langer gespeichert werden, soweit dies erforderlich ist, um:
-
-- Vorfalle zu untersuchen;
-- wiederholten Missbrauch zu verhindern;
-- Nutzer zu schutzen;
-- gesetzliche Verpflichtungen zu erfullen;
-- Rechtsanspruche geltend zu machen, auszuuben oder zu verteidigen.
-
-### Technische Telemetrie
-Technische und sicherheitsbezogene Daten werden nur so lange gespeichert, wie dies fur Betrieb, Fehleranalyse, Analyse und Sicherheit angemessen erforderlich ist.
-
-Firebase Crashlytics speichert relevante Crash-Informationen und zugehorige Kennungen grundsatzlich fur etwa 90 Tage, bevor mit deren Entfernung begonnen wird.
-
-### Sicherungskopien
-Geloschte Informationen konnen vorubergehend in geschutzten Sicherungskopien verbleiben, bis diese im Rahmen unseres regularen Backup-Lebenszyklus uberschrieben oder geloscht werden.
-
-## 20. Loschung des Kontos und der Daten
-Du kannst dein Drink With Me Konto direkt innerhalb der App dauerhaft loschen.
-
-Die Loschfunktion befindet sich in den Einstellungen fur Konto und Daten.
-
-Vor der Loschung musst du ausdrucklich bestatigen, dass du dein Konto loschen mochtest.
-
-Nach der Bestatigung startet Drink With Me die Loschung deines Kontos und der damit verbundenen benutzerbezogenen Daten.
-
-Die Loschung umfasst vorbehaltlich technisch notwendiger Abhangigkeiten und gesetzlich zulassiger Aufbewahrung insbesondere:
-
-- dein Drink With Me Benutzerkonto;
-- profilbezogene Daten;
-- hochgeladene Fotos;
-- Push-Benachrichtigungstoken;
-- Benachrichtigungen;
-- benutzerbezogene Analytics- und Telemetriedaten;
-- sonstige unmittelbar mit deinem geloschten Konto verknupfte Informationen.
-Soweit anwendbar, versucht der Loschvorgang ausserdem, das zugehorige Benutzerkonto aus der Microsoft Entra External ID Authentifizierungsinfrastruktur zu entfernen.
-
-Nach Einleitung des Loschvorgangs wirst du aus Drink With Me abgemeldet.
-
-Bestimmte Informationen konnen weiterhin gespeichert werden, soweit dies erforderlich oder zulassig ist fur:
-
-- gesetzliche Verpflichtungen;
-- Betrugs- oder Missbrauchspravention;
-- Sicherheit;
-- Streitbeilegung;
-- Geltendmachung, Ausubung oder Verteidigung von Rechtsanspruchen.
-Daten konnen ausserdem vorubergehend in geschutzten technischen Sicherungskopien verbleiben, bis diese uberschrieben werden.
-
-Wenn du keinen Zugriff mehr auf die App hast, kannst du die Loschung deines Drink With Me Kontos uber folgende Adresse beantragen:
-
-**[datenschutz@blocklevel.de](mailto:datenschutz@blocklevel.de)**
-
-Wir konnen Informationen anfordern, die erforderlich sind, um zu uberprufen, dass du Inhaber des betreffenden Kontos bist, bevor wir eine externe Loschanfrage bearbeiten.
-
-Die Loschung deines Drink With Me Kontos loscht nicht automatisch Konten, die du unabhangig davon bei Apple, Google oder anderen Identitatsanbietern unterhaltst.
-
-## 21. Gerateberechtigungen
-Je nach verwendeter Funktion kann Drink With Me Zugriff auf bestimmte Geratefunktionen anfordern.
+### Profil
+Vorname, Geburtsdatum (angezeigt wird dein Alter), bis zu drei Profilfotos, eine Kurzbeschreibung (bis 140 Zeichen), Sprachen, deine Stadt sowie deine Einstellungen (wofür du offen bist, Getränke, Orte, Privatsphäre, Benachrichtigungen). Dein Profil sehen andere Personen im Rahmen der Funktionen der App. Von deinen Fotos speichern wir nur neu kodierte Versionen ohne Metadaten (z. B. Aufnahmeort); die Datei, die du hochlädst, behalten wir nicht.
 
 ### Standort
-Wird fur Funktionen zu Nahe, Discovery, Karten und optionalem Teilen eines Standorts verwendet.
+- Mit deiner Erlaubnis („Beim Verwenden der App“) lesen wir deinen ungefähren Standort, um Check-ins, Runden und Treffpunkte in deiner Nähe anzuzeigen, deine Gegend (z. B. Stadtteil) zu bestimmen und dir „Sag mir Bescheid“-Hinweise zu schicken.
+- **Fremde sehen nie deine Koordinaten, deine Bar oder eine Adresse**, sondern nur die Gegend und einen Kartenpunkt auf einem Raster von ca. 1,1 km. Freunde sehen die Bar deines Check-ins. Nach einem gegenseitigen Prost sehen sich beide die Bar im Chat.
+- Um deine Gegend zu bestimmen und Bars zu suchen, übermittelt unser Server Koordinaten und Suchbegriffe an **Microsoft Azure Maps**.
+- Wir speichern deine zuletzt bekannte Position, damit wir dich bei Aktivitäten in der Nähe benachrichtigen können (wenn du „Sag mir Bescheid“ eingeschaltet hast).
+- **Standort im Chat teilen:** Wenn du im Chat „Aktuellen Standort teilen“ wählst, sehen die Chat-Mitglieder deinen genauen Standort einmalig als Zeile im Chat und können ihn eine Stunde lang in einer Karten-App öffnen. Danach entfernen wir die Koordinaten aus dem Chat. Der Standort wird nicht live aktualisiert; die App liest ihn nur in dem Moment, in dem du bestätigst.
 
-### Kamera und Fotobibliothek
-Wird verwendet, wenn du Profil- oder Aktivitatsfotos aufnehmen oder hochladen mochtest.
+### Check-ins, Runden und Treffpunkte
+- **Check-in („Ich bin gerade unterwegs“):** Getränk, Bar oder Gegend, wer ihn sehen darf (Freunde, ausgewählte Freunde, alle), ob du allein bist, optional ein Drinkfoto und eine Notiz. Ein Check-in endet nach 3 Stunden (auf Wunsch +1 Stunde) oder wenn du ihn beendest. **Das Drinkfoto löschen wir, sobald der Check-in endet.**
+- **Runden:** Zeit, Ort (Bar oder Umkreis), Getränk, Plätze, Stimmung, Notiz, Mitglieder, Anfragen und deine Antwort auf die Erinnerung am Tag der Runde.
+- **Treffpunkte:** Wöchentliche Termine in Bars. Wir speichern, ob du „dabei“ bist.
+
+### Prost, Dazukommen, Freunde
+Prost und Gegen-Prost (unter Freunden auch ein Prost für eine geplante Runde; der Gastgeber sieht, welche Freunde zugeprostet haben), Dazukommen-Anfragen und -Antworten (mit geschätzter Ankunftszeit), Freundschaften (entstehen über einen Einladungslink oder nach einem Treffen mit beidseitigem „Ja, gern“) und Einladungslinks.
+
+### Chats
+Nachrichten (Text, Schnellaktionen wie „Bin unterwegs“ und „Bin da“, geteilter Standort), Zeitstempel und Lesestatus sowie Reaktionen (ein Emoji pro Person und Nachricht, für alle im Chat sichtbar). Unsere Systemzeilen im Chat (z. B. „Lena ist unterwegs“) zeigen nur, was die Beteiligten selbst ausgelöst haben.
+
+### Nach dem Treffen
+Einen Tag nach einem Treffen fragen wir „Wie war’s?“. Wir speichern deine Antwort (z. B. in Kontakt bleiben, „nicht getroffen“ mit Grund, „war nicht da“). **Eine einseitige Antwort erfährt die andere Person nie.** Befreundet werden zwei Personen nur, wenn beide „Ja, gern“ sagen. Wer in mehreren Treffen als nicht erschienen markiert wurde, dessen „erschienen“-Wert im Profil sinkt; einzelne Markierungen zählen nicht. Wählst du „Nicht okay“, legen wir eine Meldung an, die wir innerhalb von 24 Stunden prüfen.
+
+### Selfie-Verifizierung
+Die Selfie-Verifizierung ist **derzeit nicht aktiv**. Nimmst du dennoch in der App ein Selfie auf, empfängt unser Server es, wertet es nicht aus und speichert es nicht; gespeichert wird nur der Zeitpunkt deiner Einwilligung. Bevor wir die Verifizierung einschalten, ergänzen wir diese Erklärung.
+
+### Sicherheit
+Blockieren und Melden (meldende und gemeldete Person, Grund, betroffene Inhalte, Maßnahme). Wer blockiert ist, verschwindet in beide Richtungen aus Check-ins, Runden, Prost und Chats.
 
 ### Benachrichtigungen
-Werden verwendet, um Drink With Me Push-Benachrichtigungen zuzustellen.
+Gerätekennung für Push (**Firebase Cloud Messaging** von Google bzw. **Apple Push Notification Service**), deine Einstellungen (Freunde unterwegs, Prost, Anfragen für deine Runde; Ruhezeiten) und Zustellversuche. Auf dem Sperrbildschirm zeigen wir nie die Bar und nennen bei „jemand prostet dir zu“ nicht den Absender. Antwortest du direkt aus einer Benachrichtigung auf „Dazukommen“, verwenden wir dafür ein einmaliges, nur für diese Anfrage gültiges Token.
 
-Du kannst diese Berechtigungen jederzeit uber die Einstellungen deines Betriebssystems andern oder widerrufen.
+### Technik, Absturzberichte
+IP-Adresse, Zeitstempel, Gerätetyp, Betriebssystem, App-Version, Fehler- und Sicherheitsereignisse. In Release-Versionen nutzen wir **Firebase Crashlytics** (Crash-Berichte, Gerätemodell, Installationskennungen; Speicherung nach Angaben von Google ca. 90 Tage). **Firebase Analytics setzen wir nicht ein.** Zusätzlich senden wir technische Telemetrie an unsere eigene Infrastruktur, um Fehler zu erkennen und Missbrauch zu verhindern. Anfragen mit Schreibzugriff halten wir 30 Tage vor, um doppelte Ausführungen zu verhindern.
 
-Wenn du eine Berechtigung deaktivierst, konnen davon abhangige Funktionen moglicherweise nicht mehr genutzt werden.
+### Karten
+Wir verwenden **MapLibre**. Die Kartenstile liefern wir über unsere Website drink-with-me.net aus (Hosting: **GitHub Pages** von GitHub, Inc., USA), die Kartenkacheln stammen von **OpenFreeMap** (Hyperknot Software Kft., Ungarn; ggf. mit Cloudflare als CDN) und Daten von OpenStreetMap. Beim Laden der Karte werden technisch notwendige Verbindungsdaten an GitHub und OpenFreeMap übertragen. Nach eigenen Angaben speichert OpenFreeMap keine IP-Adressen in regulären Protokollen; bei Missbrauch kann sie bis zu 30 Tage protokolliert werden.
 
-## 22. Werbung und Tracking
-Drink With Me **verkauft keine personenbezogenen Daten**.
+## 4. Zwecke und Rechtsgrundlagen
+- **Vertrag (Art. 6 Abs. 1 lit. b DSGVO):** Konto, Profil, Check-ins, Runden, Prost, Chats, Freunde, Treffpunkte, Benachrichtigungen, die du in der App nutzt.
+- **Einwilligung (Art. 6 Abs. 1 lit. a DSGVO):** Standortfreigabe, Kamera, Mitteilungen, Teilen des Standorts im Chat.
+- **Berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO):** Sicherheit und Stabilität, Absturzberichte, Missbrauchs- und Betrugsabwehr, Prüfung von Meldungen, Rate-Limits, Durchsetzung der Regeln.
+- **Rechtliche Verpflichtung (Art. 6 Abs. 1 lit. c DSGVO)**, soweit zutreffend.
+Wir treffen keine Entscheidungen, die dir gegenüber rechtliche Wirkung entfalten, allein automatisiert (Art. 22 DSGVO).
 
-Drink With Me verwendet personenbezogene Daten derzeit nicht fur personalisierte Werbung durch Dritte.
+## 5. Zugriff auf dein Gerät
+Kamera und Fotos (Profilfotos, Drinkfoto, Selfie), Standort („Beim Verwenden der App“, nie im Hintergrund), Mitteilungen und lokaler Speicher (Spracheinstellung, Erscheinungsbild, Zwischenstand der Registrierung) nur, soweit für die jeweilige Funktion nötig oder von dir erlaubt (§ 25 TDDDG). Berechtigungen kannst du jederzeit in den Einstellungen deines Betriebssystems widerrufen.
 
-Drink With Me verwendet derzeit keine Werbe-SDKs und kein appubergreifendes Werbetracking.
+## 6. Empfänger und Dienstleister
+- **Microsoft:** Azure (Hosting in der Region Nordeuropa), Entra External ID (Anmeldung), Azure Maps (Ortssuche und Bestimmung deiner Gegend).
+- **Google:** Firebase Cloud Messaging, Firebase Crashlytics; Anmeldung mit Google.
+- **Apple:** Push-Dienst; Anmeldung mit Apple.
+- **GitHub:** Auslieferung der Kartenstile.
+- **OpenFreeMap / Cloudflare:** Karten.
+- **Andere Nutzer:** nur das, was die jeweilige Funktion vorsieht (Profil, Check-in, Gegend, Chats) und wie du es freigibst.
+Wir verkaufen keine Daten und nutzen sie nicht für Werbung durch Dritte oder appübergreifendes Tracking.
 
-Firebase Crashlytics sowie unsere eigene technische und produktbezogene Telemetrie werden fur technischen Betrieb, Sicherheit, Fehlerdiagnose und Verbesserung von Drink With Me eingesetzt und nicht fur Werbung durch Dritte.
+## 7. Drittländer
+Anbieter mit Sitz in den USA (Google, Apple, Microsoft, GitHub, Cloudflare) setzen wir auf Grundlage des EU-US Data Privacy Framework oder der Standardvertragsklauseln der Europäischen Kommission ein.
 
-Sollte sich der Einsatz von Werbung oder Tracking-Technologien andern, werden wir diese Datenschutzerklarung aktualisieren und, soweit gesetzlich erforderlich, eine Einwilligung einholen.
+## 8. Speicherdauer
+- **Drinkfoto:** wird gelöscht, sobald der Check-in endet.
+- **Geteilter Standort im Chat:** eine Stunde abrufbar, danach werden die Koordinaten aus der Chatzeile entfernt.
+- **Schreibzugriffs-Schlüssel (Idempotenz):** 30 Tage.
+- **Absturzberichte:** ca. 90 Tage (Google).
+- **Alles Übrige:** bis du dein Konto löschst. Beim Löschen entfernen wir dein Profil, deine Fotos, Check-ins, Runden-Teilnahmen, Chats, Prost, Treffen, Blockierungen, Meldungen, Geräte-Kennungen, Benachrichtigungen und dein Anmeldekonto.
+Kontolöschung und Datenexport findest du in der App unter Einstellungen → Konto und unter [drink-with-me.net/delete-account.html](delete-account.html).
 
-## 23. Deine Rechte
-Nach Massgabe der gesetzlichen Voraussetzungen hast du insbesondere das Recht:
+## 9. Deine Rechte
+Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerspruch gegen Verarbeitungen nach Art. 6 Abs. 1 lit. e oder f DSGVO, Widerruf von Einwilligungen mit Wirkung für die Zukunft, Beschwerde bei einer Aufsichtsbehörde (zuständig: Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen).
 
-- Auskunft uber die dich betreffenden personenbezogenen Daten zu erhalten;
-- eine Kopie deiner personenbezogenen Daten zu erhalten;
-- die Berichtigung unrichtiger oder unvollstandiger Daten zu verlangen;
-- die Loschung personenbezogener Daten zu verlangen;
-- die Einschrankung der Verarbeitung zu verlangen;
-- bestimmte personenbezogene Daten in einem strukturierten, gangigen und maschinenlesbaren Format zu erhalten;
-- soweit gesetzlich vorgesehen, die Ubermittlung dieser Daten an einen anderen Verantwortlichen zu verlangen;
-- einer Verarbeitung auf Grundlage berechtigter Interessen zu widersprechen;
-- eine erteilte Einwilligung jederzeit zu widerrufen.
-Der Widerruf einer Einwilligung beruhrt nicht die Rechtmaessigkeit der Verarbeitung, die vor dem Widerruf erfolgt ist.
-
-Zur Ausubung deiner Rechte kannst du dich an folgende Adresse wenden:
-
-**[datenschutz@blocklevel.de](mailto:datenschutz@blocklevel.de)**
-
-Wir konnen verpflichtet sein, deine Identitat zu uberprufen, bevor wir bestimmte Anfragen bearbeiten.
-
-## 24. Beschwerderecht
-Du hast das Recht, dich bei einer Datenschutzaufsichtsbehorde zu beschweren.
-
-Die fur unseren Unternehmenssitz zustandige Datenschutzaufsichtsbehorde ist:
-
-**Landesbeauftragte fur Datenschutz und Informationsfreiheit Nordrhein-Westfalen (LDI NRW)**
-Kavalleriestrasse 2-4
-40213 Dusseldorf
-Deutschland
-
-Du kannst dich ausserdem an eine andere zustandige Datenschutzaufsichtsbehorde wenden, insbesondere an die Behorde an deinem gewohnlichen Aufenthaltsort, deinem Arbeitsplatz oder am Ort des mutmasslichen Datenschutzverstosses.
-
-## 25. Sicherheit
-Wir treffen angemessene technische und organisatorische Massnahmen, um personenbezogene Daten insbesondere gegen:
-
-- unbefugten Zugriff;
-- unbeabsichtigten Verlust;
-- unrechtmaessige Offenlegung;
-- Veranderung;
-- Zerstorung
-zu schutzen.
-
-Kein mit dem Internet verbundener Dienst kann absolute Sicherheit garantieren. Wir uberprufen und passen unsere Sicherheitsmassnahmen daher entsprechend den mit dem Dienst und den verarbeiteten Daten verbundenen Risiken an.
-
-## 26. Anderungen dieser Datenschutzerklarung
-Wir konnen diese Datenschutzerklarung aktualisieren, wenn:
-
-- sich Funktionen von Drink With Me andern;
-- sich unsere Verarbeitungstatigkeiten andern;
-- Dienstleister geandert werden;
-- sich die technische Infrastruktur andert;
-- sich gesetzliche Anforderungen andern.
-Die jeweils aktuelle Fassung wird uber Drink With Me und auf der Drink With Me Website bereitgestellt.
-
-Das Datum am Anfang dieser Datenschutzerklarung gibt den Stand der letzten Aktualisierung an.
-
-## 27. Kontakt
-Bei Fragen, Anfragen oder Beschwerden zum Datenschutz kannst du dich an uns wenden:
-
-**blocklevel GmbH**
-Drahtzieherweg 15
-47877 Willich
-Deutschland
-
-E-Mail: **[datenschutz@blocklevel.de](mailto:datenschutz@blocklevel.de)**
-Telefon: +49 (2154) 8912 - 800`,
+## 10. Änderungen
+Das Datum oben gibt den Stand an. Wesentliche Änderungen kündigen wir in der App an.`,
         en: `# Privacy Policy for the Drink With Me App
-**Last updated: August 7, 2026**
+**Last updated: November 26, 2026**
 
-This Privacy Policy explains how personal data is processed when you use the **Drink With Me** mobile application ("Drink With Me", the "App", "we", "us").
-
-This Privacy Policy applies specifically to the Drink With Me App. The public Drink With Me website has a separate privacy policy.
+This policy explains how personal data is processed when you use the mobile app **Drink With Me** (“the app”, “we”, “us”). The website has its own privacy policy.
 
 ## 1. Controller
-The controller responsible for processing personal data under the General Data Protection Regulation ("GDPR") is:
+**blocklevel GmbH**, Drahtzieherweg 15, 47877 Willich, Germany
 
-**blocklevel GmbH**
-Drahtzieherweg 15
-47877 Willich
-Germany
+Email: **datenschutz@blocklevel.de** · Phone: +49 (2154) 8912 - 800
 
-Email: **[datenschutz@blocklevel.de](mailto:datenschutz@blocklevel.de)**
-Phone: +49 (2154) 8912 - 800
+## 2. Age
+The app is for people aged 18 and over. We check your date of birth at sign-up; anyone under 18 cannot create an account.
 
-## 2. Categories of Personal Data We Process
-Depending on how you use Drink With Me, we may process the following categories of personal data.
+## 3. What we process
 
-### Account and authentication data
-This may include:
+### Account and sign-in
+- Email address, user ID and the sign-in method (email with a one-time code, Apple or Google).
+- Sign-in runs through **Microsoft Entra External ID**. With Apple or Google, that provider authenticates you and passes us what we need for your account. Apple “Hide My Email” addresses count as their own address.
+- There is one account per email address. If you sign in with a second method and the same address, we do not link the accounts and point you to the first method.
+- By registering you accept the terms of use; we store the accepted version.
 
-- email address;
-- user ID and internal identifiers;
-- authentication provider;
-- authentication tokens and technical authentication information;
-- information received from external identity providers where you choose such a sign-in option.
-Drink With Me uses **Microsoft Entra External ID** for customer identity and authentication.
-
-Where offered, you may also choose an external identity provider such as Google or Apple. In this case, the respective provider authenticates you and provides us with the information required to create or access your Drink With Me account.
-
-## 3. Profile Data
-Information you provide for your Drink With Me profile may include:
-
-- display name;
-- age or date of birth;
-- gender;
-- profile photos;
-- profile description;
-- drink preferences;
-- Discovery preferences and filters;
-- other optional profile information.
-Some profile information is intended to be shown to other users as part of the social functionality of Drink With Me.
-
-You control certain profile and visibility settings within the App.
-
-## 4. Location Data
-Drink With Me uses location information for features where geographic proximity is relevant.
-
-Depending on the functionality you use, we may process:
-
-- your current or recently provided location;
-- approximate distance between users;
-- locations associated with activities or plans;
-- locations you explicitly choose to share with other users.
-Access to your device location is subject to the permissions you grant through your operating system.
-
-We may use your location to:
-
-- show people near you;
-- calculate approximate distances;
-- show nearby activities, events or places;
-- provide map functionality;
-- enable location-based Discovery;
-- enable voluntary sharing of a location.
-Your precise device location is not automatically disclosed to other users simply because you use location-based features.
-
-If you explicitly share a specific location through a feature such as a plan or "Having a drink now", the selected location may be visible to the audience you selected.
-
-You can revoke location permissions at any time through your device settings. Certain location-based functionality may no longer work after the permission is revoked.
-
-## 5. Availability and Activity Information
-Drink With Me processes information about your availability and social activity.
-
-This may include statuses such as:
-
-- Hidden;
-- Open;
-- Up for a drink.
-Drink With Me may also allow you to publish an activity using features such as **Having a drink now**.
-
-Depending on what you choose to share, this may include:
-
-- the fact that you are currently having a drink;
-- a location;
-- a time;
-- a photo;
-- optional accompanying information;
-- the users or groups with whom the activity is shared.
-You control the available privacy and audience settings when sharing such information.
-
-## 6. Discovery, Buddies, Matches and Social Interactions
-To provide its social and Discovery functionality, Drink With Me may process information including:
-
-- profiles shown to you;
-- Discovery settings and filters;
-- distance information;
-- availability information;
-- likes or expressions of interest;
-- passes or other selection decisions;
-- Buddies;
-- Matches;
-- drink requests;
-- responses to drink requests;
-- privacy selections;
-- other interactions between users.
-Drink With Me may use algorithms to determine which profiles or content are relevant to you and in which order they are displayed.
-
-We do not use these algorithms to make solely automated decisions that produce legal effects or similarly significantly affect you within the meaning of Article 22 GDPR.
-
-## 7. Plans
-When users make a plan through Drink With Me, we may process information including:
-
-- participants;
-- proposed or confirmed date and time;
-- location or venue;
-- plan status;
-- responses;
-- confirmations;
-- related interaction information.
-This information is made available to the users participating in the relevant plan.
-
-## 8. Messages
-Where messaging functionality is used, Drink With Me processes the information necessary to provide that communication.
-
-This may include:
-
-- sender and recipient;
-- message content;
-- timestamps;
-- technical delivery information;
-- read or status information where applicable.
-Private messages are not used for third-party advertising.
-
-## 9. Photos and User-Generated Content
-Drink With Me processes content that you choose to upload or publish, including:
-
-- profile photos;
-- activity photos;
-- other user-generated content.
-Such content is processed according to the relevant feature and your visibility or privacy selections.
-
-Please only upload photographs or information concerning other individuals where you are entitled to do so.
-
-Information that you voluntarily include in photos, messages, profile descriptions or other user-generated content may reveal additional personal information about you.
-
-## 10. Push Notifications
-Drink With Me may send push notifications concerning App activity, including for example:
-
-- drink requests;
-- Matches;
-- messages;
-- plans;
-- Buddy activity;
-- people becoming available nearby;
-- "Having a drink now" activities.
-For this purpose, we process:
-
-- device push tokens;
-- notification preferences;
-- technical information required to deliver a notification.
-Depending on your device, push notifications are delivered using:
-
-- **Firebase Cloud Messaging (FCM)** provided by Google; and/or
-- **Apple Push Notification Service (APNs)** provided by Apple.
-You can manage notification categories within Drink With Me where available and can disable push notifications through your operating-system settings.
-
-## 11. Crash Reporting and Technical Telemetry
-We process technical information in order to maintain the security, stability and reliability of Drink With Me.
-
-### Firebase Crashlytics
-Release versions of Drink With Me use **Firebase Crashlytics**, provided by Google, to identify and analyse technical errors and crashes.
-
-Crashlytics may process information including:
-
-- crash reports;
-- stack traces;
-- information about the state of the App at the time of a crash;
-- device model and technical device information;
-- operating-system information;
-- App version;
-- timestamps;
-- Firebase installation identifiers;
-- Crashlytics installation identifiers.
-Crashlytics is used to identify technical problems and improve the stability and reliability of Drink With Me.
-
-According to Google, Firebase Crashlytics retains crash stack traces, associated identifiers and certain related crash information for approximately 90 days before deletion from live and backup systems begins.
-
-Drink With Me does **not currently use Firebase Analytics**.
-
-### Drink With Me technical telemetry
-Drink With Me also sends technical telemetry to our own backend infrastructure.
-
-This may include technical events necessary to:
-
-- detect and diagnose errors;
-- monitor App reliability;
-- troubleshoot technical problems;
-- protect the service against abuse;
-- understand whether important App functionality operates correctly.
-Where technical telemetry can be associated with a Drink With Me account, it is used only for operating, protecting, troubleshooting and improving the service and not for third-party advertising.
-
-### Product usage information
-Drink With Me may record certain interactions with App functionality in our own backend, such as whether specific functionality has been displayed or used.
-
-We use this information to understand whether features work as intended and to improve the App and user experience.
-
-This information is not used for personalised third-party advertising or cross-app advertising tracking.
-
-## 12. Maps
-Drink With Me uses **MapLibre** technology to render interactive maps.
-
-Map styles and tiles are provided through **OpenFreeMap**, operated by **Hyperknot Software Kft., Hungary**.
-
-The maps use geographic data from **OpenStreetMap** and technology/data structures based on the **OpenMapTiles** schema.
-
-When the App loads map resources, technical connection information is transmitted to OpenFreeMap as necessary to provide the requested resources.
-
-According to OpenFreeMap, its regular server logs do not store users' IP addresses. OpenFreeMap processes anonymised technical log information such as client/browser information, timestamps and operating-system information.
-
-OpenFreeMap states that it may temporarily enable IP-address logging in the event of security incidents or misuse for a maximum period of 30 days.
-
-OpenFreeMap may use **Cloudflare** as a content delivery network. In this case, technical request information may also be processed by Cloudflare.
-
-Map functionality is used to display places, events, activities and, where applicable, locations voluntarily shared by users.
-
-## 13. Blocking, Reports and Platform Safety
-Drink With Me allows users to block other users and report problematic users, behaviour or content.
-
-When such functionality is used, we may process:
-
-- the reporting user;
-- the reported user;
-- the reason for the report;
-- relevant content;
-- relevant interactions;
-- information required to assess the report;
-- actions taken as a result.
-We process such information in order to:
-
-- investigate reports;
-- protect users;
-- prevent fraud, abuse and harassment;
-- enforce platform rules;
-- maintain the safety and integrity of Drink With Me;
-- establish, exercise or defend legal claims.
-
-## 14. Technical Operation and Security
-When you use Drink With Me, we may automatically process technical information including:
-
-- IP address;
-- timestamps;
-- device type;
-- operating system;
-- App version;
-- API requests;
-- error information;
-- security-related events.
-We use this information for:
-
-- operating the service;
-- troubleshooting;
-- preventing attacks and abuse;
-- maintaining IT and platform security;
-- ensuring the reliable delivery of the App.
-
-## 15. Legal Bases for Processing
-We process personal data on the following legal bases depending on the relevant purpose.
-
-### Performance of a contract - Article 6(1)(b) GDPR
-Processing necessary to provide the Drink With Me service requested by you is generally based on Article 6(1)(b) GDPR.
-
-This includes, in particular:
-
-- account management;
-- profiles;
-- Discovery;
-- Buddies and Matches;
-- social interactions;
-- messaging;
-- drink requests;
-- plans;
-- App functionality requested by you.
-
-### Consent - Article 6(1)(a) GDPR
-Where required by law, we process information on the basis of your consent.
-
-This may apply particularly to:
-
-- access to certain device functions;
-- certain uses of location information;
-- voluntary sharing of precise location information;
-- other optional processing requiring consent.
-You can withdraw consent at any time with effect for the future.
-
-### Legitimate interests - Article 6(1)(f) GDPR
-We rely on our legitimate interests where processing is necessary to:
-
-- provide a secure and reliable service;
-- identify and resolve technical problems;
-- improve App functionality and usability;
-- prevent fraud and abuse;
-- protect users;
-- investigate reports;
-- maintain IT and platform security;
-- establish, exercise or defend legal claims.
-Where we rely on legitimate interests, we balance those interests against your rights and freedoms.
-
-### Legal obligations - Article 6(1)(c) GDPR
-We may process information where required to comply with applicable legal obligations.
-
-## 16. Access to Information on Your Device
-Where information is stored on or accessed from your device, we comply with the applicable requirements of Section 25 of the German Telecommunications Digital Services Data Protection Act (TDDDG).
-
-Where such access is strictly necessary to provide a function expressly requested by you, it may take place without separate consent where permitted by law.
-
-Where consent is legally required, we request consent before the relevant access or storage takes place.
-
-Device permissions can additionally be controlled through the settings of your operating system.
-
-## 17. Service Providers and Recipients
-We use selected service providers to operate Drink With Me.
-
-### Microsoft
-We use **Microsoft Azure** for backend and hosting infrastructure and **Microsoft Entra External ID** for identity and authentication services.
-
-Microsoft may process account, authentication and technical information as required to provide those services.
-
-### Google
-We use:
-
-- Firebase Cloud Messaging for push notifications; and
-- Firebase Crashlytics for crash reporting and technical diagnostics.
-Google may additionally process authentication information if you choose Google as an identity provider where this option is offered.
-
-We do not currently use Firebase Analytics.
-
-### Apple
-We use Apple Push Notification Service for push notifications on Apple devices.
-
-Apple may additionally process authentication information if you use Sign in with Apple where this option is offered.
-
-### OpenFreeMap
-We use OpenFreeMap, operated by Hyperknot Software Kft. in Hungary, to provide map styles and map tiles.
-
-OpenFreeMap may use Cloudflare as part of its technical delivery infrastructure.
-
-### Other users
-Information may be shared with other Drink With Me users where this is required for a feature you use or where you expressly choose to share it.
-
-This can include:
-
-- profile information;
-- availability;
-- approximate distance;
-- social interactions;
-- plans;
-- activities;
-- voluntarily shared location information.
-
-### Authorities and legal recipients
-We may disclose personal data where required by law, court order or another binding legal obligation, or where necessary to protect the rights and safety of users or third parties.
-
-Where service providers process personal data on our behalf, appropriate contractual data-protection arrangements are put in place where required.
-
-## 18. International Data Transfers
-Some of our technical service providers belong to international groups or may process personal data outside the European Economic Area ("EEA").
-
-Where personal data is transferred outside the EEA, we ensure that an appropriate transfer mechanism is used as required by the GDPR.
-
-Depending on the relevant recipient and processing, such transfers may be based on:
-
-- an adequacy decision of the European Commission;
-- the EU-U.S. Data Privacy Framework where the recipient is appropriately certified;
-- Standard Contractual Clauses approved by the European Commission;
-- supplementary safeguards where necessary.
-Certain Microsoft services may fall within Microsoft's EU Data Boundary. However, limited transfers or access from outside the EU/EEA may still occur depending on the service and operational circumstances.
-
-You may contact us for further information about safeguards applicable to a particular transfer.
-
-## 19. Data Retention
-We retain personal data only for as long as necessary for the purpose for which it is processed or for as long as applicable legal or security requirements require retention.
-
-The following general criteria apply.
-
-### Account and profile information
-Account and profile information is generally retained for as long as your Drink With Me account remains active.
-
-### Availability and activity information
-Temporary availability and activity information is retained for as long as required to provide the relevant functionality and according to the expiry or deletion rules applicable to that feature.
-
-### Location information
-Location information is retained only for as long as necessary to provide the relevant location-based functionality.
-
-Locations voluntarily shared as part of an activity or plan cease to be displayed according to the expiry, deletion or visibility rules of the relevant feature.
-
-### Messages and plans
-Messages and plan information are retained for as long as necessary to provide the respective functionality and maintain relevant conversations or plans, unless deletion or anonymisation takes place earlier.
-
-### Reports and safety information
-Information relating to reports, abuse, blocks or security incidents may be retained for longer where necessary to:
-
-- investigate incidents;
-- prevent repeated abuse;
-- protect users;
-- comply with legal obligations;
-- establish, exercise or defend legal claims.
-
-### Technical telemetry
-Technical and security information is retained only for the period reasonably necessary for operation, troubleshooting, analysis and security.
-
-Firebase Crashlytics generally retains relevant crash information and associated identifiers for approximately 90 days before removal begins.
-
-### Backups
-Deleted information may remain temporarily in protected backups until those backups are overwritten or deleted as part of our normal backup lifecycle.
-
-## 20. Account and Data Deletion
-You can permanently delete your Drink With Me account directly within the App.
-
-The deletion function is available under the account and data settings.
-
-Before deletion, you are required to explicitly confirm that you want to delete the account.
-
-Following confirmation, Drink With Me initiates deletion of your account and associated user-linked data.
-
-The deletion process includes, subject to technical dependencies and legally permitted retention:
-
-- the Drink With Me user account;
-- profile-related data;
-- uploaded photos;
-- push notification tokens;
-- notifications;
-- user-linked analytics and telemetry data;
-- other information directly associated with the deleted user account.
-Where applicable, the deletion process also attempts to remove the corresponding customer account from the Microsoft Entra External ID authentication infrastructure.
-
-After the deletion process has been initiated, you are signed out of Drink With Me.
-
-Certain information may be retained where this is required or permitted for:
-
-- legal obligations;
-- fraud or abuse prevention;
-- security;
-- resolving disputes;
-- establishing, exercising or defending legal claims.
-Data may also remain temporarily in protected technical backups until those backups are overwritten.
-
-If you are unable to access the App, you may request deletion of your Drink With Me account by contacting:
-
-**[datenschutz@blocklevel.de](mailto:datenschutz@blocklevel.de)**
-
-We may request information necessary to verify that you are the owner of the account before processing an external deletion request.
-
-Deleting your Drink With Me account does not necessarily delete accounts you maintain independently with Apple, Google or other identity providers.
-
-## 21. Device Permissions
-Depending on the functionality you use, Drink With Me may request access to device functions including:
+### Profile
+First name, date of birth (others see your age), up to three profile photos, a short bio (up to 140 characters), languages, your city and your preferences (what you are open for, drinks, places, privacy, notifications). Other people see your profile within the features of the app. Of your photos we store only re-encoded versions without metadata (such as the place a photo was taken); we do not keep the file you upload.
 
 ### Location
-Used for proximity, Discovery, maps and optional location sharing.
+- With your permission (“while using the app”) we read your approximate location to show check-ins, rounds and meeting points nearby, to work out your area (for example the district) and to send “Let me know” alerts.
+- **Strangers never see your coordinates, your bar or an address**, only the area and a map point on a grid of about 1.1 km. Friends see the bar of your check-in. After a mutual Cheers, both of you see the bar in the chat.
+- To work out your area and to search for bars, our server sends coordinates and search terms to **Microsoft Azure Maps**.
+- We store your last known position so that we can notify you about activity nearby (if you turned “Let me know” on).
+- **Sharing a location in a chat:** If you choose “Share current location” in a chat, the chat members see your exact position once, as a line in the chat, and can open it in a maps app for one hour. After that we remove the coordinates from the chat. The position is not updated live; the app reads it only at the moment you confirm.
 
-### Camera and photo library
-Used when you choose to take or upload profile or activity photos.
+### Check-ins, rounds and meeting points
+- **Check-in (“I’m out right now”):** drink, bar or area, who may see it (friends, selected friends, everyone), whether you are alone, optionally a drink photo and a note. A check-in ends after 3 hours (+1 hour on request) or when you end it. **We delete the drink photo as soon as the check-in ends.**
+- **Rounds:** time, place (bar or radius), drink, seats, vibe, note, members, requests and your answer to the reminder on the day of the round.
+- **Meeting points:** weekly dates at bars. We store whether you are “in”.
+
+### Cheers, joining, friends
+Cheers and cheers back (among friends also a Cheers for a planned round; the host sees which friends toasted), requests to join and their answers (with an estimated arrival time), friendships (created through an invite link or after a meeting where both say “yes, gladly”) and invite links.
+
+### Chats
+Messages (text, quick actions such as “On my way” and “I’m here”, a shared location), timestamps and read status, and reactions (one emoji per person and message, visible to everyone in the chat). System lines in a chat (for example “Lena is on the way”) show only what the people involved triggered themselves.
+
+### After the meeting
+The day after a meeting we ask “How was it?”. We store your answer (for example keep in touch, “did not meet” with a reason, “was not there”). **The other person never learns about a one-sided answer.** Two people become friends only if both say “yes, gladly”. Someone marked as not having shown up in several meetings sees their “showed up” value drop; single marks do not count. If you choose “Not okay”, we create a report that we review within 24 hours.
+
+### Selfie verification
+Selfie verification is **currently not active**. If you nevertheless take a selfie in the app, our server receives it, does not analyse it and does not store it; only the time of your consent is stored. Before we switch verification on, we will amend this policy.
+
+### Safety
+Blocking and reporting (reporting and reported person, reason, content concerned, action taken). Someone you block disappears from check-ins, rounds, Cheers and chats in both directions.
 
 ### Notifications
-Used to deliver Drink With Me push notifications.
+Device token for push (**Firebase Cloud Messaging** by Google or **Apple Push Notification Service**), your settings (friends out, Cheers, requests for your round; quiet hours) and delivery attempts. The lock screen never shows the bar, and for “someone toasts you” it does not name the sender. If you answer a “join” request straight from a notification, we use a one-time token valid for that request only.
 
-You can modify or withdraw these permissions through your operating-system settings.
+### Technical data and crash reports
+IP address, timestamps, device type, operating system, app version, error and security events. In release builds we use **Firebase Crashlytics** (crash reports, device model, installation IDs; stored for about 90 days according to Google). **We do not use Firebase Analytics.** We also send technical telemetry to our own infrastructure to detect errors and prevent abuse. We keep write requests for 30 days to prevent duplicate execution.
 
-If you disable a permission, functionality that depends on that permission may no longer be available.
+### Maps
+We use **MapLibre**. We deliver the map styles through our website drink-with-me.net (hosting: **GitHub Pages** by GitHub, Inc., USA); the map tiles come from **OpenFreeMap** (Hyperknot Software Kft., Hungary; possibly with Cloudflare as CDN) and data from OpenStreetMap. Loading the map transmits the technically required connection data to GitHub and OpenFreeMap. According to OpenFreeMap it does not store IP addresses in regular logs; in case of abuse they may be logged for up to 30 days.
 
-## 22. Advertising and Tracking
-Drink With Me **does not sell personal data**.
+## 4. Purposes and legal bases
+- **Contract (Art. 6(1)(b) GDPR):** account, profile, check-ins, rounds, Cheers, chats, friends, meeting points, notifications you use in the app.
+- **Consent (Art. 6(1)(a) GDPR):** location, camera, notifications, sharing a location in a chat.
+- **Legitimate interest (Art. 6(1)(f) GDPR):** security and stability, crash reports, abuse and fraud prevention, review of reports, rate limits, enforcing the rules.
+- **Legal obligation (Art. 6(1)(c) GDPR)** where applicable.
+We make no decisions based solely on automated processing that have legal effects on you (Art. 22 GDPR).
 
-Drink With Me does not currently use personal data for personalised third-party advertising.
+## 5. Access to your device
+Camera and photos (profile photos, drink photo, selfie), location (“while using the app”, never in the background), notifications and local storage (language, appearance, sign-up progress) only as needed for the feature or as you allow (§ 25 TDDDG). You can revoke permissions at any time in your operating system settings.
 
-Drink With Me does not currently use advertising SDKs or cross-app advertising tracking.
+## 6. Recipients and service providers
+- **Microsoft:** Azure (hosting in the North Europe region), Entra External ID (sign-in), Azure Maps (place search and working out your area).
+- **Google:** Firebase Cloud Messaging, Firebase Crashlytics; Sign in with Google.
+- **Apple:** push service; Sign in with Apple.
+- **GitHub:** delivery of the map styles.
+- **OpenFreeMap / Cloudflare:** maps.
+- **Other users:** only what the feature provides (profile, check-in, area, chats) and as you share it.
+We do not sell data and do not use it for third-party advertising or cross-app tracking.
 
-Firebase Crashlytics and our own technical/product telemetry are used for technical operation, security, diagnostics and improvement of Drink With Me, not for third-party advertising.
+## 7. Third countries
+We use providers based in the USA (Google, Apple, Microsoft, GitHub, Cloudflare) on the basis of the EU-US Data Privacy Framework or the European Commission’s Standard Contractual Clauses.
 
-If our use of advertising or tracking technologies changes, we will update this Privacy Policy and obtain consent where legally required.
+## 8. Retention
+- **Drink photo:** deleted as soon as the check-in ends.
+- **Shared location in a chat:** can be opened for one hour, after that the coordinates are removed from the chat line.
+- **Write-request keys (idempotency):** 30 days.
+- **Crash reports:** about 90 days (Google).
+- **Everything else:** until you delete your account. On deletion we remove your profile, photos, check-ins, round participation, chats, Cheers, meetings, blocks, reports, device tokens, notifications and your sign-in account.
+You can delete your account and export your data in the app under Settings → Account and at [drink-with-me.net/delete-account.html](delete-account.html).
 
-## 23. Your Rights
-Subject to the applicable legal requirements, you have the right to:
+## 9. Your rights
+Access, rectification, erasure, restriction, data portability, objection to processing under Art. 6(1)(e) or (f) GDPR, withdrawal of consent with effect for the future, and a complaint to a supervisory authority (competent: the State Commissioner for Data Protection and Freedom of Information of North Rhine-Westphalia).
 
-- obtain information about the personal data we process concerning you;
-- receive a copy of your personal data;
-- request correction of inaccurate or incomplete personal data;
-- request deletion of personal data;
-- request restriction of processing;
-- receive certain personal data in a structured, commonly used and machine-readable format;
-- request transmission of such data to another controller where legally applicable;
-- object to processing based on legitimate interests;
-- withdraw consent at any time where processing is based on consent.
-Withdrawal of consent does not affect the lawfulness of processing carried out before the withdrawal.
-
-To exercise your rights, contact:
-
-**[datenschutz@blocklevel.de](mailto:datenschutz@blocklevel.de)**
-
-We may need to verify your identity before processing certain requests.
-
-## 24. Right to Lodge a Complaint
-You have the right to lodge a complaint with a data protection supervisory authority.
-
-The supervisory authority responsible for our establishment is:
-
-**Landesbeauftragte fur Datenschutz und Informationsfreiheit Nordrhein-Westfalen (LDI NRW)**
-Kavalleriestrasse 2-4
-40213 Dusseldorf
-Germany
-
-You may also contact another competent supervisory authority, in particular the authority at your habitual place of residence, place of work or the place of the alleged infringement.
-
-## 25. Security
-We implement appropriate technical and organisational measures designed to protect personal data against:
-
-- unauthorised access;
-- accidental loss;
-- unlawful disclosure;
-- alteration;
-- destruction.
-No internet-connected service can guarantee absolute security. We therefore review and adapt our security measures according to the risks associated with the service and the personal data processed.
-
-## 26. Changes to This Privacy Policy
-We may update this Privacy Policy if:
-
-- Drink With Me functionality changes;
-- our processing activities change;
-- service providers change;
-- technical infrastructure changes;
-- applicable legal requirements change.
-The current version will be made available through Drink With Me and on the Drink With Me website.
-
-The date at the top of this Privacy Policy indicates when it was last updated.
-
-## 27. Contact
-For privacy-related questions, requests or complaints, please contact:
-
-**blocklevel GmbH**
-Drahtzieherweg 15
-47877 Willich
-Germany
-
-Email: **[datenschutz@blocklevel.de](mailto:datenschutz@blocklevel.de)**
-Phone: +49 (2154) 8912 - 800`
+## 10. Changes
+The date above shows the version. We announce material changes in the app.`
       };
 
       var labels = {

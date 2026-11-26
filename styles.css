@@ -1,3 +1,7 @@
+/* Self-hosted fonts: no requests to Google (GDPR). Licences: assets/fonts/OFL-*.txt */
+@font-face { font-family: "Bricolage Grotesque"; font-style: normal; font-weight: 600 800; font-display: swap; src: url("assets/fonts/BricolageGrotesque-Variable.woff2") format("woff2"); }
+@font-face { font-family: "Manrope"; font-style: normal; font-weight: 400 800; font-display: swap; src: url("assets/fonts/Manrope-Variable.woff2") format("woff2"); }
+
 :root {
   --sunburst: #ffb800;
   --lemon: #ffde59;
@@ -9,7 +13,7 @@
   --muted: #6f6547;
   --outline: #e8dfc6;
   --display: "Bricolage Grotesque", "Arial Black", sans-serif;
-  --body: "Schibsted Grotesk", "Helvetica Neue", sans-serif;
+  --body: "Manrope", "Helvetica Neue", sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -186,3 +190,5 @@ footer a { font-weight: 700; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+/* Long German headings must not push narrow phones sideways. */
+.legal h1, .legal h2, .legal h3 { hyphens: auto; overflow-wrap: anywhere; }
