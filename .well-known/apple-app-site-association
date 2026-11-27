@@ -6,7 +6,9 @@
         "appID": "S792U22FCB.me.drinkwith.drinkWithMe",
         "paths": [
           "/invite",
-          "/invite/"
+          "/invite/",
+          "/round",
+          "/round/"
         ]
       }
     ]
